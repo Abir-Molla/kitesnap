@@ -4,6 +4,14 @@ All notable changes to Snapzy will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2.1.0-beta.3] - 2026-10-10
+
+### Bug Fixes
+- Correct restored screen crop placement in screenshots (#642) (5625449d)
+
+### Contributors
+- @mvanhorn
+
 ## [2.1.0-beta.2] - 2026-10-10
 
 ### Features
