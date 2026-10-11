@@ -370,7 +370,6 @@ private extension KeyboardShortcutManager {
     case .deleteRecording: setDeleteRecordingShortcut(config)
     case .delayedCapture: setDelayedCaptureShortcut(config)
     case .annotate: setAnnotateShortcut(config)
-    case .cloudUploads: setCloudUploadsShortcut(config)
     case .shortcutList: setShortcutListShortcut(config)
     case .ocr: setOCRShortcut(config)
     case .smartElement: setSmartElementShortcut(config)

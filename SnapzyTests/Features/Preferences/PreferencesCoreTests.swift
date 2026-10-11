@@ -21,17 +21,6 @@ final class PreferencesCoreTests: XCTestCase {
     return navigation
   }
 
-  func testCloudUploadFloatingPositionStored_readsValidValueAndFallsBackToDefault() throws {
-    let defaults = try makeDefaults()
-    XCTAssertEqual(CloudUploadFloatingPosition.stored(userDefaults: defaults), .center)
-
-    defaults.set(CloudUploadFloatingPosition.top.rawValue, forKey: PreferencesKeys.cloudUploadsFloatingPosition)
-    XCTAssertEqual(CloudUploadFloatingPosition.stored(userDefaults: defaults), .top)
-
-    defaults.set("invalid", forKey: PreferencesKeys.cloudUploadsFloatingPosition)
-    XCTAssertEqual(CloudUploadFloatingPosition.stored(userDefaults: defaults), .center)
-  }
-
   func testHistoryBackgroundStyleStored_readsValidValueAndFallsBackToDefault() throws {
     let defaults = try makeDefaults()
     XCTAssertEqual(HistoryBackgroundStyle.currentStoredStyle(userDefaults: defaults), .hud)
@@ -118,13 +107,12 @@ final class PreferencesCoreTests: XCTestCase {
       .history,
       .shortcuts,
       .permissions,
-      .cloud,
       .advanced,
       .about,
     ]
 
-    XCTAssertEqual(tabs.count, 11)
-    XCTAssertEqual(PreferencesTab.allCases.count, 11)
+    XCTAssertEqual(tabs.count, 10)
+    XCTAssertEqual(PreferencesTab.allCases.count, 10)
   }
 
   func testPreferencesTabGroups_coverAllCasesExactlyOnce() {

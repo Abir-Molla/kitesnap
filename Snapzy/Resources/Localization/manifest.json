@@ -25,19 +25,6 @@
       ]
     },
     {
-      "file": "Features/Cloud.xcstrings",
-      "prefixes": [
-        "cloud-expire.",
-        "cloud-operation.",
-        "cloud-password.",
-        "cloud-provider.",
-        "cloud-settings.",
-        "cloud-transfer.",
-        "cloud-usage.",
-        "preferences-cloud-history."
-      ]
-    },
-    {
       "file": "Features/Menubar.xcstrings",
       "prefixes": [
         "menu."

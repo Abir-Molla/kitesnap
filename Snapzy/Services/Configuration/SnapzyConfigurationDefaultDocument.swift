@@ -20,7 +20,6 @@ enum SnapzyConfigurationDefaultDocument {
     writeRecording(&writer)
     writeQuickAccess(&writer)
     writeHistory(&writer)
-    writeCloud(&writer)
     writeAnnotate(&writer)
     writeShortcuts(&writer)
 
@@ -156,17 +155,6 @@ enum SnapzyConfigurationDefaultDocument {
     writer.value("auto_clear_days", 0)
   }
 
-  private static func writeCloud(_ writer: inout SimpleTOMLWriter) {
-    writer.section("cloud")
-    writer.value("provider", CloudProviderType.awsS3.rawValue)
-    writer.value("bucket", "")
-    writer.value("region", "us-east-1")
-    writer.value("endpoint", "")
-    writer.value("custom_domain", "")
-    writer.value("expire_time", CloudExpireTime.day7.rawValue)
-    writer.value("uploads_window_position", CloudUploadFloatingPosition.defaultPosition.rawValue)
-  }
-
   private static func writeAnnotate(_ writer: inout SimpleTOMLWriter) {
     writer.section("annotate")
     writer.value("clipboard_image_open_behavior", AnnotateClipboardImageBehavior.ask.rawValue)
@@ -285,7 +273,6 @@ enum SnapzyConfigurationDefaultDocument {
     case .deleteRecording: return nil
     case .delayedCapture: return nil
     case .annotate: return .defaultAnnotate
-    case .cloudUploads: return .defaultCloudUploads
     case .shortcutList: return .defaultShortcutList
     case .ocr: return .defaultOCR
     case .smartElement: return nil
@@ -299,7 +286,6 @@ enum SnapzyConfigurationDefaultDocument {
     case .copyAndClose: return AnnotateShortcutManager.defaultCopyAndClose
     case .toggleSidebar: return AnnotateShortcutManager.defaultToggleSidebar
     case .togglePin: return AnnotateShortcutManager.defaultTogglePin
-    case .cloudUpload: return AnnotateShortcutManager.defaultCloudUpload
     case .autoRedactSensitiveData: return AnnotateShortcutManager.defaultAutoRedactSensitiveData
     }
   }

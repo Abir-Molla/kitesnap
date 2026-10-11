@@ -45,15 +45,9 @@ private extension View {
 struct AnnotateBottomBarView: View {
   @ObservedObject var state: AnnotateState
   let eventRouter: AnnotateWindowEventRouter
-  @ObservedObject private var cloudManager = CloudManager.shared
   @ObservedObject private var preferencesManager = PreferencesManager.shared
   @ObservedObject private var annotateShortcutManager = AnnotateShortcutManager.shared
 
-  @State private var isCloudUploading = false
-  @State private var cloudUploadProgress: Double = 0
-  @State private var cloudUploadError: String?
-  @State private var showCloudNotConfiguredAlert = false
-  @State private var showOverwriteConfirmation = false
   @State private var measuredLeftWidth: CGFloat = 0
   @State private var measuredRightWidth: CGFloat = 0
   @State private var isZoomHovered = false
@@ -88,37 +82,6 @@ struct AnnotateBottomBarView: View {
         measuredRightWidth = widths[.right] ?? 0
       }
 
-      // Cloud upload progress bar (always present to avoid layout shift)
-      ProgressView(value: cloudUploadProgress)
-        .progressViewStyle(.linear)
-        .frame(height: 3)
-        .opacity(isCloudUploading ? 1 : 0)
-    }
-    .alert(L10n.AnnotateUI.cloudNotConfiguredTitle, isPresented: $showCloudNotConfiguredAlert) {
-      Button(L10n.Common.ok, role: .cancel) {}
-    } message: {
-      Text(L10n.AnnotateUI.cloudNotConfiguredMessage)
-    }
-    .alert(L10n.AnnotateUI.overwriteCloudFileTitle, isPresented: $showOverwriteConfirmation) {
-      Button(L10n.Common.overwrite) {
-        handleCloudUpload()
-      }
-      .keyboardShortcut(.defaultAction)
-      Button(L10n.Common.cancel, role: .cancel) {}
-    } message: {
-      Text(L10n.AnnotateUI.overwriteCloudFileMessage)
-    }
-    .onReceive(eventRouter.publisher(for: .annotateCloudUpload)) { _ in
-      // ⌘U shortcut: trigger cloud upload (with overwrite confirmation if needed)
-      let showCloudButton = cloudManager.isConfigured && QuickAccessActionConfigurationStore.shared.isEnabled(.uploadToCloud)
-      let needsReUpload = state.requiresRenderedOutputForSharing || state.isCloudStale
-      let alreadyUploaded = state.cloudURL != nil && !needsReUpload
-      guard showCloudButton, !isCloudUploading, !alreadyUploaded else { return }
-      if state.cloudKey != nil && needsReUpload {
-        showOverwriteConfirmation = true
-      } else {
-        handleCloudUpload()
-      }
     }
   }
 
@@ -390,9 +353,6 @@ struct AnnotateBottomBarView: View {
   }
 
   private var annotateActionButtons: some View {
-    let showCloudButton = cloudManager.isConfigured && QuickAccessActionConfigurationStore.shared.isEnabled(.uploadToCloud)
-    let cloudUploadShortcut = annotateShortcutManager.isActionShortcutEnabled(for: .cloudUpload)
-      ? annotateShortcutManager.cloudUploadShortcut?.displayString : nil
     let togglePinShortcut = annotateShortcutManager.isActionShortcutEnabled(for: .togglePin)
       ? annotateShortcutManager.togglePinShortcut?.displayString : nil
     let copyAndCloseShortcut = annotateShortcutManager.isActionShortcutEnabled(for: .copyAndClose)
@@ -408,29 +368,6 @@ struct AnnotateBottomBarView: View {
 
       BottomBarButton(icon: "square.and.arrow.up", tooltip: L10n.Common.share) {
         share()
-      }
-
-      // Cloud upload button
-      if showCloudButton {
-        // needsReUpload: true when output changed in current session OR was changed since last upload
-        let needsReUpload = state.requiresRenderedOutputForSharing || state.isCloudStale
-        let alreadyUploaded = state.cloudURL != nil && !needsReUpload
-        BottomBarButton(
-          icon: alreadyUploaded ? "checkmark.icloud" : "icloud.and.arrow.up",
-          tooltip: alreadyUploaded
-            ? L10n.AnnotateUI.uploadedToCloud
-            : tooltipText(
-              state.cloudKey != nil ? L10n.AnnotateUI.reuploadToCloud : L10n.AnnotateUI.uploadToCloud,
-              shortcut: cloudUploadShortcut
-            )
-        ) {
-          if state.cloudKey != nil && needsReUpload {
-            showOverwriteConfirmation = true
-          } else {
-            handleCloudUpload()
-          }
-        }
-        .disabled(isCloudUploading || alreadyUploaded)
       }
 
       BottomBarButton(
@@ -531,165 +468,4 @@ struct AnnotateBottomBarView: View {
     }
   }
 
-  // MARK: - Cloud Upload
-
-  /// Write a rendered image to a temporary PNG file inside the sandbox temp directory.
-  /// Used to upload manual combine sessions without overwriting the user's source file.
-  private func writeRenderedImageToTemporaryFile(_ image: NSImage) -> URL? {
-    guard let data = AnnotateExporter.imageData(from: image, for: "png") else { return nil }
-    // UUID-suffixed so concurrent uploads from multiple windows never collide on the path
-    // (the per-Task defer cleanup would otherwise delete another window's in-flight file).
-    let tempURL = FileManager.default.temporaryDirectory
-      .appendingPathComponent("combined-\(UUID().uuidString).png")
-    do {
-      try data.write(to: tempURL, options: .atomic)
-      return tempURL
-    } catch {
-      DiagnosticLogger.shared.logError(.cloud, error, "Annotate temp render write failed")
-      return nil
-    }
-  }
-
-  private func handleCloudUpload() {
-    guard cloudManager.isConfigured else {
-      DiagnosticLogger.shared.log(.warning, .cloud, "Annotate cloud upload skipped; cloud not configured")
-      showCloudNotConfiguredAlert = true
-      return
-    }
-
-    guard let sourceURL = state.sourceURL else {
-      DiagnosticLogger.shared.log(.warning, .cloud, "Annotate cloud upload skipped; source URL missing")
-      return
-    }
-
-    // Step 1: Render flattened image with annotations BEFORE uploading
-    let sessionSnapshot = AnnotateManager.shared.makeSessionData(for: state)
-    let renderedImage = AnnotateExporter.renderFinalImage(state: state)
-
-    // Step 2: Decide the upload target. Manual combine sessions must NOT overwrite the
-    // user's picked source file with the stitched render, so upload a temporary rendered
-    // copy instead and leave the source untouched.
-    let isProtectedManualCombine = state.isCombineMode && state.isManualImportSession
-    let uploadURL: URL
-    if isProtectedManualCombine {
-      guard let renderedImage, let tempURL = writeRenderedImageToTemporaryFile(renderedImage) else {
-        DiagnosticLogger.shared.log(.error, .cloud, "Annotate cloud upload skipped; temp render failed")
-        cloudUploadError = L10n.AnnotateUI.saveFailedMessage
-        return
-      }
-      uploadURL = tempURL
-    } else {
-      uploadURL = sourceURL
-      // Save rendered image to disk (so the file includes annotations)
-      if let renderedImage = renderedImage {
-        let didSave = AnnotateExporter.saveToFile(image: renderedImage, state: state)
-        if didSave,
-           let sessionSnapshot,
-           AnnotationSessionStore.shared.shouldPersist(for: sourceURL) {
-          AnnotationSessionStore.shared.persist(sessionSnapshot, for: sourceURL)
-        }
-      }
-    }
-
-    isCloudUploading = true
-    cloudUploadProgress = 0
-    DiagnosticLogger.shared.log(
-      .info,
-      .cloud,
-      "Annotate cloud upload started",
-      context: ["fileName": sourceURL.lastPathComponent, "hasOldCloudKey": state.cloudKey == nil ? "false" : "true"]
-    )
-
-    // Animate to 80% quickly to show activity
-    withAnimation(.easeOut(duration: 0.4)) {
-      cloudUploadProgress = 0.8
-    }
-
-    let uploadStartTime = Date()
-    let oldCloudKey = state.cloudKey  // Save old key for cleanup after successful upload
-
-    Task {
-      // Remove the temporary rendered file (manual combine) once the upload finishes,
-      // whether it succeeds or fails.
-      defer {
-        if isProtectedManualCombine {
-          try? FileManager.default.removeItem(at: uploadURL)
-        }
-      }
-      do {
-        let fileAccess = SandboxFileAccessManager.shared.beginAccessingURL(uploadURL)
-        defer { fileAccess.stop() }
-
-        // Always upload with a fresh key (new URL avoids CDN cache issues)
-        let result = try await cloudManager.upload(fileURL: uploadURL)
-
-        // Delete the old cloud file in background (no garbage)
-        if let oldKey = oldCloudKey {
-          Task.detached(priority: .utility) {
-            do {
-              try await CloudManager.shared.deleteByKey(key: oldKey)
-            } catch {
-              DiagnosticLogger.shared.logError(.cloud, error, "Annotate old cloud object cleanup failed")
-            }
-          }
-        }
-
-        // Store cloud URL and key on state
-        state.cloudURL = result.publicURL
-        state.cloudKey = result.key
-
-        // Auto-copy cloud link
-        let pasteboard = NSPasteboard.general
-        pasteboard.clearContents()
-        pasteboard.setString(result.publicURL.absoluteString, forType: .string)
-
-        // Ensure minimum visual duration (~600ms total)
-        let elapsed = Date().timeIntervalSince(uploadStartTime)
-        let remainingDelay = max(0, 0.6 - elapsed)
-
-        withAnimation(.easeIn(duration: 0.15)) {
-          cloudUploadProgress = 1.0
-        }
-
-        if remainingDelay > 0 {
-          try? await Task.sleep(nanoseconds: UInt64(remainingDelay * 1_000_000_000))
-        }
-
-        isCloudUploading = false
-        SoundManager.play("Pop")
-
-        // Update QuickAccess thumbnail and mark as saved
-        state.markAsSaved()
-        state.isCloudStale = false
-        if let itemId = state.quickAccessItemId {
-          if let renderedImage = renderedImage {
-            QuickAccessManager.shared.updateItemThumbnail(id: itemId, image: renderedImage)
-          }
-          // Set cloud URL AFTER thumbnail update to ensure isCloudStale = false
-          QuickAccessManager.shared.setCloudURL(id: itemId, url: result.publicURL, key: result.key)
-        }
-        DiagnosticLogger.shared.log(
-          .info,
-          .cloud,
-          "Annotate cloud upload completed",
-          context: ["fileName": sourceURL.lastPathComponent]
-        )
-
-        // Close window
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-          NSApp.keyWindow?.close()
-        }
-      } catch {
-        isCloudUploading = false
-        cloudUploadProgress = 0
-        cloudUploadError = error.localizedDescription
-        DiagnosticLogger.shared.logError(
-          .cloud,
-          error,
-          "Annotate cloud upload failed",
-          context: ["fileName": sourceURL.lastPathComponent]
-        )
-      }
-    }
-  }
 }

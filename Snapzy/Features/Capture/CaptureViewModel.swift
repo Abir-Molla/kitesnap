@@ -384,10 +384,6 @@ final class ScreenCaptureViewModel: ObservableObject, KeyboardShortcutDelegate {
       deleteRecordingFromShortcut()
     case .openAnnotate:
       AnnotateManager.shared.openEmptyAnnotation()
-    case .openCloudUploads:
-      if CloudUploadHistoryWindowController.shared.toggleWindow() {
-        NSApp.activate(ignoringOtherApps: true)
-      }
     case .openShortcutList:
       ShortcutOverlayManager.shared.toggle()
     case .openHistory:

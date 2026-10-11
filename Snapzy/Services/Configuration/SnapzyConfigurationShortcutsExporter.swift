@@ -159,7 +159,6 @@ extension GlobalShortcutKind {
     case .deleteRecording: return "delete_recording"
     case .delayedCapture: return "delayed_capture"
     case .annotate: return "annotate"
-    case .cloudUploads: return "cloud_uploads"
     case .shortcutList: return "shortcut_list"
     case .ocr: return "ocr"
     case .smartElement: return "smart_element"
@@ -177,7 +176,6 @@ extension QuickAccessActionKind {
     case .dismiss: return "dismiss"
     case .delete: return "delete"
     case .edit: return "edit"
-    case .uploadToCloud: return "upload_to_cloud"
     case .pinToScreen: return "pin_to_screen"
     }
   }
@@ -189,7 +187,6 @@ extension AnnotateActionShortcutKind {
     case .copyAndClose: return "copy_and_close"
     case .toggleSidebar: return "toggle_sidebar"
     case .togglePin: return "toggle_pin"
-    case .cloudUpload: return "cloud_upload"
     case .autoRedactSensitiveData: return "auto_redact_sensitive_data"
     }
   }

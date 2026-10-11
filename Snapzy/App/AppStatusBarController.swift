@@ -701,18 +701,6 @@ final class AppStatusBarController: ObservableObject {
       item.isEnabled = true
       return item
 
-    case .cloudUploads:
-      let item = NSMenuItem(
-        title: L10n.Actions.cloudUploads,
-        action: #selector(openCloudUploadsAction),
-        keyEquivalent: ""
-      )
-      applyConfiguredShortcut(item, for: .cloudUploads, using: shortcutManager)
-      item.target = self
-      item.image = NSImage(systemSymbolName: "icloud.and.arrow.up", accessibilityDescription: nil)
-      item.isEnabled = CloudManager.shared.isConfigured
-      return item
-
     case .openHistory:
       let item = NSMenuItem(
         title: L10n.Actions.openHistory,
@@ -831,23 +819,6 @@ final class AppStatusBarController: ObservableObject {
   @objc private func openCombineImagesAction() {
     logMenuAction("openCombineImages")
     CombineImagesCoordinator.shared.presentPicker()
-  }
-
-  @objc private func openCloudUploadsAction() {
-    logMenuAction(
-      "openCloudUploads",
-      context: ["cloudConfigured": CloudManager.shared.isConfigured ? "true" : "false"]
-    )
-    let didShow = CloudUploadHistoryWindowController.shared.toggleWindow()
-    DiagnosticLogger.shared.log(
-      .debug,
-      .cloud,
-      "Cloud uploads window toggled",
-      context: ["shown": didShow ? "true" : "false"]
-    )
-    if didShow {
-      NSApp.activate(ignoringOtherApps: true)
-    }
   }
 
   @objc private func openHistoryAction() {

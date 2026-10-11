@@ -174,17 +174,4 @@ enum PreferencesKeys {
   static let historyFloatingScale = "history.floating.scale"
   static let historyOpenOnLaunch = "history.openOnLaunch"
 
-  // Cloud
-  static let cloudProviderType = "cloud.providerType"
-  static let cloudBucket = "cloud.bucket"
-  static let cloudRegion = "cloud.region"
-  static let cloudEndpoint = "cloud.endpoint"
-  static let cloudCustomDomain = "cloud.customDomain"
-  static let cloudExpireTime = "cloud.expireTime"
-  static let cloudConfigured = "cloud.configured"
-  static let cloudPasswordEnabled = "cloud.passwordEnabled"
-  static let cloudPasswordSkipped = "cloud.passwordSkipped"
-  static let cloudUsageStatsCache = "cloud.usageStatsCache"
-  nonisolated static let cloudUploadsFloatingPosition = "cloud.uploads.floatingPosition"
-  static let cloudGoogleFolderId = "cloud.google.folderId"
 }

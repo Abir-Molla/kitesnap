@@ -48,7 +48,6 @@ enum ShortcutOverlayContentBuilder {
         title: L10n.ShortcutOverlay.toolsSection,
         items: [
           globalItem(kind: .annotate, icon: "pencil.and.scribble", manager: keyboard),
-          globalItem(kind: .cloudUploads, icon: "icloud.and.arrow.up", manager: keyboard),
           globalItem(kind: .shortcutList, icon: "list.bullet.rectangle", manager: keyboard),
         ]
       ),
@@ -235,8 +234,6 @@ enum ShortcutOverlayContentBuilder {
       return (L10n.AnnotateUI.toggleSidebar, "rectangle.on.rectangle")
     case .togglePin:
       return (L10n.ShortcutOverlay.togglePin, "pin")
-    case .cloudUpload:
-      return (L10n.ShortcutOverlay.cloudUpload, "icloud.and.arrow.up")
     case .autoRedactSensitiveData:
       return (L10n.ShortcutOverlay.autoRedactSensitiveData, "shield.lefthalf.filled")
     }

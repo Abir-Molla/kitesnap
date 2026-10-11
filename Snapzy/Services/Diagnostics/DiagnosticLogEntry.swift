@@ -33,7 +33,6 @@ enum DiagnosticLogCategory: String {
   case clipboard = "CLIPBOARD"
   case export = "EXPORT"
   case preferences = "PREFERENCES"
-  case cloud = "CLOUD"
   case history = "HISTORY"
   case fileAccess = "FILE_ACCESS"
 }

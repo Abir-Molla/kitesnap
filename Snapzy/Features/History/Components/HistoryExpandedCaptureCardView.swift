@@ -27,8 +27,7 @@ struct HistoryExpandedCaptureCardView: View, Equatable {
     lhs.isFocused == rhs.isFocused &&
     lhs.emphasisMode == rhs.emphasisMode &&
     lhs.reservedScrollAxis == rhs.reservedScrollAxis &&
-    lhs.backgroundStyle == rhs.backgroundStyle &&
-    HistoryFloatingManager.shared.cloudUploadState(for: lhs.record) == HistoryFloatingManager.shared.cloudUploadState(for: rhs.record)
+    lhs.backgroundStyle == rhs.backgroundStyle
   }
 
   @ObservedObject private var manager = HistoryFloatingManager.shared
@@ -169,9 +168,6 @@ struct HistoryExpandedCaptureCardView: View, Equatable {
         }
         .padding(8)
 
-        if let uploadState = manager.cloudUploadState(for: record) {
-          HistoryCloudUploadOverlayView(state: uploadState)
-        }
       }
       .clipShape(Radius.rect(Radius.tile))
       .overlay(

@@ -186,12 +186,6 @@ final class AnnotateState: ObservableObject {
   /// QuickAccess item ID if opened from quick access card (nil for drag-drop workflow)
   let quickAccessItemId: UUID?
 
-  /// Cloud URL if file was already uploaded (passed from QuickAccessItem)
-  @Published var cloudURL: URL?
-  /// Cloud object key for overwrite re-uploads
-  @Published var cloudKey: String?
-  /// True when image has changed since last cloud upload (synced from QuickAccessItem)
-  @Published var isCloudStale: Bool = false
 
   /// Whether an image is loaded
   var hasImage: Bool { sourceImage != nil }
@@ -1484,9 +1478,6 @@ final class AnnotateState: ObservableObject {
     image: NSImage,
     url: URL,
     quickAccessItemId: UUID? = nil,
-    cloudURL: URL? = nil,
-    cloudKey: String? = nil,
-    isCloudStale: Bool = false,
     defaults: UserDefaults = .standard,
     canvasPresetStore: AnnotateCanvasPresetStore? = nil,
     appliesDefaultCanvasPresetOnNewImages: Bool = true
@@ -1497,9 +1488,6 @@ final class AnnotateState: ObservableObject {
     self.sourceImage = image
     self.sourceURL = url
     self.quickAccessItemId = quickAccessItemId
-    self.cloudURL = cloudURL
-    self.cloudKey = cloudKey
-    self.isCloudStale = isCloudStale
     self.dragToAppPreparationState = .ready
     self.isCropEdgeSnappingEnabled =
       defaults.object(forKey: PreferencesKeys.annotateCropSnapToEdgesEnabled) as? Bool ?? true
@@ -1524,8 +1512,6 @@ final class AnnotateState: ObservableObject {
     self.sourceImage = nil
     self.sourceURL = nil
     self.quickAccessItemId = nil
-    self.cloudURL = nil
-    self.cloudKey = nil
     self.dragToAppPreparationState = .unavailable
     self.isCropEdgeSnappingEnabled =
       defaults.object(forKey: PreferencesKeys.annotateCropSnapToEdgesEnabled) as? Bool ?? true

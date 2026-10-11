@@ -32,7 +32,7 @@ enum OCRKeychainError: LocalizedError, Equatable {
 
 /// Keychain-backed API key store for custom OCR endpoints.
 ///
-/// Mirrors `CloudKeychainStore`: generic-password items in the data-protection
+/// Generic-password items in the data-protection
 /// keychain (`kSecAttrAccessibleWhenUnlocked`), falling back to the file-based
 /// keychain when the data-protection entitlement is unavailable (unsigned dev
 /// builds). Account = model UUID string.

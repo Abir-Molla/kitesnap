@@ -85,10 +85,6 @@ struct SnapzyDeepLinkHandler {
         CombineImagesCoordinator.shared.presentPicker()
       }
       NSApp.activate(ignoringOtherApps: true)
-    case .openCloudUploads:
-      if CloudUploadHistoryWindowController.shared.toggleWindow() {
-        NSApp.activate(ignoringOtherApps: true)
-      }
     case .openHistory:
       HistoryFloatingManager.shared.toggle()
     case .showShortcuts:
@@ -122,7 +118,6 @@ enum SnapzyDeepLinkAction: Equatable {
   case recordApplication
   case openAnnotate
   case openCombine([URL])
-  case openCloudUploads
   case openHistory
   case showShortcuts
   case openSettings(PreferencesTab?)
@@ -169,8 +164,6 @@ enum SnapzyDeepLinkAction: Equatable {
       self = .openAnnotate
     case "open/combine", "combine", "combine-images", "open-combine":
       self = .openCombine(Self.combineFileURLs(from: components))
-    case "open/cloud-uploads", "cloud-uploads", "uploads", "open-uploads":
-      self = .openCloudUploads
     case "open/liquid-glass-playground", "open/liquid-glass-preview", "open/liquid-glass", "liquid-glass-playground", "liquid-glass":
       self = .openLiquidGlassPlayground
     case "open/history", "history", "capture-history":
@@ -205,7 +198,6 @@ enum SnapzyDeepLinkAction: Equatable {
     case .recordApplication: return "recordApplication"
     case .openAnnotate: return "openAnnotate"
     case .openCombine(let fileURLs): return "openCombine(\(fileURLs.count))"
-    case .openCloudUploads: return "openCloudUploads"
     case .openHistory: return "openHistory"
     case .showShortcuts: return "showShortcuts"
     case .openSettings(let tab): return "openSettings(\(String(describing: tab)))"
@@ -253,8 +245,6 @@ enum SnapzyDeepLinkAction: Equatable {
       return .shortcuts
     case "permissions", "privacy":
       return .permissions
-    case "cloud", "uploads":
-      return .cloud
     case "advanced", "configuration", "config", "toml":
       return .advanced
     case "about":

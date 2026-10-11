@@ -14,8 +14,7 @@ struct HistoryItemView: View, Equatable {
 
   static func == (lhs: HistoryItemView, rhs: HistoryItemView) -> Bool {
     lhs.record == rhs.record &&
-    lhs.isSelected == rhs.isSelected &&
-    HistoryFloatingManager.shared.cloudUploadState(for: lhs.record) == HistoryFloatingManager.shared.cloudUploadState(for: rhs.record)
+    lhs.isSelected == rhs.isSelected
   }
 
   @ObservedObject private var manager = HistoryFloatingManager.shared
@@ -105,9 +104,6 @@ struct HistoryItemView: View, Equatable {
             }
           }
 
-          if let uploadState = manager.cloudUploadState(for: record) {
-            HistoryCloudUploadOverlayView(state: uploadState)
-          }
         }
         .clipShape(Radius.rect(Radius.tile))
       }

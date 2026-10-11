@@ -37,7 +37,6 @@ enum SnapzyConfigurationImporter {
 
     preparedImport.mutations.forEach { $0() }
     KeyboardShortcutManager.shared.refreshShortcutRegistration()
-    CloudManager.shared.reloadStateFromDefaults()
     // Guard mirrors the AppStatusBarController pattern: shared stores track
     // the standard defaults only; skipping avoids pruning real user state
     // when tests import into isolated defaults.
@@ -77,7 +76,6 @@ enum SnapzyConfigurationImporter {
     collectRecording(&reader, defaults: defaults, mutations: &mutations)
     collectQuickAccess(&reader, defaults: defaults, mutations: &mutations)
     collectHistory(&reader, defaults: defaults, mutations: &mutations)
-    collectCloud(&reader, defaults: defaults, mutations: &mutations)
     collectAnnotate(&reader, defaults: defaults, mutations: &mutations)
     collectShortcuts(&reader, mutations: &mutations)
 
@@ -482,37 +480,6 @@ enum SnapzyConfigurationImporter {
     }
     collectInt(&reader, "history", "floating", "auto_clear_days", range: 0...365, mutations: &mutations) {
       manager.autoClearDays = $0
-    }
-  }
-
-  private static func collectCloud(
-    _ reader: inout SnapzyConfigurationReader,
-    defaults: UserDefaults,
-    mutations: inout [() -> Void]
-  ) {
-    collectEnumString(&reader, "cloud", "provider", allowed: CloudProviderType.allCases.map(\.rawValue), mutations: &mutations) {
-      defaults.set($0, forKey: PreferencesKeys.cloudProviderType)
-    }
-    collectString(&reader, "cloud", "bucket", mutations: &mutations) {
-      defaults.set($0, forKey: PreferencesKeys.cloudBucket)
-    }
-    collectString(&reader, "cloud", "folder_name", mutations: &mutations) {
-      defaults.set($0, forKey: PreferencesKeys.cloudBucket)
-    }
-    collectString(&reader, "cloud", "region", mutations: &mutations) {
-      defaults.set($0, forKey: PreferencesKeys.cloudRegion)
-    }
-    collectString(&reader, "cloud", "endpoint", mutations: &mutations) {
-      defaults.set($0, forKey: PreferencesKeys.cloudEndpoint)
-    }
-    collectString(&reader, "cloud", "custom_domain", mutations: &mutations) {
-      defaults.set($0, forKey: PreferencesKeys.cloudCustomDomain)
-    }
-    collectEnumString(&reader, "cloud", "expire_time", allowed: CloudExpireTime.allCases.map(\.rawValue), mutations: &mutations) {
-      defaults.set($0, forKey: PreferencesKeys.cloudExpireTime)
-    }
-    collectEnumString(&reader, "cloud", "uploads_window_position", allowed: CloudUploadFloatingPosition.allCases.map(\.rawValue), mutations: &mutations) {
-      defaults.set($0, forKey: PreferencesKeys.cloudUploadsFloatingPosition)
     }
   }
 

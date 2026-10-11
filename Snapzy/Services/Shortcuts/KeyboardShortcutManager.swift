@@ -97,12 +97,6 @@ struct ShortcutConfig: Equatable, Codable {
   )
 
   /// Cmd + Shift + E
-  /// Cmd + Shift + L
-  static let defaultCloudUploads = ShortcutConfig(
-    keyCode: UInt32(kVK_ANSI_L),
-    modifiers: UInt32(cmdKey | shiftKey)
-  )
-
   /// Cmd + Shift + K
   static let defaultShortcutList = ShortcutConfig(
     keyCode: UInt32(kVK_ANSI_K),
@@ -478,7 +472,6 @@ enum GlobalShortcutKind: String, CaseIterable, Codable {
   case deleteRecording
   case delayedCapture
   case annotate
-  case cloudUploads
   case shortcutList
   case ocr
   case smartElement
@@ -524,8 +517,6 @@ extension GlobalShortcutKind {
       return L10n.Actions.captureDelayed
     case .annotate:
       return L10n.Actions.openAnnotate
-    case .cloudUploads:
-      return L10n.Actions.cloudUploads
     case .shortcutList:
       return L10n.Actions.showShortcutList
     case .ocr:
@@ -560,7 +551,6 @@ enum ShortcutAction {
   case restartRecording
   case deleteRecording
   case openAnnotate
-  case openCloudUploads
   case openShortcutList
   case openHistory
 }
@@ -590,7 +580,6 @@ final class KeyboardShortcutManager {
   /// this property directly.
   private(set) var pauseResumeRecordingShortcut: ShortcutConfig
   private(set) var annotateShortcut: ShortcutConfig
-  private(set) var cloudUploadsShortcut: ShortcutConfig
   private(set) var shortcutListShortcut: ShortcutConfig
   private(set) var ocrShortcut: ShortcutConfig
   private(set) var smartElementShortcut: ShortcutConfig
@@ -650,7 +639,6 @@ final class KeyboardShortcutManager {
   private var applicationCaptureHotkeyRef: EventHotKeyRef?
   private var applicationRecordingHotkeyRef: EventHotKeyRef?
   private var annotateHotkeyRef: EventHotKeyRef?
-  private var cloudUploadsHotkeyRef: EventHotKeyRef?
   private var shortcutListHotkeyRef: EventHotKeyRef?
   private var ocrHotkeyRef: EventHotKeyRef?
   private var smartElementHotkeyRef: EventHotKeyRef?
@@ -675,7 +663,6 @@ final class KeyboardShortcutManager {
   private let recordingHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4634), id: 4)  // "ZSF4"
   private let annotateHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4635), id: 5)  // "ZSF5"
   private let ocrHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4637), id: 7)  // "ZSF7"
-  private let cloudUploadsHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4638), id: 8)  // "ZSF8"
   private let objectCutoutHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4639), id: 9)  // "ZSF9"
   private let shortcutListHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4641), id: 10)  // "ZSFA"
   private let historyHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4642), id: 11)  // "ZSFB"
@@ -702,7 +689,6 @@ final class KeyboardShortcutManager {
   private let recordingShortcutKey = "recordingShortcut"
   private let pauseResumeRecordingShortcutKey = "pauseResumeRecordingShortcut"
   private let annotateShortcutKey = "annotateShortcut"
-  private let cloudUploadsShortcutKey = "cloudUploadsShortcut"
   private let shortcutListShortcutKey = PreferencesKeys.shortcutListShortcut
   private let ocrShortcutKey = "ocrShortcut"
   private let smartElementShortcutKey = PreferencesKeys.smartElementShortcut
@@ -726,7 +712,6 @@ final class KeyboardShortcutManager {
     recordingShortcut = .defaultRecording
     pauseResumeRecordingShortcut = .defaultPauseResumeRecording
     annotateShortcut = .defaultAnnotate
-    cloudUploadsShortcut = .defaultCloudUploads
     shortcutListShortcut = .defaultShortcutList
     ocrShortcut = .defaultOCR
     smartElementShortcut = .defaultSmartElement
@@ -849,7 +834,6 @@ final class KeyboardShortcutManager {
     case .deleteRecording: return deleteRecordingShortcut
     case .delayedCapture: return delayedCaptureShortcut
     case .annotate: return annotateShortcut
-    case .cloudUploads: return cloudUploadsShortcut
     case .shortcutList: return shortcutListShortcut
     case .ocr: return ocrShortcut
     case .smartElement: return smartElementShortcut
@@ -1051,17 +1035,6 @@ final class KeyboardShortcutManager {
   }
 
 
-  /// Update cloud uploads shortcut
-  func setCloudUploadsShortcut(_ config: ShortcutConfig?) {
-    mutateShortcutRegistration {
-      setShortcut(config, for: .cloudUploads) {
-        cloudUploadsShortcut = $0
-      }
-      saveShortcuts()
-      saveClearedShortcuts()
-    }
-  }
-
   /// Update shortcut list overlay shortcut
   func setShortcutListShortcut(_ config: ShortcutConfig?) {
     mutateShortcutRegistration {
@@ -1147,9 +1120,6 @@ final class KeyboardShortcutManager {
     if let annotateData = try? encoder.encode(annotateShortcut) {
       UserDefaults.standard.set(annotateData, forKey: annotateShortcutKey)
     }
-    if let cloudUploadsData = try? encoder.encode(cloudUploadsShortcut) {
-      UserDefaults.standard.set(cloudUploadsData, forKey: cloudUploadsShortcutKey)
-    }
     if let shortcutListData = try? encoder.encode(shortcutListShortcut) {
       UserDefaults.standard.set(shortcutListData, forKey: shortcutListShortcutKey)
     }
@@ -1231,11 +1201,6 @@ final class KeyboardShortcutManager {
       let config = try? decoder.decode(ShortcutConfig.self, from: annotateData)
     {
       annotateShortcut = config
-    }
-    if let cloudUploadsData = UserDefaults.standard.data(forKey: cloudUploadsShortcutKey),
-      let config = try? decoder.decode(ShortcutConfig.self, from: cloudUploadsData)
-    {
-      cloudUploadsShortcut = config
     }
     if let shortcutListData = UserDefaults.standard.data(forKey: shortcutListShortcutKey),
       let config = try? decoder.decode(ShortcutConfig.self, from: shortcutListData)
@@ -1424,9 +1389,6 @@ final class KeyboardShortcutManager {
     case annotateHotkeyID.id:
       actionName = "annotate"
       action = .openAnnotate
-    case cloudUploadsHotkeyID.id:
-      actionName = "cloud-uploads"
-      action = .openCloudUploads
     case shortcutListHotkeyID.id:
       actionName = "shortcut-list"
       action = .openShortcutList
@@ -1562,12 +1524,6 @@ final class KeyboardShortcutManager {
       config: shortcut(for: .smartElement),
       hotkeyID: smartElementHotkeyID,
       ref: &smartElementHotkeyRef
-    )
-    registerShortcutIfNeeded(
-      kind: .cloudUploads,
-      config: shortcut(for: .cloudUploads),
-      hotkeyID: cloudUploadsHotkeyID,
-      ref: &cloudUploadsHotkeyRef
     )
     registerShortcutIfNeeded(
       kind: .shortcutList,
@@ -1831,10 +1787,6 @@ final class KeyboardShortcutManager {
     if let ref = smartElementHotkeyRef {
       UnregisterEventHotKey(ref)
       smartElementHotkeyRef = nil
-    }
-    if let ref = cloudUploadsHotkeyRef {
-      UnregisterEventHotKey(ref)
-      cloudUploadsHotkeyRef = nil
     }
     if let ref = shortcutListHotkeyRef {
       UnregisterEventHotKey(ref)

@@ -38,12 +38,6 @@ struct QuickAccessItem: Identifiable, Equatable {
   var processingState: QuickAccessProcessingState = .idle
   /// Incremented when thumbnail changes — used by SwiftUI to detect visual updates
   let thumbnailVersion: UUID
-  /// Cloud URL after successful upload (nil if not uploaded)
-  var cloudURL: URL?
-  /// Cloud object key for overwrite uploads (nil if not uploaded)
-  var cloudKey: String?
-  /// True when image has changed since last cloud upload (needs re-upload)
-  var isCloudStale: Bool = false
   /// True when the item should remain visible and bypass auto-dismiss
   var isPinned: Bool = false
   /// True if the item's corresponding Pin or Edit window is currently open
@@ -58,8 +52,6 @@ struct QuickAccessItem: Identifiable, Equatable {
     self.itemType = .screenshot
     self.duration = nil
     self.thumbnailVersion = UUID()
-    self.cloudURL = nil
-    self.cloudKey = nil
     self.isPinned = false
     self.isWindowOpen = false
   }
@@ -73,14 +65,12 @@ struct QuickAccessItem: Identifiable, Equatable {
     self.itemType = .video
     self.duration = duration
     self.thumbnailVersion = UUID()
-    self.cloudURL = nil
-    self.cloudKey = nil
     self.isPinned = false
     self.isWindowOpen = false
   }
 
   /// Initializer with explicit id (used for thumbnail retry updates)
-  init(id: UUID, url: URL, thumbnail: NSImage, capturedAt: Date, itemType: QuickAccessItemType, duration: TimeInterval?, thumbnailVersion: UUID = UUID(), cloudURL: URL? = nil, cloudKey: String? = nil, isCloudStale: Bool = false, isPinned: Bool = false, isWindowOpen: Bool = false) {
+  init(id: UUID, url: URL, thumbnail: NSImage, capturedAt: Date, itemType: QuickAccessItemType, duration: TimeInterval?, thumbnailVersion: UUID = UUID(), isPinned: Bool = false, isWindowOpen: Bool = false) {
     self.id = id
     self.url = url
     self.thumbnail = thumbnail
@@ -88,15 +78,12 @@ struct QuickAccessItem: Identifiable, Equatable {
     self.itemType = itemType
     self.duration = duration
     self.thumbnailVersion = thumbnailVersion
-    self.cloudURL = cloudURL
-    self.cloudKey = cloudKey
-    self.isCloudStale = isCloudStale
     self.isPinned = isPinned
     self.isWindowOpen = isWindowOpen
   }
 
   static func == (lhs: QuickAccessItem, rhs: QuickAccessItem) -> Bool {
-    lhs.id == rhs.id && lhs.processingState == rhs.processingState && lhs.thumbnailVersion == rhs.thumbnailVersion && lhs.cloudURL == rhs.cloudURL && lhs.isCloudStale == rhs.isCloudStale && lhs.isPinned == rhs.isPinned && lhs.isWindowOpen == rhs.isWindowOpen
+    lhs.id == rhs.id && lhs.processingState == rhs.processingState && lhs.thumbnailVersion == rhs.thumbnailVersion && lhs.isPinned == rhs.isPinned && lhs.isWindowOpen == rhs.isWindowOpen
   }
 
   /// Whether this item is a video
@@ -124,9 +111,6 @@ struct QuickAccessItem: Identifiable, Equatable {
       capturedAt: capturedAt,
       itemType: itemType,
       duration: duration,
-      cloudURL: cloudURL,
-      cloudKey: cloudKey,
-      isCloudStale: isCloudStale,
       isPinned: isPinned,
       isWindowOpen: isWindowOpen
     )

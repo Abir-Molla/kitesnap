@@ -335,7 +335,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     alert.messageText = "Snapzy could not open its database."
 
     var informativeText = """
-      Snapzy needs this database for capture history and cloud upload records.
+      Snapzy needs this database for capture history.
 
       Database:
       \(DatabaseManager.defaultDatabaseURL.path)
@@ -370,7 +370,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     alert.informativeText = """
       Snapzy will move the current database files into a recovery folder, then create a new empty database.
 
-      This resets capture history and cloud upload history inside Snapzy. Capture files on disk and cloud files are not deleted.
+      This resets capture history inside Snapzy. Capture files on disk are not deleted.
 
       Database:
       \(DatabaseManager.defaultDatabaseURL.path)

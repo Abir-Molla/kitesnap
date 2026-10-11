@@ -39,7 +39,6 @@ enum MenuBarItemKind: String, CaseIterable {
   // Tools
   case openAnnotate
   case combineImages
-  case cloudUploads
   case openHistory
   case shortcutList
 
@@ -54,7 +53,7 @@ enum MenuBarItemKind: String, CaseIterable {
       return .capture
     case .recordScreen, .recordApplication:
       return .recording
-    case .openAnnotate, .combineImages, .cloudUploads, .openHistory, .shortcutList:
+    case .openAnnotate, .combineImages, .openHistory, .shortcutList:
       return .tools
     case .checkForUpdates:
       return nil
@@ -84,7 +83,6 @@ enum MenuBarItemKind: String, CaseIterable {
     case .recordApplication: return L10n.PreferencesShortcuts.applicationRecordingTitle
     case .openAnnotate: return L10n.Actions.openAnnotate
     case .combineImages: return L10n.Combine.open
-    case .cloudUploads: return L10n.Actions.cloudUploads
     case .openHistory: return L10n.Actions.openHistory
     case .shortcutList: return L10n.Menu.keyboardShortcuts
     case .checkForUpdates: return L10n.Menu.checkForUpdates
@@ -108,7 +106,6 @@ enum MenuBarItemKind: String, CaseIterable {
     case .recordApplication: return "square.on.square"
     case .openAnnotate: return "pencil.and.outline"
     case .combineImages: return "rectangle.3.group"
-    case .cloudUploads: return "icloud.and.arrow.up"
     case .openHistory: return "clock.arrow.circlepath"
     case .shortcutList: return "list.bullet.rectangle"
     case .checkForUpdates: return "arrow.triangle.2.circlepath"

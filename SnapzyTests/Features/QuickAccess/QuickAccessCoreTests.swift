@@ -129,7 +129,6 @@ final class QuickAccessCoreTests: XCTestCase {
   func testQuickAccessItem_thumbnailReplacementPreservesEditorSessionState() throws {
     let id = UUID()
     let url = URL(fileURLWithPath: "/tmp/demo.mov")
-    let cloudURL = try XCTUnwrap(URL(string: "https://example.com/demo"))
     let thumbnail = NSImage(size: CGSize(width: 16, height: 16))
     var item = QuickAccessItem(
       id: id,
@@ -138,9 +137,6 @@ final class QuickAccessCoreTests: XCTestCase {
       capturedAt: Date(),
       itemType: .video,
       duration: 1,
-      cloudURL: cloudURL,
-      cloudKey: "demo-key",
-      isCloudStale: true,
       isPinned: true,
       isWindowOpen: true
     )
@@ -150,9 +146,6 @@ final class QuickAccessCoreTests: XCTestCase {
 
     XCTAssertEqual(updated.id, id)
     XCTAssertEqual(updated.url, url)
-    XCTAssertEqual(updated.cloudURL, cloudURL)
-    XCTAssertEqual(updated.cloudKey, "demo-key")
-    XCTAssertTrue(updated.isCloudStale)
     XCTAssertTrue(updated.isPinned)
     XCTAssertTrue(updated.isWindowOpen)
     XCTAssertEqual(updated.processingState, .processing(progress: 0.5))
@@ -169,7 +162,6 @@ final class QuickAccessCoreTests: XCTestCase {
       capturedAt: Date(),
       itemType: .video,
       duration: 1,
-      cloudKey: "demo-key",
       isPinned: true,
       isWindowOpen: true
     )
@@ -178,7 +170,6 @@ final class QuickAccessCoreTests: XCTestCase {
     let updated = item.replacingURL(replacementURL)
 
     XCTAssertEqual(updated.url, replacementURL)
-    XCTAssertEqual(updated.cloudKey, "demo-key")
     XCTAssertTrue(updated.isPinned)
     XCTAssertTrue(updated.isWindowOpen)
     XCTAssertEqual(updated.processingState, .complete)
@@ -473,11 +464,7 @@ final class QuickAccessCoreTests: XCTestCase {
       duration: nil,
       thumbnailVersion: thumbnailVersion
     )
-    var uploaded = base
-    uploaded.cloudURL = URL(string: "https://cdn.example.com/demo.png")
-
     XCTAssertEqual(base, base)
-    XCTAssertNotEqual(base, uploaded)
 
     var pinned = base
     pinned.isPinned = true
@@ -1534,13 +1521,12 @@ final class QuickAccessCoreTests: XCTestCase {
       .dismiss,
       .delete,
       .edit,
-      .uploadToCloud,
       .pinToScreen,
     ]
 
     XCTAssertEqual(
       QuickAccessActionKind.contextMenuOrder(from: configuredOrder),
-      [.copy, .saveOrOpen, .edit, .uploadToCloud, .pinToScreen, .dismiss, .delete]
+      [.copy, .saveOrOpen, .edit, .pinToScreen, .dismiss, .delete]
     )
   }
 
@@ -1567,7 +1553,7 @@ final class QuickAccessCoreTests: XCTestCase {
 
     XCTAssertEqual(
       store.actionOrder,
-      [.delete, .copy, .saveOrOpen, .dismiss, .edit, .uploadToCloud, .pinToScreen]
+      [.delete, .copy, .saveOrOpen, .dismiss, .edit, .pinToScreen]
     )
     XCTAssertEqual(store.orderedActions(includeDisabled: false), [.copy])
   }
@@ -1595,30 +1581,30 @@ final class QuickAccessCoreTests: XCTestCase {
     let defaults = makeIsolatedDefaults()
     let store = makeActionConfigurationStore(defaults: defaults)
 
-    store.setEnabled(.uploadToCloud, enabled: false)
+    store.setEnabled(.pinToScreen, enabled: false)
     store.moveAction(from: IndexSet(integer: 0), to: 3)
 
-    XCTAssertFalse(store.isEnabled(.uploadToCloud))
+    XCTAssertFalse(store.isEnabled(.pinToScreen))
     XCTAssertEqual(
       store.actionOrder,
-      [.saveOrOpen, .dismiss, .copy, .delete, .edit, .uploadToCloud, .pinToScreen]
+      [.saveOrOpen, .dismiss, .copy, .delete, .edit, .pinToScreen]
     )
     XCTAssertEqual(store.slotAssignments, QuickAccessActionSlot.defaultAssignments)
 
     let reloadedStore = makeActionConfigurationStore(defaults: defaults)
-    XCTAssertFalse(reloadedStore.isEnabled(.uploadToCloud))
+    XCTAssertFalse(reloadedStore.isEnabled(.pinToScreen))
     XCTAssertEqual(reloadedStore.actionOrder, store.actionOrder)
     XCTAssertEqual(reloadedStore.slotAssignments, QuickAccessActionSlot.defaultAssignments)
 
-    reloadedStore.assignAction(.uploadToCloud, to: .centerTop)
+    reloadedStore.assignAction(.pinToScreen, to: .centerTop)
     reloadedStore.clearSlot(.bottomLeading)
 
-    XCTAssertEqual(reloadedStore.action(in: .centerTop), .uploadToCloud)
+    XCTAssertEqual(reloadedStore.action(in: .centerTop), .pinToScreen)
     XCTAssertNil(reloadedStore.action(in: .bottomTrailing))
     XCTAssertNil(reloadedStore.action(in: .bottomLeading))
 
     let placementReload = makeActionConfigurationStore(defaults: defaults)
-    XCTAssertEqual(placementReload.action(in: .centerTop), .uploadToCloud)
+    XCTAssertEqual(placementReload.action(in: .centerTop), .pinToScreen)
     XCTAssertNil(placementReload.action(in: .bottomTrailing))
     XCTAssertNil(placementReload.action(in: .bottomLeading))
 
@@ -1647,7 +1633,7 @@ final class QuickAccessCoreTests: XCTestCase {
     XCTAssertEqual(store.action(in: .topTrailing), .delete)
     XCTAssertNil(store.action(in: .topLeading))
     XCTAssertEqual(store.action(in: .bottomLeading), .edit)
-    XCTAssertEqual(store.action(in: .bottomTrailing), .uploadToCloud)
+    XCTAssertEqual(store.action(in: .bottomTrailing), .pinToScreen)
   }
 
   func testQuickAccessCountdownTimer_pauseResumePreservesRemainingTime() async throws {

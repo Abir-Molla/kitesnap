@@ -22,7 +22,6 @@ enum SnapzyConfigurationExporter {
     writeRecording(&writer, defaults: defaults)
     writeQuickAccess(&writer, defaults: defaults)
     writeHistory(&writer, defaults: defaults)
-    writeCloud(&writer, defaults: defaults)
     writeAnnotate(&writer, defaults: defaults)
     writeShortcuts(&writer)
 
@@ -184,23 +183,6 @@ enum SnapzyConfigurationExporter {
     writer.value("max_displayed_items", manager.maxDisplayedItems)
     writer.value("scale", manager.panelScale)
     writer.value("auto_clear_days", manager.autoClearDays)
-  }
-
-  private static func writeCloud(_ writer: inout SimpleTOMLWriter, defaults: UserDefaults) {
-    writer.section("cloud")
-    let providerRaw = defaults.string(forKey: PreferencesKeys.cloudProviderType) ?? CloudProviderType.awsS3.rawValue
-    writer.value("provider", providerRaw)
-
-    if providerRaw == CloudProviderType.googleDrive.rawValue {
-      writer.value("folder_name", defaults.string(forKey: PreferencesKeys.cloudBucket) ?? "Snapzy")
-    } else {
-      writer.value("bucket", defaults.string(forKey: PreferencesKeys.cloudBucket) ?? "")
-      writer.value("region", defaults.string(forKey: PreferencesKeys.cloudRegion) ?? "us-east-1")
-      writer.value("endpoint", defaults.string(forKey: PreferencesKeys.cloudEndpoint) ?? "")
-      writer.value("custom_domain", defaults.string(forKey: PreferencesKeys.cloudCustomDomain) ?? "")
-      writer.value("expire_time", defaults.string(forKey: PreferencesKeys.cloudExpireTime) ?? CloudExpireTime.day7.rawValue)
-    }
-    writer.value("uploads_window_position", CloudUploadFloatingPosition.stored(userDefaults: defaults).rawValue)
   }
 
   private static func writeAnnotate(_ writer: inout SimpleTOMLWriter, defaults: UserDefaults) {
