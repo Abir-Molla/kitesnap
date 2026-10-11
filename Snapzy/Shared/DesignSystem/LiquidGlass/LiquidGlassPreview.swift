@@ -100,7 +100,7 @@ enum PlaygroundDisplayMode: String, CaseIterable, Identifiable {
 
   var title: String {
     switch self {
-    case .sideBySide: return "So sánh song song"
+    case .sideBySide: return "Side-by-Side"
     case .macOS26: return "macOS 26+ (Apple Glass)"
     case .macOS1315: return "macOS 13–15 (Solid Native)"
     }
@@ -146,13 +146,13 @@ enum PlaygroundCategory: String, CaseIterable, Identifiable {
 
   var subtitle: String {
     switch self {
-    case .overview: return "Màu sắc, độ mờ substrate, bán kính và viền specular"
-    case .buttons: return "Đầy đủ emphasis, kích cỡ, hình dạng và trạng thái tương tác"
-    case .segmented: return "Thanh chọn phân đoạn trượt mượt mà với hiệu ứng đệm kính"
-    case .toolbars: return "Thanh công cụ nổi Annotate và Dock điều khiển Recording"
-    case .cards: return "Thẻ Quick Access, Toast thông báo và hộp thoại xác nhận"
-    case .forms: return "Ô tìm kiếm phủ kính, thanh trượt, toggle và ô chọn"
-    case .mockups: return "Mô phỏng chân thực trải nghiệm Snapzy trong môi trường làm việc"
+    case .overview: return "Colors, substrate opacity, radii, and specular borders"
+    case .buttons: return "Complete emphasis, sizes, shapes, and interaction states"
+    case .segmented: return "Smooth segmented controls with fluid glass cushioning"
+    case .toolbars: return "Annotate floating toolbar and Recording control dock"
+    case .cards: return "Quick Access cards, notification toasts, and confirmation dialogs"
+    case .forms: return "Glass search fields, sliders, toggles, and controls"
+    case .mockups: return "Realistic simulation of the app experience in production"
     }
   }
 }
@@ -229,7 +229,7 @@ struct AccordionSection<Content: View>: View {
             Button {
               onReset()
             } label: {
-              Text("Đặt lại")
+              Text("Reset")
                 .font(.system(size: 10))
                 .foregroundColor(.accentColor)
             }
@@ -319,7 +319,7 @@ struct StudioSliderRow: View {
             doubleValue = defaultValue
           }
         }
-        .help("Nhấp đúp vào số để đặt lại mặc định (\(String(format: "%.2f", defaultValue)))")
+        .help("Double-click value to reset to default (\(String(format: "%.2f", defaultValue)))")
     }
     .padding(.vertical, 2)
   }
@@ -654,7 +654,7 @@ struct LiquidGlassPlaygroundView: View {
           Text(LiquidGlassCapabilities.isSystemSupported ? "macOS 26+ Native Ready" : "macOS 13–15 Compatible")
             .font(.system(size: 10, weight: .semibold))
             .foregroundStyle(LiquidGlassTokens.inkPrimary)
-          Text(LiquidGlassCapabilities.forcesLegacyGlass ? "Ép chế độ Solid Fallback" : "Chế độ Auto Adaptive")
+          Text(LiquidGlassCapabilities.forcesLegacyGlass ? "Forced Solid Fallback" : "Auto Adaptive Mode")
             .font(.system(size: 9.5))
             .foregroundStyle(.secondary)
         }
@@ -689,7 +689,7 @@ struct LiquidGlassPlaygroundView: View {
       Spacer()
 
       // Wallpaper Selector
-      Picker("Nền", selection: $selectedWallpaper) {
+      Picker("Background", selection: $selectedWallpaper) {
         ForEach(PlaygroundWallpaper.allCases) { wp in
           Text(wp.title).tag(wp)
         }
@@ -712,7 +712,7 @@ struct LiquidGlassPlaygroundView: View {
           .frame(width: 28, height: 24)
       }
       .buttonStyle(.bordered)
-      .help("Đổi giao diện Tối (mặc định) / Sáng / Theo hệ thống")
+      .help("Toggle Dark / Light / System Appearance")
 
       // Inspector Toggle Button
       Button {
@@ -727,7 +727,7 @@ struct LiquidGlassPlaygroundView: View {
       }
       .buttonStyle(.bordered)
       .keyboardShortcut("i", modifiers: [.command, .option])
-      .help("Ẩn/Hiện thanh Inspector tinh chỉnh (⌘⌥I)")
+      .help("Toggle Inspector Panel (⌥⌘I)")
 
       // Native Sidebar Toggle Shortcut (⌘⌥S)
       Button {
@@ -762,7 +762,7 @@ struct LiquidGlassPlaygroundView: View {
         HStack(spacing: 6) {
           Image(systemName: "doc.on.doc")
             .font(.system(size: 11, weight: .semibold))
-          Text("Sao chép \(selectedCategory.title)")
+          Text("Copy \(selectedCategory.title)")
             .font(.system(size: 11, weight: .medium))
         }
         .foregroundStyle(.primary)
@@ -784,12 +784,12 @@ struct LiquidGlassPlaygroundView: View {
         withAnimation(.spring(response: 0.25, dampingFraction: 0.8)) {
           tuning = LiquidGlassTuning.default
         }
-        copyCode("// Đã khôi phục thông số Liquid Glass mặc định", title: "Khôi phục thông số")
+        copyCode("// Restored default Liquid Glass parameters", title: "Reset Parameters")
       } label: {
         HStack(spacing: 5) {
           Image(systemName: "arrow.counterclockwise")
             .font(.system(size: 10, weight: .bold))
-          Text("Đặt lại Tuning")
+          Text("Reset Tuning")
             .font(.system(size: 11, weight: .medium))
         }
         .foregroundStyle(.secondary)
@@ -842,7 +842,7 @@ struct LiquidGlassPlaygroundView: View {
     NSPasteboard.general.setString(snippet, forType: .string)
 
     withAnimation(.spring(response: 0.28, dampingFraction: 0.8)) {
-      toastMessage = "Đã chép: \(title)"
+      toastMessage = "Copied: \(title)"
       hasCopiedCode = true
     }
 
@@ -868,7 +868,7 @@ struct LiquidGlassPlaygroundView: View {
     case .buttons:
       return """
       LiquidGlassActionButton(
-        title: "Lưu lại",
+        title: "Save",
         icon: "square.and.arrow.down",
         trailingKey: "⌘S",
         emphasis: .primary,
@@ -907,7 +907,7 @@ struct LiquidGlassPlaygroundView: View {
       return """
       HStack {
         Image(systemName: "magnifyingglass")
-        TextField("Tìm kiếm...", text: $query)
+        TextField("Search...", text: $query)
       }
       .padding(8)
       .liquidGlassSurface(shape: RoundedRectangle(cornerRadius: 8), layer: .control)
@@ -965,7 +965,7 @@ struct LiquidGlassPlaygroundView: View {
         )
       }
       .buttonStyle(.plain)
-      .help("Sao chép mã mẫu của nhóm linh kiện này")
+      .help("Copy sample code for this component group")
     }
     .padding(.horizontal, 18)
     .padding(.vertical, 14)
@@ -1060,19 +1060,19 @@ struct LiquidGlassPlaygroundView: View {
     VStack(spacing: 16) {
       studioCard(
         "Color & Ink Tokens",
-        subtitle: "Màu chữ và biểu tượng tương thích theo nền sáng/tối",
+        subtitle: "Dynamic text and icon colors adaptable to light/dark backgrounds",
         codeSnippet: "// Ink Tokens\nlet primary = LiquidGlassTokens.inkPrimary\nlet body = LiquidGlassTokens.inkBody\nlet muted = LiquidGlassTokens.inkMuted"
       ) {
         VStack(spacing: 10) {
           HStack(spacing: 12) {
-            tokenSwatch(name: "inkPrimary", color: LiquidGlassTokens.inkPrimary, subtitle: "Đậm nét chính")
-            tokenSwatch(name: "inkBody", color: LiquidGlassTokens.inkBody, subtitle: "Nội dung thân")
-            tokenSwatch(name: "inkMuted", color: LiquidGlassTokens.inkMuted, subtitle: "Gợi ý / Disabled")
+            tokenSwatch(name: "inkPrimary", color: LiquidGlassTokens.inkPrimary, subtitle: "Primary Text")
+            tokenSwatch(name: "inkBody", color: LiquidGlassTokens.inkBody, subtitle: "Body Content")
+            tokenSwatch(name: "inkMuted", color: LiquidGlassTokens.inkMuted, subtitle: "Hint / Disabled")
           }
 
           HStack(spacing: 12) {
             tokenSwatch(name: "Accent Blue", color: .accentColor, subtitle: "Primary Action")
-            tokenSwatch(name: "Destructive", color: .red, subtitle: "Xóa / Cảnh báo")
+            tokenSwatch(name: "Destructive", color: .red, subtitle: "Delete / Warning")
             tokenSwatch(name: "Glass Tint", color: .white.opacity(0.18), subtitle: "Neutral Layer")
           }
         }
@@ -1080,7 +1080,7 @@ struct LiquidGlassPlaygroundView: View {
 
       studioCard(
         "Substrate Levels",
-        subtitle: "Độ đậm nền các trạng thái nút secondary",
+        subtitle: "Substrate background opacity for secondary button states",
         codeSnippet: "// Substrate Opacity Values\nlet resting = LiquidGlassTokens.controlSubstrateResting // 0.45\nlet hover = LiquidGlassTokens.controlSubstrateHover // 0.60\nlet pressed = LiquidGlassTokens.controlSubstratePressed // 0.72"
       ) {
         HStack(spacing: 12) {
@@ -1112,7 +1112,7 @@ struct LiquidGlassPlaygroundView: View {
 
       studioCard(
         "Geometry & Hairline Physics",
-        subtitle: "Bán kính bo cong theo chiều cao control và viền vật lý 0.5pt",
+        subtitle: "Corner radii derived from control height and 0.5pt hairline border",
         codeSnippet: Self.radiusSnippet
       ) {
         VStack(alignment: .leading, spacing: 10) {
@@ -1137,7 +1137,7 @@ struct LiquidGlassPlaygroundView: View {
             radiusChip("card", Radius.card)
             radiusChip("panel", Radius.panel)
             radiusChip("window", Radius.window)
-            Text("Capsule — chỉ cho nút hành động & thanh chọn")
+            Text("Capsule — action buttons & segmented pickers only")
               .font(.system(size: 10))
               .foregroundStyle(.secondary)
           }
@@ -1218,13 +1218,13 @@ struct LiquidGlassPlaygroundView: View {
     VStack(spacing: 16) {
       studioCard(
         "Emphasis Levels",
-        subtitle: "Primary, Secondary, Destructive và Ghost",
-        codeSnippet: "LiquidGlassActionButton(\n  title: \"Lưu lại\",\n  icon: \"square.and.arrow.down\",\n  trailingKey: \"⌘S\",\n  emphasis: .primary,\n  capsule: true\n) {\n  // Action\n}"
+        subtitle: "Primary, Secondary, Destructive, and Ghost",
+        codeSnippet: "LiquidGlassActionButton(\n  title: \"Save\",\n  icon: \"square.and.arrow.down\",\n  trailingKey: \"⌘S\",\n  emphasis: .primary,\n  capsule: true\n) {\n  // Action\n}"
       ) {
         VStack(spacing: 8) {
           HStack(spacing: 8) {
             LiquidGlassActionButton(
-              title: "Lưu lại",
+              title: "Save",
               icon: "square.and.arrow.down",
               trailingKey: "⌘S",
               emphasis: .primary,
@@ -1233,7 +1233,7 @@ struct LiquidGlassPlaygroundView: View {
             .disabled(simulateDisabled)
 
             LiquidGlassActionButton(
-              title: "Sao chép",
+              title: "Copy",
               trailingKey: "⌘C",
               emphasis: .secondary,
               capsule: true
@@ -1243,7 +1243,7 @@ struct LiquidGlassPlaygroundView: View {
 
           HStack(spacing: 8) {
             LiquidGlassActionButton(
-              title: "Xóa",
+              title: "Delete",
               icon: "trash",
               emphasis: .destructive,
               capsule: true
@@ -1266,7 +1266,7 @@ struct LiquidGlassPlaygroundView: View {
               HStack(spacing: 6) {
                 ProgressView()
                   .controlSize(.small)
-                Text("Đang xử lý...")
+                Text("Processing...")
                   .font(.system(size: 11, weight: .medium))
               }
               .padding(.horizontal, 10)
@@ -1280,7 +1280,7 @@ struct LiquidGlassPlaygroundView: View {
 
       studioCard(
         "Shape & Size Variants",
-        subtitle: "Capsule (viên thuốc) vs Rounded Rectangle (chữ nhật bo)",
+        subtitle: "Capsule vs Rounded Rectangle variants",
         codeSnippet: "LiquidGlassActionButton(\n  title: \"Capsule Regular\",\n  icon: \"star.fill\",\n  emphasis: .secondary,\n  capsule: true\n) {}"
       ) {
         VStack(spacing: 10) {
@@ -1306,7 +1306,7 @@ struct LiquidGlassPlaygroundView: View {
 
       studioCard(
         "Icon Action Grid",
-        subtitle: "Bộ nút thao tác biểu tượng dùng trong toolbar và preview",
+        subtitle: "Icon action buttons used in toolbars and previews",
         codeSnippet: "Button {\n  // Action\n} label: {\n  Image(systemName: \"crop\")\n    .frame(width: 28, height: 28)\n}\n.buttonStyle(LiquidGlassButtonStyle(emphasis: .secondary, capsule: false))"
       ) {
         HStack(spacing: 10) {
@@ -1337,7 +1337,7 @@ struct LiquidGlassPlaygroundView: View {
     VStack(spacing: 16) {
       studioCard(
         "Sliding Pill Tabs",
-        subtitle: "Bộ chọn phân đoạn chuẩn với hiệu ứng lò xo trượt fluid",
+        subtitle: "Standard segmented control with fluid spring motion",
         codeSnippet: "LiquidGlassSegmentedControl(items: [\"Capture\", \"Record\", \"OCR\"], selection: $selectedTab) {\n  Text($0)\n}"
       ) {
         VStack(spacing: 12) {
@@ -1346,7 +1346,7 @@ struct LiquidGlassPlaygroundView: View {
           }
 
           HStack {
-            Text("Đang chọn:")
+            Text("Selected:")
               .font(.system(size: 11))
               .foregroundStyle(.secondary)
             Text(selectedTab)
@@ -1358,11 +1358,11 @@ struct LiquidGlassPlaygroundView: View {
 
       studioCard(
         "Capture Mode Selector",
-        subtitle: "Phân loại chế độ chụp với biểu tượng",
-        codeSnippet: "LiquidGlassActionButton(\n  title: \"Toàn màn hình\",\n  icon: \"display\",\n  emphasis: .primary,\n  capsule: true\n) {}"
+        subtitle: "Capture mode selector with symbols",
+        codeSnippet: "LiquidGlassActionButton(\n  title: \"Fullscreen\",\n  icon: \"display\",\n  emphasis: .primary,\n  capsule: true\n) {}"
       ) {
         LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 6) {
-          ForEach([("Toàn màn hình", "display"), ("Vùng chọn", "crop"), ("Cửa sổ", "macwindow"), ("Cuộn trang", "arrow.down.doc")], id: \.0) { item in
+          ForEach([("Fullscreen", "display"), ("Area", "crop"), ("Window", "macwindow"), ("Scrolling", "arrow.down.doc")], id: \.0) { item in
             let isSelected = selectedTab == item.0
 
             Button {
@@ -1392,7 +1392,7 @@ struct LiquidGlassPlaygroundView: View {
     VStack(spacing: 16) {
       studioCard(
         "Annotate Floating Dock",
-        subtitle: "Thanh công cụ nổi chứa các bút vẽ, màu và hành động",
+        subtitle: "Floating toolbar with drawing tools, palette, and actions",
         codeSnippet: "HStack(spacing: 6) {\n  // Tools...\n}\n.padding(.horizontal, 10)\n.padding(.vertical, 6)\n.liquidGlassSurface(shape: Capsule(), layer: .control)"
       ) {
         VStack(spacing: 12) {
@@ -1437,8 +1437,8 @@ struct LiquidGlassPlaygroundView: View {
 
       studioCard(
         "Recording Control Dock",
-        subtitle: "Dock điều khiển phiên quay màn hình với timer thời gian thực",
-        codeSnippet: "HStack(spacing: 12) {\n  Text(\"01:42\")\n  LiquidGlassActionButton(title: \"Tạm dừng\", icon: \"pause.fill\", emphasis: .secondary, capsule: true) {}\n  LiquidGlassActionButton(title: \"Kết thúc\", icon: \"stop.fill\", emphasis: .destructive, capsule: true) {}\n}\n.padding(.horizontal, 14)\n.padding(.vertical, 7)\n.liquidGlassSurface(shape: Capsule(), layer: .control)"
+        subtitle: "Screen recording control dock with real-time timer",
+        codeSnippet: "HStack(spacing: 12) {\n  Text(\"01:42\")\n  LiquidGlassActionButton(title: \"Pause\", icon: \"pause.fill\", emphasis: .secondary, capsule: true) {}\n  LiquidGlassActionButton(title: \"Stop\", icon: \"stop.fill\", emphasis: .destructive, capsule: true) {}\n}\n.padding(.horizontal, 14)\n.padding(.vertical, 7)\n.liquidGlassSurface(shape: Capsule(), layer: .control)"
       ) {
         HStack(spacing: 12) {
           HStack(spacing: 6) {
@@ -1454,8 +1454,8 @@ struct LiquidGlassPlaygroundView: View {
           Divider().frame(height: 16)
 
           HStack(spacing: 8) {
-            LiquidGlassActionButton(title: "Tạm dừng", icon: "pause.fill", emphasis: .secondary, capsule: true) {}
-            LiquidGlassActionButton(title: "Kết thúc", icon: "stop.fill", emphasis: .destructive, capsule: true) {}
+            LiquidGlassActionButton(title: "Pause", icon: "pause.fill", emphasis: .secondary, capsule: true) {}
+            LiquidGlassActionButton(title: "Stop", icon: "stop.fill", emphasis: .destructive, capsule: true) {}
           }
         }
         .padding(.horizontal, 14)
@@ -1471,7 +1471,7 @@ struct LiquidGlassPlaygroundView: View {
     VStack(spacing: 16) {
       studioCard(
         "Quick Access Floating Card",
-        subtitle: "Thẻ kết quả chụp nổi trên màn hình góc dưới phải",
+        subtitle: "Floating capture result card in the bottom-right corner",
         codeSnippet: "VStack(alignment: .leading, spacing: 10) {\n  Text(\"Screenshot.png\")\n  // Preview...\n  HStack { ... }\n}\n.padding(14)\n.liquidGlassSurface(shape: RoundedRectangle(cornerRadius: 12), layer: .control)"
       ) {
         VStack(alignment: .leading, spacing: 10) {
@@ -1506,10 +1506,10 @@ struct LiquidGlassPlaygroundView: View {
 
           // Card Action Buttons
           HStack(spacing: 8) {
-            LiquidGlassActionButton(title: "Sao chép", icon: "doc.on.doc", trailingKey: "⌘C", emphasis: .secondary, capsule: true) {}
-            LiquidGlassActionButton(title: "Sửa ảnh", icon: "pencil", emphasis: .secondary, capsule: true) {}
+            LiquidGlassActionButton(title: "Copy", icon: "doc.on.doc", trailingKey: "⌘C", emphasis: .secondary, capsule: true) {}
+            LiquidGlassActionButton(title: "Annotate", icon: "pencil", emphasis: .secondary, capsule: true) {}
             Spacer()
-            LiquidGlassActionButton(title: "Lưu", icon: "arrow.down", emphasis: .primary, capsule: true) {}
+            LiquidGlassActionButton(title: "Save", icon: "arrow.down", emphasis: .primary, capsule: true) {}
           }
         }
         .padding(14)
@@ -1519,15 +1519,15 @@ struct LiquidGlassPlaygroundView: View {
 
       studioCard(
         "Notification Toast HUD",
-        subtitle: "Thông báo nổi trạng thái (OCR, sao chép)",
-        codeSnippet: "HStack(spacing: 8) {\n  Image(systemName: \"checkmark.circle.fill\").foregroundStyle(.green)\n  Text(\"Đã sao chép\")\n}\n.padding(.horizontal, 14)\n.padding(.vertical, 9)\n.liquidGlassSurface(shape: Capsule(), layer: .control)"
+        subtitle: "Floating status HUD (OCR, clipboard)",
+        codeSnippet: "HStack(spacing: 8) {\n  Image(systemName: \"checkmark.circle.fill\").foregroundStyle(.green)\n  Text(\"Copied\")\n}\n.padding(.horizontal, 14)\n.padding(.vertical, 9)\n.liquidGlassSurface(shape: Capsule(), layer: .control)"
       ) {
         HStack(spacing: 8) {
           Image(systemName: "checkmark.circle.fill")
             .font(.system(size: 14))
             .foregroundStyle(.green)
 
-          Text("Đã sao chép ảnh chụp vào bộ nhớ tạm")
+          Text("Screenshot copied to clipboard")
             .font(.system(size: 11.5, weight: .medium))
 
           Spacer()
@@ -1551,15 +1551,15 @@ struct LiquidGlassPlaygroundView: View {
     VStack(spacing: 16) {
       studioCard(
         "Glass Search Field",
-        subtitle: "Ô nhập liệu tìm kiếm phủ kính thời gian thực",
-        codeSnippet: "HStack(spacing: 8) {\n  Image(systemName: \"magnifyingglass\")\n  TextField(\"Tìm kiếm...\", text: $query)\n}\n.padding(.horizontal, 10)\n.padding(.vertical, 7)\n.liquidGlassSurface(shape: RoundedRectangle(cornerRadius: 8), layer: .control)"
+        subtitle: "Real-time glass-morphic search input",
+        codeSnippet: "HStack(spacing: 8) {\n  Image(systemName: \"magnifyingglass\")\n  TextField(\"Search...\", text: $query)\n}\n.padding(.horizontal, 10)\n.padding(.vertical, 7)\n.liquidGlassSurface(shape: RoundedRectangle(cornerRadius: 8), layer: .control)"
       ) {
         HStack(spacing: 8) {
           Image(systemName: "magnifyingglass")
             .font(.system(size: 12))
             .foregroundStyle(.secondary)
 
-          TextField("Tìm kiếm lịch sử chụp, ghi chú...", text: $searchQuery)
+          TextField("Search capture history, notes...", text: $searchQuery)
             .textFieldStyle(.plain)
             .font(.system(size: 12))
 
@@ -1581,13 +1581,13 @@ struct LiquidGlassPlaygroundView: View {
 
       studioCard(
         "Glass Sliders & Toggles",
-        subtitle: "Thanh kéo tinh chỉnh và công tắc",
-        codeSnippet: "Slider(value: $sliderValue, in: 0...1)\nToggle(\"Tự động mở Annotate\", isOn: $toggleValue)\n  .toggleStyle(.switch)"
+        subtitle: "Tuning sliders and toggle switches",
+        codeSnippet: "Slider(value: $sliderValue, in: 0...1)\nToggle(\"Auto-open Annotate\", isOn: $toggleValue)\n  .toggleStyle(.switch)"
       ) {
         VStack(spacing: 12) {
           VStack(alignment: .leading, spacing: 4) {
             HStack {
-              Text("Độ trong suốt:")
+              Text("Opacity:")
                 .font(.system(size: 11, weight: .medium))
               Spacer()
               Text("\(Int(sliderValue * 100))%")
@@ -1599,7 +1599,7 @@ struct LiquidGlassPlaygroundView: View {
 
           Divider()
 
-          Toggle("Tự động mở Annotate sau khi chụp", isOn: $toggleValue)
+          Toggle("Auto-open Annotate after capture", isOn: $toggleValue)
             .font(.system(size: 11.5))
             .toggleStyle(.switch)
         }
@@ -1613,7 +1613,7 @@ struct LiquidGlassPlaygroundView: View {
     VStack(spacing: 18) {
       studioCard(
         "Full Workspace Preview",
-        subtitle: "Mô phỏng phối hợp Quick Access Card và Dock công cụ",
+        subtitle: "Integrated simulation of Quick Access card and tool dock",
         codeSnippet: "// Workspace Preview with Floating Quick Access & Dock\nQuickAccessFloatingCard()\n  .liquidGlassSurface(shape: RoundedRectangle(cornerRadius: 12), layer: .control)"
       ) {
         ZStack {
@@ -1656,15 +1656,15 @@ struct LiquidGlassPlaygroundView: View {
                   .overlay(Image(systemName: "photo").font(.system(size: 12)).foregroundStyle(.white))
 
                 VStack(alignment: .leading, spacing: 1) {
-                  Text("Chụp nhanh")
+                  Text("Quick Capture")
                     .font(.system(size: 10.5, weight: .bold))
                     .foregroundStyle(.white)
-                  Text("Nhấn ⌘C để chép")
+                  Text("Press ⌘C to copy")
                     .font(.system(size: 9))
                     .foregroundStyle(.white.opacity(0.7))
                 }
 
-                LiquidGlassActionButton(title: "Sao chép", trailingKey: "⌘C", emphasis: .primary, capsule: true) {}
+                LiquidGlassActionButton(title: "Copy", trailingKey: "⌘C", emphasis: .primary, capsule: true) {}
               }
               .padding(8)
               .liquidGlassSurface(shape: RoundedRectangle(cornerRadius: 10), layer: .control)
@@ -1719,7 +1719,7 @@ struct LiquidGlassPlaygroundView: View {
             )
           }
           .buttonStyle(.plain)
-          .help("Sao chép đoạn mã Swift cho thành phần này")
+          .help("Copy Swift code for this component")
         }
       }
 
@@ -1757,7 +1757,7 @@ struct LiquidGlassPlaygroundView: View {
           withAnimation(.spring(response: 0.28, dampingFraction: 0.8)) {
             tuning = LiquidGlassTuning.default
           }
-          copyCode("// Đã khôi phục thông số mặc định", title: "Khôi phục thông số")
+          copyCode("// Restored default parameters", title: "Reset Parameters")
         } label: {
           Image(systemName: "arrow.counterclockwise")
             .font(.system(size: 11, weight: .medium))
@@ -1765,7 +1765,7 @@ struct LiquidGlassPlaygroundView: View {
             .frame(width: 20, height: 20)
         }
         .buttonStyle(.plain)
-        .help("Đặt lại tất cả thông số mặc định")
+        .help("Reset all parameters to default")
 
         Button {
           withAnimation(.spring(response: 0.28, dampingFraction: 0.8)) {
@@ -1778,7 +1778,7 @@ struct LiquidGlassPlaygroundView: View {
             .frame(width: 20, height: 20)
         }
         .buttonStyle(.plain)
-        .help("Đóng thanh Inspector")
+        .help("Close Inspector")
       }
       .padding(.horizontal, 16)
       .padding(.top, 38)
@@ -1790,7 +1790,7 @@ struct LiquidGlassPlaygroundView: View {
       ScrollView {
         VStack(alignment: .leading, spacing: 0) {
           // Accordion 1: Global Settings
-          AccordionSection(title: "Toàn Bộ Ứng Dụng", isExpanded: $expandGlobalSection) {
+          AccordionSection(title: "Global Application", isExpanded: $expandGlobalSection) {
             inspectorGlobalSection
           }
 
@@ -1801,7 +1801,7 @@ struct LiquidGlassPlaygroundView: View {
 
           // Accordion 3: Optical Tuning Sliders
           AccordionSection(
-            title: "Thông Số macOS 13–15",
+            title: "macOS 13–15 Parameters",
             isExpanded: $expandTuningSection,
             onReset: {
               withAnimation(.spring(response: 0.25, dampingFraction: 0.8)) {
@@ -1813,12 +1813,12 @@ struct LiquidGlassPlaygroundView: View {
           }
 
           // Accordion 4: Composite Layers
-          AccordionSection(title: "Bóc Tách Tầng Kính", isExpanded: $expandLayersSection) {
+          AccordionSection(title: "Glass Layers Breakdown", isExpanded: $expandLayersSection) {
             inspectorLayersSection
           }
 
           // Accordion 5: Code Exporter
-          AccordionSection(title: "Xuất Mã Swift", isExpanded: $expandExportSection) {
+          AccordionSection(title: "Export Swift Code", isExpanded: $expandExportSection) {
             inspectorExportSection
           }
         }
@@ -1832,7 +1832,7 @@ struct LiquidGlassPlaygroundView: View {
 
   private var inspectorGlobalSection: some View {
     VStack(alignment: .leading, spacing: 8) {
-      Toggle("Hiệu ứng Liquid Glass", isOn: $useLiquidGlass)
+      Toggle("Liquid Glass Effect", isOn: $useLiquidGlass)
         .toggleStyle(.switch)
         .controlSize(.small)
         .onChange(of: useLiquidGlass) { _ in
@@ -1843,14 +1843,14 @@ struct LiquidGlassPlaygroundView: View {
       HStack(spacing: 4) {
         Image(systemName: "arrow.triangle.2.circlepath")
           .font(.system(size: 9))
-        Text("Đồng bộ trực tiếp từ Cài đặt chung")
+        Text("Synced directly from General Settings")
           .font(.system(size: 9.5))
       }
       .foregroundStyle(.secondary)
 
       Text(useLiquidGlass
-           ? "Ứng dụng dùng macOS 26+ Apple Glass (hoặc Solid Fallback trên macOS cũ)."
-           : "Toàn bộ cửa sổ Snapzy đang dùng Solid Native Fallback.")
+           ? "App uses macOS 26+ Apple Glass (or Solid Fallback on older macOS)."
+           : "All windows currently using Solid Native Fallback.")
         .font(.system(size: 10))
         .foregroundStyle(useLiquidGlass ? Color.secondary : Color.orange)
         .lineSpacing(1.5)
@@ -1859,12 +1859,12 @@ struct LiquidGlassPlaygroundView: View {
 
   private var inspectorSimulatorSection: some View {
     VStack(alignment: .leading, spacing: 8) {
-      Toggle("Mô phỏng Disabled (Vô hiệu hóa)", isOn: $simulateDisabled)
+      Toggle("Simulate Disabled State", isOn: $simulateDisabled)
         .toggleStyle(.switch)
         .controlSize(.small)
         .font(.system(size: 11))
 
-      Toggle("Mô phỏng Đang bận (Busy / Loading)", isOn: $simulateBusy)
+      Toggle("Simulate Busy / Loading", isOn: $simulateBusy)
         .toggleStyle(.switch)
         .controlSize(.small)
         .font(.system(size: 11))
@@ -1873,7 +1873,7 @@ struct LiquidGlassPlaygroundView: View {
 
   private var inspectorSlidersSection: some View {
     VStack(alignment: .leading, spacing: 10) {
-      Text("Kéo thanh trượt hoặc nhấp đúp vào giá trị số để đặt lại:")
+      Text("Drag sliders or double-click numeric values to reset:")
         .font(.system(size: 10))
         .foregroundStyle(.secondary)
         .padding(.bottom, 2)
@@ -1922,11 +1922,11 @@ struct LiquidGlassPlaygroundView: View {
 
   private var inspectorLayersSection: some View {
     VStack(alignment: .leading, spacing: 6) {
-      Toggle("Tầng 1: Substrate nền", isOn: $tuning.isSubstrateEnabled)
-      Toggle("Tầng 2: Refraction Sheen", isOn: $tuning.isRefractionEnabled)
-      Toggle("Tầng 3: Body Veil / Wash", isOn: $tuning.isVeilEnabled)
-      Toggle("Tầng 4: Specular Border 0.5pt", isOn: $tuning.isSpecularEnabled)
-      Toggle("Rim Lighting (Viền cong)", isOn: $tuning.isRimLightingEnabled)
+      Toggle("Layer 1: Base Substrate", isOn: $tuning.isSubstrateEnabled)
+      Toggle("Layer 2: Refraction Sheen", isOn: $tuning.isRefractionEnabled)
+      Toggle("Layer 3: Body Veil / Wash", isOn: $tuning.isVeilEnabled)
+      Toggle("Layer 4: Specular Border 0.5pt", isOn: $tuning.isSpecularEnabled)
+      Toggle("Rim Lighting (Curved Border)", isOn: $tuning.isRimLightingEnabled)
     }
     .toggleStyle(.switch)
     .controlSize(.small)
@@ -1935,7 +1935,7 @@ struct LiquidGlassPlaygroundView: View {
 
   private var inspectorExportSection: some View {
     VStack(alignment: .leading, spacing: 8) {
-      Text("Mã cấu hình hiện tại:")
+      Text("Current Configuration:")
         .font(.system(size: 10))
         .foregroundStyle(.secondary)
 
@@ -1948,11 +1948,11 @@ struct LiquidGlassPlaygroundView: View {
         .overlay(RoundedRectangle(cornerRadius: 6).stroke(Color.white.opacity(0.08), lineWidth: 0.5))
 
       Button {
-        copyCode(generatedTuningCode, title: "Mã cấu hình Tuning")
+        copyCode(generatedTuningCode, title: "Tuning Configuration")
       } label: {
         HStack {
           Image(systemName: hasCopiedCode ? "checkmark" : "doc.on.doc")
-          Text(hasCopiedCode ? "Đã chép mã Swift!" : "Sao chép Swift Tokens")
+          Text(hasCopiedCode ? "Copied Swift Code!" : "Copy Swift Tokens")
         }
         .frame(maxWidth: .infinity)
       }
