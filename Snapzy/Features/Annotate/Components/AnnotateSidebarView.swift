@@ -463,7 +463,9 @@ struct AnnotateSidebarView: View, Equatable {
             if state.padding <= 0 {
               state.padding = 24
             }
-
+            if state.cornerRadius <= 0 {
+              state.cornerRadius = 12
+            }
             state.backgroundStyle = .gradient(preset)
           }
         }

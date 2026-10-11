@@ -133,6 +133,12 @@ nonisolated enum GradientPreset: String, CaseIterable, Identifiable, Sendable {
   case blueGreen
   case yellowOrange
   case cyanBlue
+  case sequoiaSunrise
+  case sonomaDawn
+  case auroraGreen
+  case midnightNavy
+  case neonSunset
+  case cosmicViolet
 
   var id: String {
     rawValue
@@ -148,6 +154,12 @@ nonisolated enum GradientPreset: String, CaseIterable, Identifiable, Sendable {
     case .blueGreen: [.blue, .green]
     case .yellowOrange: [.yellow, .orange]
     case .cyanBlue: [.cyan, .blue]
+    case .sequoiaSunrise: [Color(red: 0.85, green: 0.28, blue: 0.15), Color(red: 0.98, green: 0.65, blue: 0.25), Color(red: 0.20, green: 0.45, blue: 0.35)]
+    case .sonomaDawn: [Color(red: 0.98, green: 0.45, blue: 0.25), Color(red: 0.95, green: 0.72, blue: 0.40), Color(red: 0.35, green: 0.65, blue: 0.85)]
+    case .auroraGreen: [Color(red: 0.05, green: 0.85, blue: 0.55), Color(red: 0.08, green: 0.55, blue: 0.75), Color(red: 0.18, green: 0.20, blue: 0.55)]
+    case .midnightNavy: [Color(red: 0.08, green: 0.10, blue: 0.22), Color(red: 0.15, green: 0.22, blue: 0.40), Color(red: 0.28, green: 0.18, blue: 0.38)]
+    case .neonSunset: [Color(red: 1.0, green: 0.25, blue: 0.50), Color(red: 1.0, green: 0.55, blue: 0.20), Color(red: 0.98, green: 0.85, blue: 0.30)]
+    case .cosmicViolet: [Color(red: 0.42, green: 0.15, blue: 0.75), Color(red: 0.70, green: 0.22, blue: 0.85), Color(red: 0.15, green: 0.35, blue: 0.80)]
     }
   }
 }

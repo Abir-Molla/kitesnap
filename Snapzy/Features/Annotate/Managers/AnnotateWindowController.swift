@@ -245,6 +245,7 @@ final class AnnotateWindowController: NSWindowController, NSWindowDelegate {
 
   private func setupContent() {
     let capturedState = self.state
+    capturedState.showSidebar = true
     guard let annotateWindow = window as? AnnotateWindow else { return }
     let eventRouter = AnnotateWindowEventRouter(window: annotateWindow)
     let mainView = AnnotateMainView(state: capturedState, eventRouter: eventRouter)

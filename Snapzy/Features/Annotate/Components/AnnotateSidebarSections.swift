@@ -24,6 +24,12 @@ struct SidebarGradientSection: View {
             preset: preset,
             isSelected: state.backgroundStyle == .gradient(preset)
           ) {
+            if state.padding <= 0 {
+              state.padding = 24
+            }
+            if state.cornerRadius <= 0 {
+              state.cornerRadius = 12
+            }
             state.backgroundStyle = .gradient(preset)
           }
         }
@@ -106,6 +112,9 @@ struct SidebarWallpaperSection: View {
     if state.padding <= 0 {
       state.padding = 24
     }
+    if state.cornerRadius <= 0 {
+      state.cornerRadius = 12
+    }
     state.backgroundStyle = .wallpaper(item.fullImageURL)
   }
 
@@ -124,6 +133,9 @@ struct SidebarWallpaperSection: View {
   private func selectCustomWallpaper(_ item: SystemWallpaperManager.WallpaperItem) {
     if state.padding <= 0 {
       state.padding = 24
+    }
+    if state.cornerRadius <= 0 {
+      state.cornerRadius = 12
     }
     state.backgroundStyle = .wallpaper(item.fullImageURL)
   }

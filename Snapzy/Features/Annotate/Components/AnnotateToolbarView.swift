@@ -73,15 +73,6 @@ struct AnnotateToolbarView: View {
   private var captureToolsGroup: some View {
     HStack(spacing: 4) {
       ToolbarButton(
-        icon: "crop",
-        isSelected: state.selectedTool == .crop,
-        activeGlassTint: nil
-      ) {
-        state.beginCropInteraction()
-      }
-      .help(L10n.AnnotateUI.crop)
-
-      ToolbarButton(
         icon: "rectangle.on.rectangle",
         isSelected: state.showSidebar,
         activeGlassTint: nil
@@ -89,6 +80,15 @@ struct AnnotateToolbarView: View {
         state.toggleSidebarVisibility()
       }
       .help(L10n.AnnotateUI.toggleSidebar)
+
+      ToolbarButton(
+        icon: "crop",
+        isSelected: state.selectedTool == .crop,
+        activeGlassTint: nil
+      ) {
+        state.beginCropInteraction()
+      }
+      .help(L10n.AnnotateUI.crop)
 
       ToolbarDivider()
 
