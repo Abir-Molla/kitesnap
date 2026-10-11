@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleIconFile</key>
-	<string>SnapzyIcon</string>
-	<key>CFBundleName</key>
-	<string>$(SNAPZY_BUNDLE_NAME)</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -28,6 +24,8 @@
 			</array>
 		</dict>
 	</array>
+	<key>CFBundleIconFile</key>
+	<string>SnapzyIcon</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -39,19 +37,15 @@
 			</array>
 		</dict>
 	</array>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Snapzy needs microphone access to record audio with your screen recordings.</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Snapzy needs camera access to add a camera overlay to your screen recordings.</string>
 	<key>NSCameraUseContinuityCameraDeviceType</key>
 	<true/>
 	<key>NSScreenCaptureUsageDescription</key>
 	<string>Snapzy needs screen recording permission to capture screenshots and record your screen.</string>
+	<key>SUEnableInstallerLauncherService</key>
+	<true/>
 	<key>SUFeedURL</key>
 	<string>https://raw.githubusercontent.com/duongductrong/Snapzy/master/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>zcoJ90nh+SEFg6ZEkb9fwQCEK51vSIRwyn6tOsQisL0=</string>
-	<key>SUEnableInstallerLauncherService</key>
-	<true/>
 </dict>
 </plist>

@@ -32,7 +32,6 @@
 		A3A629C62F5E9E4E00E06B7C /* Exceptions for "Snapzy" folder in "Snapzy" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Config/Secrets.xcconfig,
 				Resources/Info.plist,
 				Resources/Localization/Generated/README.md,
 				Resources/Localization/README.md,
@@ -173,16 +172,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				vi,
 				Base,
-				"zh-Hans",
-				"zh-Hant",
-				es,
-				ja,
-				ko,
-				ru,
-				fr,
-				de,
 			);
 			mainGroup = A364629A2F18EEDA0003453D;
 			minimizedProjectReferenceProxies = 1;
@@ -397,7 +387,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 199;
-				DEVELOPMENT_TEAM = XMHV5GH2Z7;
+				DEVELOPMENT_TEAM = VB7NDKV729;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -405,17 +395,19 @@
 				EXECUTABLE_NAME = Snapzy;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Snapzy/Resources/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Snapzy Debug";
+				INFOPLIST_KEY_CFBundleDisplayName = Snapzy;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Snapzy needs camera access to add a camera overlay to your screen recordings.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Snapzy needs microphone access to record audio with your screen recordings.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2.1.0-beta.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.trongduong.snapzy.debug;
+				MARKETING_VERSION = "2.1.0-beta.3";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abirmolla.kitesnap.debug;
 				PRODUCT_MODULE_NAME = Snapzy;
 				PRODUCT_NAME = "Snapzy Debug";
 				REGISTER_APP_GROUPS = YES;
@@ -439,7 +431,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 199;
-				DEVELOPMENT_TEAM = XMHV5GH2Z7;
+				DEVELOPMENT_TEAM = VB7NDKV729;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -449,14 +441,16 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Snapzy;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Snapzy needs camera access to add a camera overlay to your screen recordings.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Snapzy needs microphone access to record audio with your screen recordings.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2.1.0-beta.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.trongduong.snapzy;
+				MARKETING_VERSION = "2.1.0-beta.3";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abirmolla.kitesnap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SNAPZY_BUNDLE_NAME = Snapzy;
@@ -475,7 +469,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 82;
-				DEVELOPMENT_TEAM = XMHV5GH2Z7;
+				DEVELOPMENT_TEAM = VB7NDKV729;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -501,7 +495,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 82;
-				DEVELOPMENT_TEAM = XMHV5GH2Z7;
+				DEVELOPMENT_TEAM = VB7NDKV729;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
