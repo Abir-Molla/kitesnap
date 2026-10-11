@@ -48,7 +48,6 @@ enum ShortcutOverlayContentBuilder {
         title: L10n.ShortcutOverlay.toolsSection,
         items: [
           globalItem(kind: .annotate, icon: "pencil.and.scribble", manager: keyboard),
-          globalItem(kind: .videoEditor, icon: "film", manager: keyboard),
           globalItem(kind: .cloudUploads, icon: "icloud.and.arrow.up", manager: keyboard),
           globalItem(kind: .shortcutList, icon: "list.bullet.rectangle", manager: keyboard),
         ]

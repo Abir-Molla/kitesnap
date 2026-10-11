@@ -54,7 +54,6 @@ enum Step2WorkflowStage: Equatable {
   case prerecordArea
   case recordingActive
   case videoQuickAccess
-  case videoEditorOpen
 }
 
 @MainActor
@@ -298,13 +297,6 @@ final class SnapzyOnboardingState: ObservableObject {
         self?.step2Stage = .videoQuickAccess
         self?.completeChallenge(.recordVideo3s)
       }
-    }
-  }
-
-  func openVideoEditorFromQuickAccess() {
-    withAnimation(SnapzyMotionPreferences.shared.spec(.morph).animation) {
-      step2Stage = .videoEditorOpen
-      completeChallenge(.openVideoEditor)
     }
   }
 

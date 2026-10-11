@@ -159,7 +159,6 @@ extension GlobalShortcutKind {
     case .deleteRecording: return "delete_recording"
     case .delayedCapture: return "delayed_capture"
     case .annotate: return "annotate"
-    case .videoEditor: return "video_editor"
     case .cloudUploads: return "cloud_uploads"
     case .shortcutList: return "shortcut_list"
     case .ocr: return "ocr"

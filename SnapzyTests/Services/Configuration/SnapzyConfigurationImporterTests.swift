@@ -361,9 +361,6 @@ final class SnapzyConfigurationImporterTests: XCTestCase {
     reverse_magnifier_zoom_direction = true
     show_magnifier_by_default = true
 
-    [recording]
-    video_editor_zoom_transition_duration = 0.55
-
     [annotate]
     combine_save_as_edit = false
     default_tool = "arrow"
@@ -393,9 +390,6 @@ final class SnapzyConfigurationImporterTests: XCTestCase {
     XCTAssertEqual(defaults.object(forKey: PreferencesKeys.screenshotReverseMagnifierZoomDirection) as? Bool, true)
     XCTAssertEqual(defaults.object(forKey: PreferencesKeys.screenshotShowMagnifierByDefault) as? Bool, true)
     
-    // recording
-    XCTAssertEqual(defaults.object(forKey: PreferencesKeys.videoEditorZoomTransitionDuration) as? Double, 0.55)
-
     // annotate
     XCTAssertEqual(defaults.object(forKey: PreferencesKeys.annotateCombineSaveAsEdit) as? Bool, false)
     XCTAssertEqual(defaults.string(forKey: PreferencesKeys.annotateDefaultTool), "arrow")
@@ -409,20 +403,6 @@ final class SnapzyConfigurationImporterTests: XCTestCase {
     XCTAssertNil(QuickAccessSwipeActionStore.shared.swipeRightAction)
     XCTAssertFalse(manager.hideCardWhenWindowOpen)
     XCTAssertEqual(manager.animationStyle, .scale)
-  }
-
-  func testImportRejectsOutOfRangeVideoEditorZoomTransitionDuration() {
-    let defaults = UserDefaultsFactory.make()
-    let source = """
-    schema_version = 1
-
-    [recording]
-    video_editor_zoom_transition_duration = 10.0
-    """
-
-    let result = SnapzyConfigurationImporter.importTOML(source, defaults: defaults)
-    XCTAssertTrue(result.hasErrors)
-    XCTAssertNil(defaults.object(forKey: PreferencesKeys.videoEditorZoomTransitionDuration))
   }
 
   func testImportRejectsInvalidEnumValues() {

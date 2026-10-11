@@ -336,9 +336,6 @@ enum SnapzyConfigurationImporter {
       defaults.set($0, forKey: PreferencesKeys.annotationShortcutHoldDuration)
       RecordingAnnotationShortcutConfig.shared.holdDuration = $0
     }
-    collectDouble(&reader, "recording", "video_editor_zoom_transition_duration", range: 0.15...0.75, mutations: &mutations) {
-      defaults.set($0, forKey: PreferencesKeys.videoEditorZoomTransitionDuration)
-    }
   }
 
   private static func collectQuickAccess(

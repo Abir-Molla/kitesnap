@@ -94,7 +94,6 @@ enum SnapzyConfigurationDefaultDocument {
     writer.value("show_cursor", true)
     writer.value("highlight_clicks", false)
     writer.value("show_keystrokes", false)
-    writer.value("video_editor_zoom_transition_duration", 0.4)
 
     writer.section("recording.mouse_highlight")
     writer.value("size", 50)
@@ -286,7 +285,6 @@ enum SnapzyConfigurationDefaultDocument {
     case .deleteRecording: return nil
     case .delayedCapture: return nil
     case .annotate: return .defaultAnnotate
-    case .videoEditor: return .defaultVideoEditor
     case .cloudUploads: return .defaultCloudUploads
     case .shortcutList: return .defaultShortcutList
     case .ocr: return .defaultOCR

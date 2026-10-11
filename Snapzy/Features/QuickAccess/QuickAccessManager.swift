@@ -519,8 +519,6 @@ final class QuickAccessManager: ObservableObject {
     activityHoldItemIds.remove(id)
     // Clear annotation session cache for this item
     AnnotateManager.shared.clearSessionData(for: id)
-    VideoEditorManager.shared.clearSessionData(for: id)
-    VideoEditorManager.shared.clearSessionData(for: url)
     // Fast animation (0.15s) for immediate perceived response
     withAnimation(.spring(response: 0.15, dampingFraction: 0.8)) {
       items.removeAll { $0.id == id }
@@ -585,7 +583,6 @@ final class QuickAccessManager: ObservableObject {
           context: ["fileName": url.lastPathComponent]
         )
         AnnotationSessionStore.shared.deleteSession(for: url)
-        VideoEditorSessionStore.shared.deleteSession(for: url)
         tempCaptureManager.deleteTempFile(at: url)
       }
     }
@@ -608,9 +605,7 @@ final class QuickAccessManager: ObservableObject {
     activityHoldItemIds.remove(id)
     // Clear annotation session cache for this item
     AnnotateManager.shared.clearSessionData(for: id)
-    VideoEditorManager.shared.clearSessionData(for: id)
     if let itemURL {
-      VideoEditorManager.shared.clearSessionData(for: itemURL)
     }
     withAnimation(.spring(response: 0.15, dampingFraction: 0.8)) {
       items.removeAll { $0.id == id }
@@ -1021,8 +1016,6 @@ final class QuickAccessManager: ObservableObject {
       cancelDismissTimer(for: item.id)
       // Clear annotation session cache
       AnnotateManager.shared.clearSessionData(for: item.id)
-      VideoEditorManager.shared.clearSessionData(for: item.id)
-      VideoEditorManager.shared.clearSessionData(for: item.url)
     }
     pinWindowManager.closeAll()
     items.removeAll()
@@ -1126,9 +1119,6 @@ final class QuickAccessManager: ObservableObject {
     //    "file missing" ghost entry in the history panel.
     CaptureHistoryStore.shared.removeByFilePath(url.path)
     AnnotationSessionStore.shared.deleteSession(for: url)
-    VideoEditorSessionStore.shared.deleteSession(for: url)
-    VideoEditorManager.shared.clearSessionData(for: id)
-    VideoEditorManager.shared.clearSessionData(for: url)
 
     removeItem(id: id)
 
@@ -1203,7 +1193,6 @@ final class QuickAccessManager: ObservableObject {
     }
     let tempURL = item.url
     let cachedSessionData = AnnotateManager.shared.getSessionData(for: id)
-    let cachedVideoSessionData = VideoEditorManager.shared.getSessionData(for: id)
     DiagnosticLogger.shared.log(
       .info,
       .action,
@@ -1237,10 +1226,6 @@ final class QuickAccessManager: ObservableObject {
            AnnotationSessionStore.shared.shouldPersist(for: savedURL) {
           AnnotationSessionStore.shared.persist(cachedSessionData, for: savedURL)
         }
-        if !VideoEditorSessionStore.shared.moveSession(from: tempURL, to: savedURL),
-           let cachedVideoSessionData {
-          VideoEditorSessionStore.shared.persist(cachedVideoSessionData, for: savedURL)
-        }
 
         let captureType: CaptureType = item.isVideo ? .recording : .screenshot
         PostCaptureActionHandler.shared.copyEditedCaptureToClipboardIfEnabled(
@@ -1266,8 +1251,6 @@ final class QuickAccessManager: ObservableObject {
         )
       }
       AnnotateManager.shared.clearSessionData(for: id)
-      VideoEditorManager.shared.clearSessionData(for: id)
-      VideoEditorManager.shared.clearSessionData(for: tempURL)
     }
   }
 
@@ -1323,7 +1306,7 @@ final class QuickAccessManager: ObservableObject {
   func openEditorForNewestItem() -> Bool {
     guard isEnabled, panelController.isVisible, let item = items.first else { return false }
     if item.isVideo {
-      VideoEditorManager.shared.openEditor(for: item)
+      NSWorkspace.shared.open(item.url)
     } else {
       AnnotateManager.shared.openAnnotation(for: item)
     }

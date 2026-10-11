@@ -402,8 +402,6 @@ private extension KeyboardShortcutManager {
       setDelayedCaptureShortcut(config)
     case .annotate:
       setAnnotateShortcut(config)
-    case .videoEditor:
-      setVideoEditorShortcut(config)
     case .cloudUploads:
       setCloudUploadsShortcut(config)
     case .shortcutList:

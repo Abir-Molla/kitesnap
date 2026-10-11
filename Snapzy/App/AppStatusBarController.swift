@@ -701,18 +701,6 @@ final class AppStatusBarController: ObservableObject {
       item.isEnabled = true
       return item
 
-    case .editVideo:
-      let item = NSMenuItem(
-        title: L10n.Menu.editVideo,
-        action: #selector(editVideoAction),
-        keyEquivalent: ""
-      )
-      applyConfiguredShortcut(item, for: .videoEditor, using: shortcutManager)
-      item.target = self
-      item.image = NSImage(systemSymbolName: "film", accessibilityDescription: nil)
-      item.isEnabled = true
-      return item
-
     case .cloudUploads:
       let item = NSMenuItem(
         title: L10n.Actions.cloudUploads,
@@ -843,11 +831,6 @@ final class AppStatusBarController: ObservableObject {
   @objc private func openCombineImagesAction() {
     logMenuAction("openCombineImages")
     CombineImagesCoordinator.shared.presentPicker()
-  }
-
-  @objc private func editVideoAction() {
-    logMenuAction("editVideo")
-    VideoEditorManager.shared.openEmptyEditor()
   }
 
   @objc private func openCloudUploadsAction() {

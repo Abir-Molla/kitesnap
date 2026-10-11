@@ -171,7 +171,7 @@ final class HistoryWindowController {
             "itemId": item.id.uuidString,
           ]
         )
-        VideoEditorManager.shared.openEditor(for: item)
+        NSWorkspace.shared.open(item.url)
       }
     }
   }

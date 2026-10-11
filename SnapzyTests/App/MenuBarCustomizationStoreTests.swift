@@ -33,7 +33,7 @@ final class MenuBarCustomizationStoreTests: XCTestCase {
     let defaults = makeIsolatedDefaults()
     defaults.set(
       [
-        MenuBarItemKind.editVideo.rawValue,
+        MenuBarItemKind.openAnnotate.rawValue,
         "future-item",
         MenuBarItemKind.captureArea.rawValue,
         MenuBarItemKind.captureArea.rawValue,
@@ -44,7 +44,7 @@ final class MenuBarCustomizationStoreTests: XCTestCase {
 
     let store = makeStore(defaults: defaults)
 
-    XCTAssertEqual(store.itemOrder.first, .editVideo)
+    XCTAssertEqual(store.itemOrder.first, .openAnnotate)
     XCTAssertEqual(store.itemOrder.count, MenuBarItemKind.allCases.filter(\.isCustomizable).count)
     XCTAssertFalse(store.itemOrder.contains(.checkForUpdates))
     XCTAssertTrue(store.itemOrder.contains(.captureOCR))  // missing items appended

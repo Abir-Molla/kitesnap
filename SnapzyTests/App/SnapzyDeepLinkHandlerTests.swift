@@ -26,7 +26,6 @@ final class SnapzyDeepLinkHandlerTests: XCTestCase {
       ("snapzy://record/application", .recordApplication),
       ("snapzy://open/annotate", .openAnnotate),
       ("snapzy://open/combine", .openCombine([])),
-      ("snapzy://open/video-editor", .openVideoEditor),
       ("snapzy://open/cloud-uploads", .openCloudUploads),
       ("snapzy://open/history", .openHistory),
       ("snapzy://show/shortcuts", .showShortcuts),

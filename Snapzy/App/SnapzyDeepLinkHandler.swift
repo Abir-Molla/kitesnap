@@ -85,9 +85,6 @@ struct SnapzyDeepLinkHandler {
         CombineImagesCoordinator.shared.presentPicker()
       }
       NSApp.activate(ignoringOtherApps: true)
-    case .openVideoEditor:
-      VideoEditorManager.shared.openEmptyEditor()
-      NSApp.activate(ignoringOtherApps: true)
     case .openCloudUploads:
       if CloudUploadHistoryWindowController.shared.toggleWindow() {
         NSApp.activate(ignoringOtherApps: true)
@@ -125,7 +122,6 @@ enum SnapzyDeepLinkAction: Equatable {
   case recordApplication
   case openAnnotate
   case openCombine([URL])
-  case openVideoEditor
   case openCloudUploads
   case openHistory
   case showShortcuts
@@ -173,8 +169,6 @@ enum SnapzyDeepLinkAction: Equatable {
       self = .openAnnotate
     case "open/combine", "combine", "combine-images", "open-combine":
       self = .openCombine(Self.combineFileURLs(from: components))
-    case "open/video-editor", "video-editor", "edit-video", "open-video-editor":
-      self = .openVideoEditor
     case "open/cloud-uploads", "cloud-uploads", "uploads", "open-uploads":
       self = .openCloudUploads
     case "open/liquid-glass-playground", "open/liquid-glass-preview", "open/liquid-glass", "liquid-glass-playground", "liquid-glass":
@@ -211,7 +205,6 @@ enum SnapzyDeepLinkAction: Equatable {
     case .recordApplication: return "recordApplication"
     case .openAnnotate: return "openAnnotate"
     case .openCombine(let fileURLs): return "openCombine(\(fileURLs.count))"
-    case .openVideoEditor: return "openVideoEditor"
     case .openCloudUploads: return "openCloudUploads"
     case .openHistory: return "openHistory"
     case .showShortcuts: return "showShortcuts"

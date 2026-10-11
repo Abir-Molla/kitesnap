@@ -52,7 +52,6 @@ struct ShortcutsView: View {
 
         ShortcutGroup(title: toolsSectionTitle, shortcuts: [
           ShortcutItem(keys: "⇧⌘A", action: openAnnotateTitle),
-          ShortcutItem(keys: "⇧⌘E", action: openVideoEditorTitle),
         ])
       }
       .frame(maxWidth: 380)
@@ -304,14 +303,6 @@ struct ShortcutsView: View {
       "action.open-annotate",
       defaultValue: "Open Annotate",
       comment: "Action label for opening the image annotator"
-    )
-  }
-
-  private var openVideoEditorTitle: String {
-    onboardingLocalization.string(
-      "action.open-video-editor",
-      defaultValue: "Open Video Editor",
-      comment: "Action label for opening the video editor"
     )
   }
 

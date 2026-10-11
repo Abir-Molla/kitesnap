@@ -272,7 +272,7 @@ struct SnapzyMockQuickAccessView: View {
           VStack(alignment: .leading, spacing: 4) {
             // Curved hint arrow pointing down to the card
             SnapzyCurvedHintArrow(
-              text: "Click card to open Video Editor",
+              text: "Quick Access preview",
               orientation: .curveDownToTarget,
               arrowAlignment: .leading,
               color: .white
@@ -291,7 +291,7 @@ struct SnapzyMockQuickAccessView: View {
                 triggerFeedback("Saved to Desktop (⌘S)")
               },
               onAnnotate: {
-                state.openVideoEditorFromQuickAccess()
+                triggerFeedback("Opened Video (⌘O)")
               },
               onTogglePin: {
                 withAnimation(SnapzyMotionPreferences.shared.spec(.settle).animation) {
@@ -315,23 +315,7 @@ struct SnapzyMockQuickAccessView: View {
         removal: .scale(scale: 0.92, anchor: .bottomLeading).combined(with: .opacity)
       ))
 
-    case .videoEditorOpen:
-      // Full Video Editor Window centered on screen
-      ZStack {
-        Color.black.opacity(0.38)
-          .ignoresSafeArea()
 
-        SnapzyMockVideoEditorWindow(
-          onReplay: {
-            state.resetStep2Flow()
-          },
-          onExport: {
-            triggerFeedback("Exported MP4 (⌘S)")
-            state.completeChallenge(.openVideoEditor)
-          }
-        )
-      }
-      .transition(.scale(scale: 0.94).combined(with: .opacity))
     }
   }
 

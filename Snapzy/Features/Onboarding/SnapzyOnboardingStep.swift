@@ -91,7 +91,7 @@ enum SnapzyOnboardingStep: String, CaseIterable, Identifiable, Hashable {
     case .meetSnapzy:
       return [.selectArea, .captureToQuickAccess, .openAnnotateWindow]
     case .quickAccess:
-      return [.selectRecordArea, .recordVideo3s, .openVideoEditor]
+      return [.selectRecordArea, .recordVideo3s]
     case .shortcuts:
       return [.checkShortcuts]
     case .permissions:
@@ -109,7 +109,6 @@ enum SnapzyOnboardingChallenge: String, CaseIterable, Identifiable, Hashable {
   case openAnnotateWindow
   case selectRecordArea
   case recordVideo3s
-  case openVideoEditor
   case hoverCard
   case triggerQuickAction
   case checkShortcuts
@@ -137,7 +136,6 @@ enum SnapzyOnboardingChallenge: String, CaseIterable, Identifiable, Hashable {
     case .grantAccessibility:     return L10n.Onboarding.challengeGrantAccessibility
     case .selectRecordArea:       return L10n.Onboarding.challengeSelectRecordArea
     case .recordVideo3s:          return L10n.Onboarding.challengeRecordVideo3s
-    case .openVideoEditor:        return L10n.Onboarding.challengeOpenVideoEditor
     }
   }
 
@@ -149,7 +147,6 @@ enum SnapzyOnboardingChallenge: String, CaseIterable, Identifiable, Hashable {
     case .openAnnotateWindow:     return ["⌘E"]
     case .selectRecordArea:       return ["⇧", "⌘", "5"]
     case .recordVideo3s:          return ["●"]
-    case .openVideoEditor:        return ["⌘E"]
     case .hoverCard:              return []
     case .triggerQuickAction:     return ["⌘C"]
     case .checkShortcuts:         return ["⇧", "⌘", "3"]

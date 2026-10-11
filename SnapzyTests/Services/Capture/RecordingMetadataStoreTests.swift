@@ -198,58 +198,6 @@ final class RecordingMetadataStoreTests: XCTestCase {
     XCTAssertFalse(FileManager.default.fileExists(atPath: storedSourceURL.path))
   }
 
-  func testVideoEditorStateResolvesStoredAudioSourceAssetWhenAvailable() throws {
-    let videoURL = try makeVideoFile(named: "editor-compatible-output.mov")
-    let sourceURL = tempDirectory.appendingPathComponent("editor-multitrack-source.mov")
-    try Data("multitrack".utf8).write(to: sourceURL)
-    let storedSourceURL = try RecordingMetadataStore.storeAudioSource(from: sourceURL)
-
-    var metadata = makeCurrentMetadata()
-    metadata.audioSourceURL = storedSourceURL
-    metadata.audioSourceTrackRoles = [.systemAudio, .microphone]
-    try RecordingMetadataStore.save(metadata, for: videoURL)
-
-    let loaded = try XCTUnwrap(RecordingMetadataStore.load(for: videoURL))
-    XCTAssertEqual(VideoEditorState.editorAssetURL(for: videoURL, metadata: loaded), storedSourceURL)
-    XCTAssertEqual(
-      VideoEditorState.audioTrackRoles(forAudioTrackCount: 2, metadata: loaded),
-      [.systemAudio, .microphone]
-    )
-    XCTAssertEqual(
-      VideoEditorState.audioTrackRoles(forAudioTrackCount: 1, metadata: loaded),
-      [.mixed]
-    )
-  }
-
-  func testVideoEditorStateAudioTrackRolesPreferTrackIDMetadata() throws {
-    let composition = AVMutableComposition()
-    let microphoneTrack = try XCTUnwrap(composition.addMutableTrack(
-      withMediaType: .audio,
-      preferredTrackID: 42
-    ))
-    let systemTrack = try XCTUnwrap(composition.addMutableTrack(
-      withMediaType: .audio,
-      preferredTrackID: 7
-    ))
-
-    let metadata = RecordingMetadata(
-      captureSize: CGSize(width: 640, height: 360),
-      samplesPerSecond: 60,
-      mouseSamples: [],
-      audioSourceURL: tempDirectory.appendingPathComponent("source.mov"),
-      audioSourceTrackRoles: [.systemAudio, .microphone],
-      audioSourceTracks: [
-        RecordingAudioSourceTrack(trackID: Int(systemTrack.trackID), role: .systemAudio),
-        RecordingAudioSourceTrack(trackID: Int(microphoneTrack.trackID), role: .microphone),
-      ]
-    )
-
-    XCTAssertEqual(
-      VideoEditorState.audioTrackRoles(for: [microphoneTrack, systemTrack], metadata: metadata),
-      [.microphone, .systemAudio]
-    )
-  }
-
   private func makeCurrentMetadata() -> RecordingMetadata {
     RecordingMetadata(
       coordinateSpace: .topLeftNormalized,

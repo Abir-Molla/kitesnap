@@ -1489,20 +1489,11 @@ final class QuickAccessCoreTests: XCTestCase {
     )
     defer { annotateWindow.close() }
 
-    let videoEditorWindow = VideoEditorWindow(
-      contentRect: NSRect(x: 0, y: 0, width: 800, height: 600)
-    )
-    defer { videoEditorWindow.close() }
-
     annotateWindow.applyActiveEditorLevel()
-    videoEditorWindow.applyActiveEditorLevel()
 
     XCTAssertEqual(panel.level, .floating)
     XCTAssertGreaterThan(annotateWindow.level.rawValue, panel.level.rawValue)
-    XCTAssertGreaterThan(videoEditorWindow.level.rawValue, panel.level.rawValue)
-    XCTAssertEqual(annotateWindow.level, videoEditorWindow.level)
     XCTAssertGreaterThan(pinWindow.level.rawValue, annotateWindow.level.rawValue)
-    XCTAssertGreaterThan(pinWindow.level.rawValue, videoEditorWindow.level.rawValue)
   }
 
   func testQuickAccessPanel_interactiveRegionTracksVisibleCardsOnly() {

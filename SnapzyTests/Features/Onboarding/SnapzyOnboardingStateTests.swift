@@ -164,16 +164,10 @@ final class SnapzyOnboardingStateTests: XCTestCase {
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
       XCTAssertEqual(state.step2Stage, .videoQuickAccess)
       XCTAssertTrue(state.completedChallenges.contains(.recordVideo3s))
-      XCTAssertFalse(state.isCurrentStepComplete)
-
-      // 4. Open Video Editor from Quick Access Card
-      state.openVideoEditorFromQuickAccess()
-      XCTAssertEqual(state.step2Stage, .videoEditorOpen)
-      XCTAssertTrue(state.completedChallenges.contains(.openVideoEditor))
       XCTAssertTrue(state.isCurrentStepComplete)
       XCTAssertTrue(state.completedSteps.contains(.quickAccess))
 
-      // 5. Reset Step 2 flow
+      // 4. Reset Step 2 flow
       state.resetStep2Flow()
       XCTAssertEqual(state.step2Stage, .readyToRecord)
       XCTAssertEqual(state.recordingSeconds, 0)

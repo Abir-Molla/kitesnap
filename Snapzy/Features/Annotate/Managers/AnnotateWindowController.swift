@@ -550,7 +550,7 @@ final class AnnotateWindowController: NSWindowController, NSWindowDelegate {
     alert.informativeText = L10n.AnnotateUI.unsavedChangesMessage
     alert.alertStyle = .warning
 
-    alert.addButton(withTitle: L10n.VideoEditor.save)
+    alert.addButton(withTitle: L10n.Common.save)
     alert.addButton(withTitle: L10n.AnnotateUI.dontSave)
     alert.addButton(withTitle: L10n.Common.cancel)
 

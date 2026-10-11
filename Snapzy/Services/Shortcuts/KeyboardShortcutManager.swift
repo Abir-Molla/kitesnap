@@ -97,11 +97,6 @@ struct ShortcutConfig: Equatable, Codable {
   )
 
   /// Cmd + Shift + E
-  static let defaultVideoEditor = ShortcutConfig(
-    keyCode: UInt32(kVK_ANSI_E),
-    modifiers: UInt32(cmdKey | shiftKey)
-  )
-
   /// Cmd + Shift + L
   static let defaultCloudUploads = ShortcutConfig(
     keyCode: UInt32(kVK_ANSI_L),
@@ -483,7 +478,6 @@ enum GlobalShortcutKind: String, CaseIterable, Codable {
   case deleteRecording
   case delayedCapture
   case annotate
-  case videoEditor
   case cloudUploads
   case shortcutList
   case ocr
@@ -530,8 +524,6 @@ extension GlobalShortcutKind {
       return L10n.Actions.captureDelayed
     case .annotate:
       return L10n.Actions.openAnnotate
-    case .videoEditor:
-      return L10n.Actions.openVideoEditor
     case .cloudUploads:
       return L10n.Actions.cloudUploads
     case .shortcutList:
@@ -568,7 +560,6 @@ enum ShortcutAction {
   case restartRecording
   case deleteRecording
   case openAnnotate
-  case openVideoEditor
   case openCloudUploads
   case openShortcutList
   case openHistory
@@ -599,7 +590,6 @@ final class KeyboardShortcutManager {
   /// this property directly.
   private(set) var pauseResumeRecordingShortcut: ShortcutConfig
   private(set) var annotateShortcut: ShortcutConfig
-  private(set) var videoEditorShortcut: ShortcutConfig
   private(set) var cloudUploadsShortcut: ShortcutConfig
   private(set) var shortcutListShortcut: ShortcutConfig
   private(set) var ocrShortcut: ShortcutConfig
@@ -660,7 +650,6 @@ final class KeyboardShortcutManager {
   private var applicationCaptureHotkeyRef: EventHotKeyRef?
   private var applicationRecordingHotkeyRef: EventHotKeyRef?
   private var annotateHotkeyRef: EventHotKeyRef?
-  private var videoEditorHotkeyRef: EventHotKeyRef?
   private var cloudUploadsHotkeyRef: EventHotKeyRef?
   private var shortcutListHotkeyRef: EventHotKeyRef?
   private var ocrHotkeyRef: EventHotKeyRef?
@@ -685,7 +674,6 @@ final class KeyboardShortcutManager {
   private let scrollingCaptureHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4633), id: 3)  // "ZSF3"
   private let recordingHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4634), id: 4)  // "ZSF4"
   private let annotateHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4635), id: 5)  // "ZSF5"
-  private let videoEditorHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4636), id: 6)  // "ZSF6"
   private let ocrHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4637), id: 7)  // "ZSF7"
   private let cloudUploadsHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4638), id: 8)  // "ZSF8"
   private let objectCutoutHotkeyID = EventHotKeyID(signature: OSType(0x5A53_4639), id: 9)  // "ZSF9"
@@ -714,7 +702,6 @@ final class KeyboardShortcutManager {
   private let recordingShortcutKey = "recordingShortcut"
   private let pauseResumeRecordingShortcutKey = "pauseResumeRecordingShortcut"
   private let annotateShortcutKey = "annotateShortcut"
-  private let videoEditorShortcutKey = "videoEditorShortcut"
   private let cloudUploadsShortcutKey = "cloudUploadsShortcut"
   private let shortcutListShortcutKey = PreferencesKeys.shortcutListShortcut
   private let ocrShortcutKey = "ocrShortcut"
@@ -739,7 +726,6 @@ final class KeyboardShortcutManager {
     recordingShortcut = .defaultRecording
     pauseResumeRecordingShortcut = .defaultPauseResumeRecording
     annotateShortcut = .defaultAnnotate
-    videoEditorShortcut = .defaultVideoEditor
     cloudUploadsShortcut = .defaultCloudUploads
     shortcutListShortcut = .defaultShortcutList
     ocrShortcut = .defaultOCR
@@ -863,7 +849,6 @@ final class KeyboardShortcutManager {
     case .deleteRecording: return deleteRecordingShortcut
     case .delayedCapture: return delayedCaptureShortcut
     case .annotate: return annotateShortcut
-    case .videoEditor: return videoEditorShortcut
     case .cloudUploads: return cloudUploadsShortcut
     case .shortcutList: return shortcutListShortcut
     case .ocr: return ocrShortcut
@@ -1065,16 +1050,6 @@ final class KeyboardShortcutManager {
     }
   }
 
-  /// Update video editor shortcut
-  func setVideoEditorShortcut(_ config: ShortcutConfig?) {
-    mutateShortcutRegistration {
-      setShortcut(config, for: .videoEditor) {
-        videoEditorShortcut = $0
-      }
-      saveShortcuts()
-      saveClearedShortcuts()
-    }
-  }
 
   /// Update cloud uploads shortcut
   func setCloudUploadsShortcut(_ config: ShortcutConfig?) {
@@ -1172,9 +1147,6 @@ final class KeyboardShortcutManager {
     if let annotateData = try? encoder.encode(annotateShortcut) {
       UserDefaults.standard.set(annotateData, forKey: annotateShortcutKey)
     }
-    if let videoEditorData = try? encoder.encode(videoEditorShortcut) {
-      UserDefaults.standard.set(videoEditorData, forKey: videoEditorShortcutKey)
-    }
     if let cloudUploadsData = try? encoder.encode(cloudUploadsShortcut) {
       UserDefaults.standard.set(cloudUploadsData, forKey: cloudUploadsShortcutKey)
     }
@@ -1259,11 +1231,6 @@ final class KeyboardShortcutManager {
       let config = try? decoder.decode(ShortcutConfig.self, from: annotateData)
     {
       annotateShortcut = config
-    }
-    if let videoEditorData = UserDefaults.standard.data(forKey: videoEditorShortcutKey),
-      let config = try? decoder.decode(ShortcutConfig.self, from: videoEditorData)
-    {
-      videoEditorShortcut = config
     }
     if let cloudUploadsData = UserDefaults.standard.data(forKey: cloudUploadsShortcutKey),
       let config = try? decoder.decode(ShortcutConfig.self, from: cloudUploadsData)
@@ -1457,9 +1424,6 @@ final class KeyboardShortcutManager {
     case annotateHotkeyID.id:
       actionName = "annotate"
       action = .openAnnotate
-    case videoEditorHotkeyID.id:
-      actionName = "video-editor"
-      action = .openVideoEditor
     case cloudUploadsHotkeyID.id:
       actionName = "cloud-uploads"
       action = .openCloudUploads
@@ -1586,12 +1550,6 @@ final class KeyboardShortcutManager {
       config: shortcut(for: .annotate),
       hotkeyID: annotateHotkeyID,
       ref: &annotateHotkeyRef
-    )
-    registerShortcutIfNeeded(
-      kind: .videoEditor,
-      config: shortcut(for: .videoEditor),
-      hotkeyID: videoEditorHotkeyID,
-      ref: &videoEditorHotkeyRef
     )
     registerShortcutIfNeeded(
       kind: .ocr,
@@ -1865,10 +1823,6 @@ final class KeyboardShortcutManager {
     if let ref = annotateHotkeyRef {
       UnregisterEventHotKey(ref)
       annotateHotkeyRef = nil
-    }
-    if let ref = videoEditorHotkeyRef {
-      UnregisterEventHotKey(ref)
-      videoEditorHotkeyRef = nil
     }
     if let ref = ocrHotkeyRef {
       UnregisterEventHotKey(ref)

@@ -176,7 +176,7 @@ struct QuickAccessCardView: View {
   }
 
   private var editActionTitle: String {
-    item.isVideo ? L10n.QuickAccess.editVideo : L10n.AnnotateUI.modeAnnotate
+    item.isVideo ? L10n.Common.open : L10n.AnnotateUI.modeAnnotate
   }
 
   private var deleteActionTitle: String {
@@ -431,7 +431,7 @@ struct QuickAccessCardView: View {
 
   private func handleDoubleClick() {
     if item.isVideo {
-      openVideoEditor()
+      openVideo()
     } else {
       openAnnotation()
     }
@@ -444,10 +444,8 @@ struct QuickAccessCardView: View {
     }
   }
 
-  private func openVideoEditor() {
-    Task { @MainActor in
-      VideoEditorManager.shared.openEditor(for: item)
-    }
+  private func openVideo() {
+    NSWorkspace.shared.open(item.url)
   }
 
   private func copyItem() {

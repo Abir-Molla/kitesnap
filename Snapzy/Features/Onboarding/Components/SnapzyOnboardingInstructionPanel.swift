@@ -92,8 +92,6 @@ struct SnapzyOnboardingInstructionPanel: View {
         return L10n.Onboarding.stepRecordingPromptActive(state.recordingSeconds)
       case .videoQuickAccess:
         return L10n.Onboarding.stepRecordingPromptFloating
-      case .videoEditorOpen:
-        return L10n.Onboarding.stepRecordingPromptOpen
       }
     } else if state.currentStep == .shortcuts {
       if state.hasConflict {
@@ -128,8 +126,6 @@ struct SnapzyOnboardingInstructionPanel: View {
         case .recordingActive:
           state.simulateFinishRecording()
         case .videoQuickAccess:
-          state.openVideoEditorFromQuickAccess()
-        case .videoEditorOpen:
           state.resetStep2Flow()
         }
       case .shortcuts:

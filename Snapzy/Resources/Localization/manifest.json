@@ -94,15 +94,6 @@
       ]
     },
     {
-      "file": "Features/VideoEditor.xcstrings",
-      "prefixes": [
-        "video-editor.",
-        "video-editor-timeline.",
-        "video-export.",
-        "zoom-compositor."
-      ]
-    },
-    {
       "file": "Features/WhatsNew.xcstrings",
       "prefixes": [
         "whats-new."

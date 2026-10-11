@@ -28,7 +28,6 @@ struct ShortcutsSettingsView: View {
   @State private var restartRecordingShortcut: ShortcutConfig?
   @State private var deleteRecordingShortcut: ShortcutConfig?
   @State private var annotateShortcut: ShortcutConfig?
-  @State private var videoEditorShortcut: ShortcutConfig?
   @State private var cloudUploadsShortcut: ShortcutConfig?
   @State private var shortcutListShortcut: ShortcutConfig?
   @State private var historyShortcut: ShortcutConfig?
@@ -88,7 +87,6 @@ struct ShortcutsSettingsView: View {
       initialValue: KeyboardShortcutManager.shared.shortcut(for: .deleteRecording)
     )
     _annotateShortcut = State(initialValue: KeyboardShortcutManager.shared.shortcut(for: .annotate))
-    _videoEditorShortcut = State(initialValue: KeyboardShortcutManager.shared.shortcut(for: .videoEditor))
     _cloudUploadsShortcut = State(initialValue: KeyboardShortcutManager.shared.shortcut(for: .cloudUploads))
     _shortcutListShortcut = State(initialValue: KeyboardShortcutManager.shared.shortcut(for: .shortcutList))
     _historyShortcut = State(initialValue: KeyboardShortcutManager.shared.shortcut(for: .history))
@@ -543,17 +541,6 @@ struct ShortcutsSettingsView: View {
           )
 
           ShortcutRecorderView(
-            label: L10n.Actions.openVideoEditor,
-            icon: "film",
-            description: L10n.PreferencesShortcuts.openVideoEditorDescription,
-            shortcut: $videoEditorShortcut,
-            defaultShortcut: .defaultVideoEditor,
-            isEnabled: globalEnabledBinding(for: .videoEditor),
-            validationIssue: globalValidationIssues[.videoEditor],
-            onShortcutChanged: { handleGlobalShortcutChange($0, for: .videoEditor) }
-          )
-
-          ShortcutRecorderView(
             label: L10n.Actions.cloudUploads,
             icon: "icloud.and.arrow.up",
             description: L10n.PreferencesShortcuts.cloudUploadsDescription,
@@ -873,11 +860,10 @@ struct ShortcutsSettingsView: View {
 
   private func resetToolsSection(refresh: Bool = true) {
     annotateShortcut = .defaultAnnotate
-    videoEditorShortcut = .defaultVideoEditor
     cloudUploadsShortcut = .defaultCloudUploads
     shortcutListShortcut = .defaultShortcutList
 
-    let toolsKinds: [GlobalShortcutKind] = [.annotate, .videoEditor, .cloudUploads, .shortcutList]
+    let toolsKinds: [GlobalShortcutKind] = [.annotate, .cloudUploads, .shortcutList]
     for kind in toolsKinds {
       globalShortcutEnabled[kind] = true
       manager.setShortcutEnabled(true, for: kind)
@@ -885,7 +871,6 @@ struct ShortcutsSettingsView: View {
     }
 
     manager.setAnnotateShortcut(.defaultAnnotate)
-    manager.setVideoEditorShortcut(.defaultVideoEditor)
     manager.setCloudUploadsShortcut(.defaultCloudUploads)
     manager.setShortcutListShortcut(.defaultShortcutList)
 
@@ -1099,9 +1084,6 @@ struct ShortcutsSettingsView: View {
       case .annotate:
         annotateShortcut = config
         manager.setAnnotateShortcut(config)
-      case .videoEditor:
-        videoEditorShortcut = config
-        manager.setVideoEditorShortcut(config)
       case .cloudUploads:
         cloudUploadsShortcut = config
         manager.setCloudUploadsShortcut(config)
