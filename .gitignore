@@ -19,3 +19,16 @@ Snapzy/Config/Secrets.xcconfig
 .codex
 
 .dd
+
+# KiteSnap additions
+.DS_Store
+xcuserdata/
+DerivedData/
+*.xcuserstate
+.env
+.env.*
+*.p12
+*.cer
+*.mobileprovision
+*.pem
+*.key
