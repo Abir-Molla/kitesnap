@@ -34,8 +34,7 @@
       "file": "Features/Onboarding.xcstrings",
       "prefixes": [
         "onboarding.",
-        "splash.",
-        "sponsor."
+        "splash."
       ]
     },
     {

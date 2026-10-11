@@ -18,7 +18,6 @@ struct AboutSettingsView: View {
   }
 
   @StateObject private var updatesViewModel = CheckForUpdatesViewModel(updater: UpdaterManager.shared.updater)
-  @State private var isContributorsExpanded: Bool = false
 
   var body: some View {
     GeometryReader { proxy in
@@ -131,30 +130,6 @@ struct AboutSettingsView: View {
       .padding(.horizontal, 16)
       .padding(.vertical, 12)
 
-      divider
-
-      // Special thanks
-      HStack(alignment: .top) {
-        HStack(spacing: 4) {
-          Text(L10n.PreferencesAbout.specialThanks)
-            .font(.system(size: 13, weight: .regular))
-            .foregroundStyle(Color.primary)
-
-          Link(destination: URL(string: "https://github.com/duongductrong/Snapzy/graphs/contributors")!) {
-            Image(systemName: "arrow.up.right")
-              .font(.system(size: 10, weight: .semibold))
-              .foregroundStyle(Color.secondary)
-          }
-          .buttonStyle(.plain)
-          .help(L10n.PreferencesAbout.viewAllContributors)
-        }
-
-        Spacer(minLength: 20)
-
-        specialThanksContent
-      }
-      .padding(.horizontal, 16)
-      .padding(.vertical, 12)
     }
     .cardContainer(maxWidth: 480)
   }
@@ -211,12 +186,6 @@ struct AboutSettingsView: View {
           supportLink(title: L10n.PreferencesAbout.website, url: "https://snapzy.app")
           supportLink(title: L10n.PreferencesAbout.github, url: "https://github.com/duongductrong/Snapzy")
           supportLink(title: L10n.PreferencesAbout.reportBug, url: "https://github.com/duongductrong/Snapzy/issues")
-          supportLink(title: L10n.PreferencesAbout.discordCommunity, url: "https://discord.gg/xkWDAuJkZu")
-          supportLink(
-            title: "\(L10n.PreferencesAbout.supportTitle) ❤️",
-            url: "https://github.com/sponsors/duongductrong",
-            isHighlighted: true
-          )
         }
       }
       .padding(.horizontal, 16)
@@ -253,103 +222,6 @@ struct AboutSettingsView: View {
     .buttonStyle(.plain)
   }
 
-  // MARK: - Special Thanks Content
-
-  @ViewBuilder
-  private var specialThanksContent: some View {
-    if isContributorsExpanded {
-      VStack(alignment: .trailing, spacing: 8) {
-        PreferencesFlowLayout(horizontalSpacing: 4, verticalSpacing: 4, alignment: .trailing) {
-          ForEach(Array(AboutContributor.all.enumerated()), id: \.element.id) { index, contributor in
-            contributorLink(
-              contributor: contributor,
-              suffix: index < AboutContributor.all.count - 1 ? "," : ""
-            )
-          }
-        }
-        .frame(maxWidth: .infinity, alignment: .trailing)
-
-        Button {
-          withAnimation(.easeInOut(duration: 0.2)) {
-            isContributorsExpanded = false
-          }
-        } label: {
-          HStack(spacing: 3) {
-            Text(L10n.PreferencesAbout.seeLess)
-              .font(.system(size: 11, weight: .medium))
-            Image(systemName: "chevron.up")
-              .font(.system(size: 9, weight: .semibold))
-          }
-          .foregroundStyle(Color.accentColor)
-        }
-        .buttonStyle(ActionLinkButtonStyle())
-      }
-    } else {
-      VStack(alignment: .trailing, spacing: 3) {
-        ForEach(AboutContributor.featured) { contributor in
-          contributorLink(contributor: contributor, suffix: ",")
-        }
-
-        Text(L10n.PreferencesAbout.allContributors)
-          .font(.system(size: 12, weight: .regular))
-          .foregroundStyle(Color.secondary)
-
-        Button {
-          withAnimation(.easeInOut(duration: 0.2)) {
-            isContributorsExpanded = true
-          }
-        } label: {
-          HStack(spacing: 3) {
-            Text(L10n.PreferencesAbout.seeMore)
-              .font(.system(size: 11, weight: .medium))
-            Image(systemName: "chevron.down")
-              .font(.system(size: 9, weight: .semibold))
-          }
-          .foregroundStyle(Color.accentColor)
-        }
-        .buttonStyle(ActionLinkButtonStyle())
-        .padding(.top, 2)
-      }
-    }
-  }
-
-  private func contributorLink(contributor: AboutContributor, suffix: String = "") -> some View {
-    Link(destination: contributor.profileURL) {
-      Text(contributor.name + suffix)
-        .font(.system(size: 12, weight: .regular))
-    }
-    .buttonStyle(ContributorLinkButtonStyle())
-    .help(contributor.profileURL.absoluteString)
-  }
-}
-
-// MARK: - Button Styles
-
-private struct ContributorLinkButtonStyle: ButtonStyle {
-  @State private var isHovered = false
-
-  func makeBody(configuration: Configuration) -> some View {
-    configuration.label
-      .foregroundStyle(isHovered ? Color.primary : Color.secondary)
-      .underline(isHovered)
-      .opacity(configuration.isPressed ? 0.7 : 1.0)
-      .onHover { hovering in
-        isHovered = hovering
-      }
-  }
-}
-
-private struct ActionLinkButtonStyle: ButtonStyle {
-  @State private var isHovered = false
-
-  func makeBody(configuration: Configuration) -> some View {
-    configuration.label
-      .opacity(configuration.isPressed ? 0.6 : (isHovered ? 0.8 : 1.0))
-      .underline(isHovered)
-      .onHover { hovering in
-        isHovered = hovering
-      }
-  }
 }
 
 private extension View {

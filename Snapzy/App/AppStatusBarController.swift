@@ -28,7 +28,6 @@ final class AppStatusBarController: ObservableObject {
   private var cachedCustomIconDate: Date?
   private lazy var recordingStopImage = makeRecordingStopImage()
   private var menu: NSMenu?
-  private var didDetectCrash = false
 
   // Dependencies injected after setup
   private var viewModel: ScreenCaptureViewModel?
@@ -56,7 +55,6 @@ final class AppStatusBarController: ObservableObject {
   func setup(viewModel: ScreenCaptureViewModel, updater: SPUUpdater, didCrash: Bool = false) {
     self.viewModel = viewModel
     self.updater = updater
-    self.didDetectCrash = didCrash
 
     syncStatusItemVisibility()
     buildMenu()
@@ -846,12 +844,6 @@ final class AppStatusBarController: ObservableObject {
     if let campaign = FeatureIntroManager.shared.getPendingCampaign() {
       FeatureIntroManager.shared.showCampaign(campaign)
     }
-  }
-
-  @objc private func reportProblemAction() {
-    logMenuAction("reportProblem")
-    CrashReportService.presentAlert()
-    didDetectCrash = false
   }
 
   @objc private func openPreferencesAction() {

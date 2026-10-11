@@ -18,9 +18,7 @@ nonisolated enum L10n {
     ("splash.", "Onboarding"),
     ("app-identity.", "Common"),
     ("permission-row.", "Permissions"),
-    ("crash-report.", "Errors"),
     ("onboarding.", "Onboarding"),
-    ("sponsor.", "Onboarding"),
     ("preferences.tab.", "Settings"),
     ("preferences-general.", "Settings"),
     ("preferences-menubar.", "Settings"),
@@ -1410,24 +1408,6 @@ nonisolated enum L10n {
     )
   }
 
-  enum Sponsor {
-    static let recurringSupport = string(
-      "sponsor.recurring-support",
-      defaultValue: "Recurring support",
-      comment: "Subtitle for GitHub Sponsors option"
-    )
-    static let oneTimeTip = string(
-      "sponsor.one-time-tip",
-      defaultValue: "One-time tip",
-      comment: "Subtitle for Ko-fi option"
-    )
-    static let directSupport = string(
-      "sponsor.direct-support",
-      defaultValue: "Direct support",
-      comment: "Subtitle for PayPal option"
-    )
-  }
-
   enum Onboarding {
     static let welcomeSubtitle = string(
       "onboarding.welcome.subtitle",
@@ -1737,22 +1717,6 @@ nonisolated enum L10n {
       "onboarding.skip.skip-setup",
       defaultValue: "Skip Setup",
       comment: "Button title to confirm skipping onboarding setup"
-    )
-
-    static let sponsorTitle = string(
-      "onboarding.sponsor.title",
-      defaultValue: "Sponsor the Author",
-      comment: "Onboarding sponsor step title"
-    )
-    static let sponsorDescription = string(
-      "onboarding.sponsor.description",
-      defaultValue: "Snapzy is now open-source. If it saves you time, consider supporting ongoing development.",
-      comment: "Onboarding sponsor step description"
-    )
-    static let sponsorOptionalNote = string(
-      "onboarding.sponsor.optional-note",
-      defaultValue: "Support is optional. Snapzy remains fully usable without sponsoring.",
-      comment: "Note under sponsor options"
     )
 
     static let completionTitle = string(
@@ -2271,21 +2235,6 @@ nonisolated enum L10n {
       "onboarding.completion.menubar-hub-detail",
       defaultValue: "Access recent captures, history, hotkeys, and preferences.",
       comment: "Detail for Menu Bar Hub capability card"
-    )
-    static let completionStarGithub = string(
-      "onboarding.completion.star-github",
-      defaultValue: "Star on GitHub",
-      comment: "Button label for starring on GitHub"
-    )
-    static let completionJoinDiscord = string(
-      "onboarding.completion.join-discord",
-      defaultValue: "Join Discord",
-      comment: "Button label for joining Discord"
-    )
-    static let completionSponsorProject = string(
-      "onboarding.completion.sponsor-project",
-      defaultValue: "Sponsor Project",
-      comment: "Button label for sponsoring project"
     )
     static let completionStartUsing = string(
       "onboarding.completion.start-using",
@@ -2852,25 +2801,6 @@ nonisolated enum L10n {
       defaultValue: "Open Folder",
       comment: "General preferences button title"
     )
-    static let openReportPageButton = string(
-      "preferences-general.open-report-page-button",
-      defaultValue: "Open Report Page",
-      comment: "General preferences button title"
-    )
-    static let reportIssueTitle = string(
-      "preferences-general.report-issue-title",
-      defaultValue: "Report a Problem",
-      comment: "General preferences setting title"
-    )
-    static func reportIssueDescription(_ destination: String) -> String {
-      format(
-        "preferences-general.report-issue-description",
-        defaultValue: "Send a diagnostic log bundle at %@ when something goes wrong",
-        comment: "General preferences setting description. %@ is the problem report destination.",
-        destination
-      )
-    }
-
     static let restartOnboardingTitle = string(
       "preferences-general.restart-onboarding-title",
       defaultValue: "Restart Onboarding",
@@ -4301,31 +4231,6 @@ nonisolated enum L10n {
       defaultValue: "Made by",
       comment: "Label for creator attribution in About"
     )
-    static let specialThanks = string(
-      "preferences-about.special-thanks",
-      defaultValue: "Special thanks",
-      comment: "Label for contributor thanks section in About"
-    )
-    static let allContributors = string(
-      "preferences-about.all-contributors",
-      defaultValue: "and all GitHub contributors",
-      comment: "Suffix label for GitHub contributors list"
-    )
-    static let viewAllContributors = string(
-      "preferences-about.view-all-contributors",
-      defaultValue: "View all contributors on GitHub",
-      comment: "Tooltip for GitHub contributors link"
-    )
-    static let seeMore = string(
-      "preferences-about.see-more",
-      defaultValue: "See more",
-      comment: "Button to expand all contributors in About"
-    )
-    static let seeLess = string(
-      "preferences-about.see-less",
-      defaultValue: "See less",
-      comment: "Button to collapse contributors in About"
-    )
     static let appVersion = string(
       "preferences-about.app-version",
       defaultValue: "App version",
@@ -4360,16 +4265,6 @@ nonisolated enum L10n {
       "preferences-about.support",
       defaultValue: "Support",
       comment: "About screen support section header"
-    )
-    static let discordCommunity = string(
-      "preferences-about.discord-community",
-      defaultValue: "Discord Community",
-      comment: "Label for Discord community link"
-    )
-    static let supportTitle = string(
-      "preferences-about.support-title",
-      defaultValue: "Support Snapzy",
-      comment: "About screen sponsor card title"
     )
     static let updateChannelTitle = string(
       "preferences-about.update-channel-title",
@@ -7933,39 +7828,6 @@ nonisolated enum L10n {
       "recording.error.cancelled",
       defaultValue: "Recording cancelled",
       comment: "Error description when recording is cancelled"
-    )
-  }
-
-  enum CrashReport {
-    static let alertTitle = string(
-      "crash-report.alert-title",
-      defaultValue: "Report a Problem",
-      comment: "Alert title shown when presenting a problem report dialog"
-    )
-    static let alertMessage = string(
-      "crash-report.alert-message",
-      defaultValue: "Snapzy bundled your diagnostic logs into one file. Drag the file below to the report page.",
-      comment: "Alert message shown when presenting a problem report dialog with a log bundle"
-    )
-    static let alertMessageNoLogBundle = string(
-      "crash-report.alert-message-no-log-bundle",
-      defaultValue: "Snapzy could not prepare a diagnostic log bundle. You can still open the report page and describe the problem.",
-      comment: "Alert message shown when presenting a problem report dialog without a log bundle"
-    )
-    static let submit = string(
-      "crash-report.submit",
-      defaultValue: "Open Report Page",
-      comment: "Primary button title for problem report alert"
-    )
-    static let dismiss = string(
-      "crash-report.dismiss",
-      defaultValue: "Close",
-      comment: "Secondary button title for problem report alert"
-    )
-    static let accessoryHint = string(
-      "crash-report.accessory-hint",
-      defaultValue: "Drag log bundle to the report page",
-      comment: "Hint shown below the draggable problem report log bundle"
     )
   }
 

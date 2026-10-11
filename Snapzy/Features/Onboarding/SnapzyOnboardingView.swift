@@ -254,7 +254,6 @@ struct SnapzyOnboardingView: View {
   private func finish() {
     UserDefaults.standard.set(true, forKey: PreferencesKeys.onboardingCompleted)
     UserDefaults.standard.set(true, forKey: PreferencesKeys.splashSkipped)
-    UserDefaults.standard.set(true, forKey: PreferencesKeys.sponsorPromptSeen)
     UserDefaults.standard.removeObject(forKey: PreferencesKeys.onboardingActiveStep)
 
     let isUnderXCTest = ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil

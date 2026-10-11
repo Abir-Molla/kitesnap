@@ -1,2184 +1,2085 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "onboarding.action.close-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Close onboarding"
+  "sourceLanguage": "en",
+  "strings": {
+    "onboarding.action.close-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close onboarding"
           }
         }
       }
     },
-    "onboarding.action.continue" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continue"
+    "onboarding.action.continue": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
           }
         }
       }
     },
-    "onboarding.action.continue-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Click Continue to proceed"
+    "onboarding.action.continue-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click Continue to proceed"
           }
         }
       }
     },
-    "onboarding.action.finish" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finish"
+    "onboarding.action.finish": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finish"
           }
         }
       }
     },
-    "onboarding.action.go-back-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Go back a step"
+    "onboarding.action.go-back-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go back a step"
           }
         }
       }
     },
-    "onboarding.action.skip" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skip"
+    "onboarding.action.skip": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip"
           }
         }
       }
     },
-    "onboarding.challenge.add-annotation" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pick an annotation tool (arrow, rect, blur)."
+    "onboarding.challenge.add-annotation": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick an annotation tool (arrow, rect, blur)."
           }
         }
       }
     },
-    "onboarding.challenge.capture-to-quick-access" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture lands in Quick Access card."
+    "onboarding.challenge.capture-to-quick-access": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture lands in Quick Access card."
           }
         }
       }
     },
-    "onboarding.challenge.check-shortcuts" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Uncheck ⇧⌘3, ⇧⌘4, ⇧⌘5 in Keyboard > Screenshots."
+    "onboarding.challenge.check-shortcuts": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uncheck ⇧⌘3, ⇧⌘4, ⇧⌘5 in Keyboard > Screenshots."
           }
         }
       }
     },
-    "onboarding.challenge.grant-accessibility" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Allow Accessibility (optional)."
+    "onboarding.challenge.grant-accessibility": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Accessibility (optional)."
           }
         }
       }
     },
-    "onboarding.challenge.grant-save-folder" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select captures save folder."
+    "onboarding.challenge.grant-save-folder": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select captures save folder."
           }
         }
       }
     },
-    "onboarding.challenge.grant-screen-recording" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Allow Screen Recording."
+    "onboarding.challenge.grant-screen-recording": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Screen Recording."
           }
         }
       }
     },
-    "onboarding.challenge.hover-card" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hover over the Quick Access card."
+    "onboarding.challenge.hover-card": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hover over the Quick Access card."
           }
         }
       }
     },
-    "onboarding.challenge.open-annotate-window" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Click card to open Annotate window."
+    "onboarding.challenge.open-annotate-window": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click card to open Annotate window."
           }
         }
       }
     },
-    "onboarding.challenge.open-video-editor" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open the video editor from the card."
+    "onboarding.challenge.open-video-editor": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open the video editor from the card."
           }
         }
       }
     },
-    "onboarding.challenge.record-video-3s" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Record a short 3-second video clip."
+    "onboarding.challenge.record-video-3s": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record a short 3-second video clip."
           }
         }
       }
     },
-    "onboarding.challenge.select-area" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select an area on the screen."
+    "onboarding.challenge.select-area": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select an area on the screen."
           }
         }
       }
     },
-    "onboarding.challenge.select-record-area" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select an area for screen recording."
+    "onboarding.challenge.select-record-area": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select an area for screen recording."
           }
         }
       }
     },
-    "onboarding.challenge.trigger-quick-action" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press ⌘C to copy or ⌘E to edit."
+    "onboarding.challenge.trigger-quick-action": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press ⌘C to copy or ⌘E to edit."
           }
         }
       }
     },
-    "onboarding.chrome.close-accessibility" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Close onboarding"
+    "onboarding.chrome.close-accessibility": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close onboarding"
           }
         }
       }
     },
-    "onboarding.chrome.language-auto" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Auto"
+    "onboarding.chrome.language-auto": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto"
           }
         }
       }
     },
-    "onboarding.chrome.language-auto-system" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Auto (System)"
+    "onboarding.chrome.language-auto-system": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto (System)"
           }
         }
       }
     },
-    "onboarding.chrome.language-label" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Language"
+    "onboarding.chrome.language-label": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
           }
         }
       }
     },
-    "onboarding.completion.area-capture-detail" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Freeze, crop, and drop straight into Annotate or copy."
+    "onboarding.completion.area-capture-detail": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freeze, crop, and drop straight into Annotate or copy."
           }
         }
       }
     },
-    "onboarding.completion.area-capture-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Area Capture"
+    "onboarding.completion.area-capture-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Area Capture"
           }
         }
       }
     },
-    "onboarding.completion.card-overline" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SETUP COMPLETE"
+    "onboarding.completion.card-overline": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SETUP COMPLETE"
           }
         }
       }
     },
-    "onboarding.completion.card-subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy is ready in your menu bar. Take screenshots, record clips, extract text, and annotate anytime."
+    "onboarding.completion.card-subtitle": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy is ready in your menu bar. Take screenshots, record clips, extract text, and annotate anytime."
           }
         }
       }
     },
-    "onboarding.completion.card-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You're All Set!"
+    "onboarding.completion.card-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You're All Set!"
           }
         }
       }
     },
-    "onboarding.completion.description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy is ready. Access it from the menu bar or use your keyboard shortcuts."
+    "onboarding.completion.description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy is ready. Access it from the menu bar or use your keyboard shortcuts."
           }
         }
       }
     },
-    "onboarding.completion.get-started" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Get Started"
+    "onboarding.completion.get-started": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get Started"
           }
         }
       }
     },
-    "onboarding.completion.join-discord" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Join Discord"
+    "onboarding.completion.menu-bar": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menu Bar"
           }
         }
       }
     },
-    "onboarding.completion.menu-bar" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Menu Bar"
+    "onboarding.completion.menu-bar-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the camera icon in your menu bar"
           }
         }
       }
     },
-    "onboarding.completion.menu-bar-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Look for the camera icon in your menu bar"
+    "onboarding.completion.menubar-hub-detail": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Access recent captures, history, hotkeys, and preferences."
           }
         }
       }
     },
-    "onboarding.completion.menubar-hub-detail" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Access recent captures, history, hotkeys, and preferences."
+    "onboarding.completion.menubar-hub-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menu Bar Hub"
           }
         }
       }
     },
-    "onboarding.completion.menubar-hub-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Menu Bar Hub"
+    "onboarding.completion.ocr-detail": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extract text on-device with Apple Vision to clipboard."
           }
         }
       }
     },
-    "onboarding.completion.ocr-detail" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Extract text on-device with Apple Vision to clipboard."
+    "onboarding.completion.ocr-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text Grab (OCR)"
           }
         }
       }
     },
-    "onboarding.completion.ocr-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Text Grab (OCR)"
+    "onboarding.completion.open-preferences": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Preferences"
           }
         }
       }
     },
-    "onboarding.completion.open-preferences" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open Preferences"
+    "onboarding.completion.preferences-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customize shortcuts, output format, and more"
           }
         }
       }
     },
-    "onboarding.completion.preferences-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Customize shortcuts, output format, and more"
+    "onboarding.completion.review-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Esc to review previous steps"
           }
         }
       }
     },
-    "onboarding.completion.review-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press Esc to review previous steps"
+    "onboarding.completion.screen-recording-detail": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture mic, system audio, and clicks. Export MP4 or GIF."
           }
         }
       }
     },
-    "onboarding.completion.screen-recording-detail" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture mic, system audio, and clicks. Export MP4 or GIF."
+    "onboarding.completion.screen-recording-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screen Recording"
           }
         }
       }
     },
-    "onboarding.completion.screen-recording-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Screen Recording"
+    "onboarding.completion.shortcuts-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use ⇧⌘3, ⇧⌘4, ⇧⌘5 to capture anytime"
           }
         }
       }
     },
-    "onboarding.completion.shortcuts-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Use ⇧⌘3, ⇧⌘4, ⇧⌘5 to capture anytime"
+    "onboarding.completion.start-using": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start Using Snapzy"
           }
         }
       }
     },
-    "onboarding.completion.sponsor-project" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sponsor Project"
+    "onboarding.completion.title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You're all set!"
           }
         }
       }
     },
-    "onboarding.completion.star-github" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Star on GitHub"
+    "onboarding.config-access.folder-card-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Required for config.toml"
           }
         }
       }
     },
-    "onboarding.completion.start-using" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start Using Snapzy"
+    "onboarding.config-access.folder-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grant access once. Snapzy will create config.toml if needed and apply valid direct edits on launch."
           }
         }
       }
     },
-    "onboarding.completion.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You're all set!"
+    "onboarding.config-access.folder-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Config Folder"
           }
         }
       }
     },
-    "onboarding.config-access.folder-card-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Required for config.toml"
+    "onboarding.config-access.later": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Later"
           }
         }
       }
     },
-    "onboarding.config-access.folder-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grant access once. Snapzy will create config.toml if needed and apply valid direct edits on launch."
+    "onboarding.config-access.privacy-note": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This only grants Snapzy access to its config folder. It does not import secrets or scan your files."
           }
         }
       }
     },
-    "onboarding.config-access.folder-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Config Folder"
+    "onboarding.config-access.ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "config.toml is ready."
           }
         }
       }
     },
-    "onboarding.config-access.later" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Later"
+    "onboarding.config-access.subtitle": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy uses a TOML file for portable settings, backups, and dotfile workflows."
           }
         }
       }
     },
-    "onboarding.config-access.privacy-note" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This only grants Snapzy access to its config folder. It does not import secrets or scan your files."
+    "onboarding.config-access.title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set Up config.toml"
           }
         }
       }
     },
-    "onboarding.config-access.ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "config.toml is ready."
+    "onboarding.demo.overline": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interactive Demo"
           }
         }
       }
     },
-    "onboarding.config-access.subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy uses a TOML file for portable settings, backups, and dotfile workflows."
+    "onboarding.demo.tooltip": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Run simulation on mock stage"
           }
         }
       }
     },
-    "onboarding.config-access.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Set Up config.toml"
+    "onboarding.diagnostics.description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy can collect anonymous diagnostic logs when something goes wrong. These logs help us find and fix bugs faster."
           }
         }
       }
     },
-    "onboarding.demo.overline" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Interactive Demo"
+    "onboarding.diagnostics.enable-crash-logging": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable Diagnostic Logging"
           }
         }
       }
     },
-    "onboarding.demo.tooltip" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Run simulation on mock stage"
+    "onboarding.diagnostics.logs-stored-locally": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logs are stored locally on your device"
           }
         }
       }
     },
-    "onboarding.diagnostics.description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy can collect anonymous diagnostic logs when something goes wrong. These logs help us find and fix bugs faster."
+    "onboarding.diagnostics.privacy-note": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No personal data is collected. Nothing is sent without your action."
           }
         }
       }
     },
-    "onboarding.diagnostics.enable-crash-logging" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enable Diagnostic Logging"
+    "onboarding.diagnostics.title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help Us Improve"
           }
         }
       }
     },
-    "onboarding.diagnostics.logs-stored-locally" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Logs are stored locally on your device"
+    "onboarding.language.apply-later": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue and Apply on Finish"
           }
         }
       }
     },
-    "onboarding.diagnostics.privacy-note" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No personal data is collected. Nothing is sent without your action."
+    "onboarding.language.auto-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Follow macOS. Currently %@."
           }
         }
       }
     },
-    "onboarding.diagnostics.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Help Us Improve"
+    "onboarding.language.auto-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto"
           }
         }
       }
     },
-    "onboarding.language.apply-later" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continue and Apply on Finish"
+    "onboarding.language.preferences-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can change this anytime in Preferences -> General."
           }
         }
       }
     },
-    "onboarding.language.auto-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Follow macOS. Currently %@."
+    "onboarding.language.subtitle": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy can follow your Mac or preview a specific app language during setup."
           }
         }
       }
     },
-    "onboarding.language.auto-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Auto"
+    "onboarding.language.title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose your language"
           }
         }
       }
     },
-    "onboarding.language.preferences-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You can change this anytime in Preferences -> General."
+    "onboarding.mock.anonymous-diagnostics": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anonymous Diagnostics"
           }
         }
       }
     },
-    "onboarding.language.subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy can follow your Mac or preview a specific app language during setup."
+    "onboarding.mock.captured-mode": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Captured %@!"
           }
         }
       }
     },
-    "onboarding.language.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choose your language"
+    "onboarding.mock.conflict-badge": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conflict"
           }
         }
       }
     },
-    "onboarding.mock.anonymous-diagnostics" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anonymous Diagnostics"
+    "onboarding.mock.conflicts-active": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conflicts active"
           }
         }
       }
     },
-    "onboarding.mock.captured-mode" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Captured %@!"
+    "onboarding.mock.conflicts-detected": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS shortcut conflicts detected (⇧⌘3, ⇧⌘4, ⇧⌘5)"
           }
         }
       }
     },
-    "onboarding.mock.conflict-badge" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conflict"
+    "onboarding.mock.diagnostics-detail": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crash reports only, zero capture content"
           }
         }
       }
     },
-    "onboarding.mock.conflicts-active" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conflicts active"
+    "onboarding.mock.done": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
           }
         }
       }
     },
-    "onboarding.mock.conflicts-detected" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "macOS shortcut conflicts detected (⇧⌘3, ⇧⌘4, ⇧⌘5)"
+    "onboarding.mock.export-mp4": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export MP4 (⌘S)"
           }
         }
       }
     },
-    "onboarding.mock.diagnostics-detail" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Crash reports only, zero capture content"
+    "onboarding.mock.grant": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grant"
           }
         }
       }
     },
-    "onboarding.mock.done" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Done"
+    "onboarding.mock.linked": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Linked"
           }
         }
       }
     },
-    "onboarding.mock.export-mp4" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Export MP4 (⌘S)"
+    "onboarding.mock.no-conflicts": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No conflicts"
           }
         }
       }
     },
-    "onboarding.mock.grant" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grant"
+    "onboarding.mock.open-system-settings": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open System Settings..."
           }
         }
       }
     },
-    "onboarding.mock.linked" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Linked"
+    "onboarding.mock.portable-config": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Portable plaintext settings"
           }
         }
       }
     },
-    "onboarding.mock.no-conflicts" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No conflicts"
+    "onboarding.mock.press-to-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press ⇧⌘4 or Click to Capture"
           }
         }
       }
     },
-    "onboarding.mock.open-system-settings" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open System Settings..."
+    "onboarding.mock.record-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click Record to start (3s demo)"
           }
         }
       }
     },
-    "onboarding.mock.portable-config" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Portable plaintext settings"
+    "onboarding.mock.record-mp4": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record MP4"
           }
         }
       }
     },
-    "onboarding.mock.press-to-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press ⇧⌘4 or Click to Capture"
+    "onboarding.mock.replay": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Replay Demo"
           }
         }
       }
     },
-    "onboarding.mock.record-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Click Record to start (3s demo)"
+    "onboarding.mock.resolve-all": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resolve All"
           }
         }
       }
     },
-    "onboarding.mock.record-mp4" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Record MP4"
+    "onboarding.mock.restore-defaults": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore Defaults"
           }
         }
       }
     },
-    "onboarding.mock.replay" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Replay Demo"
+    "onboarding.mock.shortcuts-active": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All global shortcuts active & conflict-free"
           }
         }
       }
     },
-    "onboarding.mock.resolve-all" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Resolve All"
+    "onboarding.mock.shortcuts-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy shortcuts ready"
           }
         }
       }
     },
-    "onboarding.mock.restore-defaults" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restore Defaults"
+    "onboarding.mock.stop": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop"
           }
         }
       }
     },
-    "onboarding.mock.shortcuts-active" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All global shortcuts active & conflict-free"
+    "onboarding.mock.swipe-to-dismiss": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Swipe to dismiss"
           }
         }
       }
     },
-    "onboarding.mock.shortcuts-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy shortcuts ready"
+    "onboarding.mock.uncheck-instruction": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uncheck ⇧⌘3, ⇧⌘4, ⇧⌘5 below to disable macOS native shortcuts."
           }
         }
       }
     },
-    "onboarding.mock.stop" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stop"
+    "onboarding.mock.uncheck-to-resolve": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uncheck to Resolve"
           }
         }
       }
     },
-    "onboarding.mock.swipe-to-dismiss" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Swipe to dismiss"
+    "onboarding.permissions.accessibility": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accessibility"
           }
         }
       }
     },
-    "onboarding.mock.uncheck-instruction" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Uncheck ⇧⌘3, ⇧⌘4, ⇧⌘5 below to disable macOS native shortcuts."
+    "onboarding.permissions.accessibility-action": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable Shortcuts…"
           }
         }
       }
     },
-    "onboarding.mock.uncheck-to-resolve" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Uncheck to Resolve"
+    "onboarding.permissions.accessibility-assurance-1": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only checks keys against configured capture shortcuts."
           }
         }
       }
     },
-    "onboarding.permissions.accessibility" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Accessibility"
+    "onboarding.permissions.accessibility-assurance-2": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Never reads passwords or logs your keystrokes."
           }
         }
       }
     },
-    "onboarding.permissions.accessibility-action" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enable Shortcuts…"
+    "onboarding.permissions.accessibility-assurance-3": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can be toggled off anytime in System Settings."
           }
         }
       }
     },
-    "onboarding.permissions.accessibility-assurance-1" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Only checks keys against configured capture shortcuts."
+    "onboarding.permissions.accessibility-promise": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listens for ⇧⌘4 and your custom global hotkeys from any application"
           }
         }
       }
     },
-    "onboarding.permissions.accessibility-assurance-2" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Never reads passwords or logs your keystrokes."
+    "onboarding.permissions.adjust-anytime": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Take them all or take some — you can adjust permissions in System Settings anytime."
           }
         }
       }
     },
-    "onboarding.permissions.accessibility-assurance-3" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Can be toggled off anytime in System Settings."
+    "onboarding.permissions.badge-optional": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OPTIONAL"
           }
         }
       }
     },
-    "onboarding.permissions.accessibility-promise" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Listens for ⇧⌘4 and your custom global hotkeys from any application"
+    "onboarding.permissions.badge-required": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "REQUIRED"
           }
         }
       }
     },
-    "onboarding.permissions.adjust-anytime" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Take them all or take some — you can adjust permissions in System Settings anytime."
+    "onboarding.permissions.choose-folder-message": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a folder for Snapzy captures (default: Desktop/Snapzy)"
           }
         }
       }
     },
-    "onboarding.permissions.badge-optional" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OPTIONAL"
+    "onboarding.permissions.grant-access": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grant Access"
           }
         }
       }
     },
-    "onboarding.permissions.badge-required" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "REQUIRED"
+    "onboarding.permissions.identity-attention": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Build Identity Needs Attention"
           }
         }
       }
     },
-    "onboarding.permissions.choose-folder-message" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choose a folder for Snapzy captures (default: Desktop/Snapzy)"
+    "onboarding.permissions.identity-blocked-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Granted in System Settings, but this build cannot use the permission until the identity issues below are fixed."
           }
         }
       }
     },
-    "onboarding.permissions.grant-access" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grant Access"
+    "onboarding.permissions.microphone": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microphone"
           }
         }
       }
     },
-    "onboarding.permissions.identity-attention" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Build Identity Needs Attention"
+    "onboarding.permissions.notifications": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications"
           }
         }
       }
     },
-    "onboarding.permissions.identity-blocked-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Granted in System Settings, but this build cannot use the permission until the identity issues below are fixed."
+    "onboarding.permissions.optional-global-shortcuts": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optional for global shortcuts"
           }
         }
       }
     },
-    "onboarding.permissions.microphone" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Microphone"
+    "onboarding.permissions.optional-notifications": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optional for OCR results and capture alerts"
           }
         }
       }
     },
-    "onboarding.permissions.notifications" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notifications"
+    "onboarding.permissions.optional-voice-recording": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optional for voice recording"
           }
         }
       }
     },
-    "onboarding.permissions.optional-global-shortcuts" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optional for global shortcuts"
+    "onboarding.permissions.privacy-local-detail": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vision OCR, image annotations, and audio capture are processed entirely locally on your Mac's hardware."
           }
         }
       }
     },
-    "onboarding.permissions.optional-notifications" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optional for OCR results and capture alerts"
+    "onboarding.permissions.privacy-local-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100% On-Device & Private"
           }
         }
       }
     },
-    "onboarding.permissions.optional-voice-recording" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optional for voice recording"
+    "onboarding.permissions.privacy-overline": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No matter what you choose"
           }
         }
       }
     },
-    "onboarding.permissions.privacy-local-detail" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vision OCR, image annotations, and audio capture are processed entirely locally on your Mac's hardware."
+    "onboarding.permissions.privacy-settings-detail": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Withdraw grants in System Settings whenever you like, and Snapzy gracefully continues with remaining tools."
           }
         }
       }
     },
-    "onboarding.permissions.privacy-local-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "100% On-Device & Private"
+    "onboarding.permissions.privacy-settings-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Undo anytime in Settings"
           }
         }
       }
     },
-    "onboarding.permissions.privacy-overline" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No matter what you choose"
+    "onboarding.permissions.privacy-trigger-detail": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy stays completely idle until you press a shortcut. There is zero background scanning of your display."
           }
         }
       }
     },
-    "onboarding.permissions.privacy-settings-detail" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Withdraw grants in System Settings whenever you like, and Snapzy gracefully continues with remaining tools."
+    "onboarding.permissions.privacy-trigger-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You trigger every capture"
           }
         }
       }
     },
-    "onboarding.permissions.privacy-settings-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Undo anytime in Settings"
+    "onboarding.permissions.refresh-status": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refresh Status"
           }
         }
       }
     },
-    "onboarding.permissions.privacy-trigger-detail" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy stays completely idle until you press a shortcut. There is zero background scanning of your display."
+    "onboarding.permissions.required-for-captures": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Required for screenshots and recordings"
           }
         }
       }
     },
-    "onboarding.permissions.privacy-trigger-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You trigger every capture"
+    "onboarding.permissions.save-folder": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save Folder"
           }
         }
       }
     },
-    "onboarding.permissions.refresh-status" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Refresh Status"
+    "onboarding.permissions.save-folder-action": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose Folder…"
           }
         }
       }
     },
-    "onboarding.permissions.required-for-captures" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Required for screenshots and recordings"
+    "onboarding.permissions.save-folder-assurance-1": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy only touches its assigned folder (default: Desktop/Snapzy)."
           }
         }
       }
     },
-    "onboarding.permissions.save-folder" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save Folder"
+    "onboarding.permissions.save-folder-assurance-2": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saves with customizable naming tokens and subfolders."
           }
         }
       }
     },
-    "onboarding.permissions.save-folder-action" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choose Folder…"
+    "onboarding.permissions.save-folder-assurance-3": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Files remain completely local on your Mac."
           }
         }
       }
     },
-    "onboarding.permissions.save-folder-assurance-1" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy only touches its assigned folder (default: Desktop/Snapzy)."
+    "onboarding.permissions.save-folder-promise": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stores your captures in your chosen folder without permission prompts"
           }
         }
       }
     },
-    "onboarding.permissions.save-folder-assurance-2" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saves with customizable naming tokens and subfolders."
+    "onboarding.permissions.screen-recording": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screen Recording"
           }
         }
       }
     },
-    "onboarding.permissions.save-folder-assurance-3" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Files remain completely local on your Mac."
+    "onboarding.permissions.screen-recording-action": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Screen Recording…"
           }
         }
       }
     },
-    "onboarding.permissions.save-folder-promise" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stores your captures in your chosen folder without permission prompts"
+    "onboarding.permissions.screen-recording-assurance-1": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Captures only when you invoke a shortcut or action."
           }
         }
       }
     },
-    "onboarding.permissions.screen-recording" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Screen Recording"
+    "onboarding.permissions.screen-recording-assurance-2": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No background streaming or hidden recording."
           }
         }
       }
     },
-    "onboarding.permissions.screen-recording-action" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Allow Screen Recording…"
+    "onboarding.permissions.screen-recording-assurance-3": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OCR text extraction runs completely on-device."
           }
         }
       }
     },
-    "onboarding.permissions.screen-recording-assurance-1" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Captures only when you invoke a shortcut or action."
+    "onboarding.permissions.screen-recording-promise": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Captures your displays, windows, and selections with pixel precision"
           }
         }
       }
     },
-    "onboarding.permissions.screen-recording-assurance-2" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No background streaming or hidden recording."
+    "onboarding.permissions.status-granted": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Granted"
           }
         }
       }
     },
-    "onboarding.permissions.screen-recording-assurance-3" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OCR text extraction runs completely on-device."
+    "onboarding.permissions.subtitle": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy needs permissions for capture, audio, notifications, and save location."
           }
         }
       }
     },
-    "onboarding.permissions.screen-recording-promise" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Captures your displays, windows, and selections with pixel precision"
+    "onboarding.permissions.title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grant Permissions"
           }
         }
       }
     },
-    "onboarding.permissions.status-granted" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Granted"
+    "onboarding.permissions.turned-off": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turned Off"
           }
         }
       }
     },
-    "onboarding.permissions.subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy needs permissions for capture, audio, notifications, and save location."
+    "onboarding.permissions.unavailable": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unavailable"
           }
         }
       }
     },
-    "onboarding.permissions.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Grant Permissions"
+    "onboarding.shortcuts.customize-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can customize or turn off shortcuts anytime in Preferences → Shortcuts."
           }
         }
       }
     },
-    "onboarding.permissions.turned-off" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Turned Off"
+    "onboarding.shortcuts.enable": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yes, enable shortcuts"
           }
         }
       }
     },
-    "onboarding.permissions.unavailable" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unavailable"
+    "onboarding.shortcuts.guide-step-1": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open System Settings → Keyboard → Keyboard Shortcuts"
           }
         }
       }
     },
-    "onboarding.shortcuts.customize-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You can customize or turn off shortcuts anytime in Preferences → Shortcuts."
+    "onboarding.shortcuts.guide-step-2": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select Screenshots from the sidebar"
           }
         }
       }
     },
-    "onboarding.shortcuts.enable" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yes, enable shortcuts"
+    "onboarding.shortcuts.guide-step-3": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uncheck the macOS screenshot shortcuts that overlap with the Snapzy shortcuts you want to keep on"
           }
         }
       }
     },
-    "onboarding.shortcuts.guide-step-1" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open System Settings → Keyboard → Keyboard Shortcuts"
+    "onboarding.shortcuts.no-conflict": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No overlapping macOS screenshot shortcuts detected — ready to go!"
           }
         }
       }
     },
-    "onboarding.shortcuts.guide-step-2" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select Screenshots from the sidebar"
+    "onboarding.shortcuts.no-thanks": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No, thanks"
           }
         }
       }
     },
-    "onboarding.shortcuts.guide-step-3" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Uncheck the macOS screenshot shortcuts that overlap with the Snapzy shortcuts you want to keep on"
+    "onboarding.shortcuts.open-settings": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Settings →"
           }
         }
       }
     },
-    "onboarding.shortcuts.no-conflict" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No overlapping macOS screenshot shortcuts detected — ready to go!"
+    "onboarding.shortcuts.resolve-overlap": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resolve macOS shortcut overlap"
           }
         }
       }
     },
-    "onboarding.shortcuts.no-thanks" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No, thanks"
+    "onboarding.shortcuts.section-recording": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recording"
           }
         }
       }
     },
-    "onboarding.shortcuts.open-settings" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open Settings →"
+    "onboarding.shortcuts.section-tools": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tools"
           }
         }
       }
     },
-    "onboarding.shortcuts.resolve-overlap" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Resolve macOS shortcut overlap"
+    "onboarding.shortcuts.subtitle": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assign system shortcuts to Snapzy for quick access."
           }
         }
       }
     },
-    "onboarding.shortcuts.section-recording" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recording"
+    "onboarding.shortcuts.title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set as default screenshot tool?"
           }
         }
       }
     },
-    "onboarding.shortcuts.section-tools" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tools"
+    "onboarding.skip.description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All remaining settings will use their defaults. You can always change them later in Preferences."
           }
         }
       }
     },
-    "onboarding.shortcuts.subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Assign system shortcuts to Snapzy for quick access."
+    "onboarding.skip.go-back": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go Back"
           }
         }
       }
     },
-    "onboarding.shortcuts.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Set as default screenshot tool?"
+    "onboarding.skip.shortcut-defaults": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keyboard shortcuts — system defaults"
           }
         }
       }
     },
-    "onboarding.skip.description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All remaining settings will use their defaults. You can always change them later in Preferences."
+    "onboarding.skip.skip-setup": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip Setup"
           }
         }
       }
     },
-    "onboarding.skip.go-back" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Go Back"
+    "onboarding.skip.title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip remaining setup?"
           }
         }
       }
     },
-    "onboarding.skip.shortcut-defaults" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keyboard shortcuts — system defaults"
+    "onboarding.step-indicator": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Step %d of %d"
           }
         }
       }
     },
-    "onboarding.skip.skip-setup" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skip Setup"
+    "onboarding.step.capture.prompt-floating": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture is in Quick Access! Click card or ✎ to open Annotate window."
           }
         }
       }
     },
-    "onboarding.skip.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skip remaining setup?"
+    "onboarding.step.capture.prompt-open": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annotate window open! Click to replay the complete flow from the beginning."
           }
         }
       }
     },
-    "onboarding.sponsor.description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy is now open-source. If it saves you time, consider supporting ongoing development."
+    "onboarding.step.capture.prompt-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click to freeze the screen and simulate selecting an area with ⇧⌘4."
           }
         }
       }
     },
-    "onboarding.sponsor.optional-note" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Support is optional. Snapzy remains fully usable without sponsoring."
+    "onboarding.step.capture.prompt-selecting": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Area selected! Click to complete capture and send to Quick Access."
           }
         }
       }
     },
-    "onboarding.sponsor.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sponsor the Author"
+    "onboarding.step.capture.short-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture"
           }
         }
       }
     },
-    "onboarding.step-indicator" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Step %d of %d"
+    "onboarding.step.capture.subtitle": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press ⇧⌘4 to freeze and select an area. Your capture instantly lands in a floating Quick Access card—ready to copy, save, or open in Annotate."
           }
         }
       }
     },
-    "onboarding.step.capture.prompt-floating" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture is in Quick Access! Click card or ✎ to open Annotate window."
+    "onboarding.step.capture.tip": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clicking the Quick Access card directly opens the full vector Annotate window."
           }
         }
       }
     },
-    "onboarding.step.capture.prompt-open" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Annotate window open! Click to replay the complete flow from the beginning."
+    "onboarding.step.capture.title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screen Capture & Annotate"
           }
         }
       }
     },
-    "onboarding.step.capture.prompt-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Click to freeze the screen and simulate selecting an area with ⇧⌘4."
+    "onboarding.step.permissions.short-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permissions"
           }
         }
       }
     },
-    "onboarding.step.capture.prompt-selecting" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Area selected! Click to complete capture and send to Quick Access."
+    "onboarding.step.permissions.subtitle": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy runs entirely on your Mac. These macOS grants enable screen capture, audio recording, and global shortcuts."
           }
         }
       }
     },
-    "onboarding.step.capture.short-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture"
+    "onboarding.step.permissions.tip": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All OCR and processing happen on-device using Apple Vision."
           }
         }
       }
     },
-    "onboarding.step.capture.subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press ⇧⌘4 to freeze and select an area. Your capture instantly lands in a floating Quick Access card—ready to copy, save, or open in Annotate."
+    "onboarding.step.permissions.title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permissions & Privacy"
           }
         }
       }
     },
-    "onboarding.step.capture.tip" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Clicking the Quick Access card directly opens the full vector Annotate window."
+    "onboarding.step.recording.prompt-active": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recording in progress (%ds)... Tap Stop or wait 3s."
           }
         }
       }
     },
-    "onboarding.step.capture.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Screen Capture & Annotate"
+    "onboarding.step.recording.prompt-floating": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Video in Quick Access! Click card or tap here to open Video Editor."
           }
         }
       }
     },
-    "onboarding.step.permissions.short-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Permissions"
+    "onboarding.step.recording.prompt-framed": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Region framed! Click 'Record MP4' or tap here to start 3s countdown."
           }
         }
       }
     },
-    "onboarding.step.permissions.subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy runs entirely on your Mac. These macOS grants enable screen capture, audio recording, and global shortcuts."
+    "onboarding.step.recording.prompt-open": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Video Editor open! Click here or 'Replay' to test the recording flow again."
           }
         }
       }
     },
-    "onboarding.step.permissions.tip" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All OCR and processing happen on-device using Apple Vision."
+    "onboarding.step.recording.prompt-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click to simulate ⇧⌘5 recording shortcut and open prerecord area."
           }
         }
       }
     },
-    "onboarding.step.permissions.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Permissions & Privacy"
+    "onboarding.step.recording.short-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recording"
           }
         }
       }
     },
-    "onboarding.step.recording.prompt-active" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recording in progress (%ds)... Tap Stop or wait 3s."
+    "onboarding.step.recording.subtitle": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press ⇧⌘5 to frame any region. Capture system audio & microphone, trim in the timeline, and export crisp MP4 or GIF."
           }
         }
       }
     },
-    "onboarding.step.recording.prompt-floating" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Video in Quick Access! Click card or tap here to open Video Editor."
+    "onboarding.step.recording.tip": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can pause, resume, and annotate on screen while recording video."
           }
         }
       }
     },
-    "onboarding.step.recording.prompt-framed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Region framed! Click 'Record MP4' or tap here to start 3s countdown."
+    "onboarding.step.recording.title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screen Recording & Video Editor"
           }
         }
       }
     },
-    "onboarding.step.recording.prompt-open" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Video Editor open! Click here or 'Replay' to test the recording flow again."
+    "onboarding.step.shortcuts.prompt-conflicts": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conflicts detected! In Keyboard > Keyboard Shortcuts > Screenshots, uncheck ⇧⌘3, ⇧⌘4, ⇧⌘5 (or tap here to resolve)."
           }
         }
       }
     },
-    "onboarding.step.recording.prompt-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Click to simulate ⇧⌘5 recording shortcut and open prerecord area."
+    "onboarding.step.shortcuts.prompt-resolved": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conflicts resolved! Test the shortcut buttons or grant config.toml access below."
           }
         }
       }
     },
-    "onboarding.step.recording.short-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recording"
+    "onboarding.step.shortcuts.short-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shortcuts"
           }
         }
       }
     },
-    "onboarding.step.recording.subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press ⇧⌘5 to frame any region. Capture system audio & microphone, trim in the timeline, and export crisp MP4 or GIF."
+    "onboarding.step.shortcuts.subtitle": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to System Settings > Keyboard > Keyboard Shortcuts > Screenshots to uncheck ⇧⌘3, ⇧⌘4, and ⇧⌘5 to prevent key conflicts with Snapzy. Keep workflows portable with config.toml."
           }
         }
       }
     },
-    "onboarding.step.recording.tip" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You can pause, resume, and annotate on screen while recording video."
+    "onboarding.step.shortcuts.tip": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can customize every shortcut anytime in Preferences → Shortcuts."
           }
         }
       }
     },
-    "onboarding.step.recording.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Screen Recording & Video Editor"
+    "onboarding.step.shortcuts.title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS Shortcuts & Conflicts"
           }
         }
       }
     },
-    "onboarding.step.shortcuts.prompt-conflicts" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conflicts detected! In Keyboard > Keyboard Shortcuts > Screenshots, uncheck ⇧⌘3, ⇧⌘4, ⇧⌘5 (or tap here to resolve)."
+    "onboarding.welcome.cta": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let's do it!"
           }
         }
       }
     },
-    "onboarding.step.shortcuts.prompt-resolved" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conflicts resolved! Test the shortcut buttons or grant config.toml access below."
+    "onboarding.welcome.feature-annotate": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annotate and edit captures"
           }
         }
       }
     },
-    "onboarding.step.shortcuts.short-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shortcuts"
+    "onboarding.welcome.feature-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture area or fullscreen screenshots"
           }
         }
       }
     },
-    "onboarding.step.shortcuts.subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Go to System Settings > Keyboard > Keyboard Shortcuts > Screenshots to uncheck ⇧⌘3, ⇧⌘4, and ⇧⌘5 to prevent key conflicts with Snapzy. Keep workflows portable with config.toml."
+    "onboarding.welcome.feature-record": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record screen with audio"
           }
         }
       }
     },
-    "onboarding.step.shortcuts.tip" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You can customize every shortcut anytime in Preferences → Shortcuts."
+    "onboarding.welcome.subtitle": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A powerful screenshot & screen recording app for macOS"
           }
         }
       }
     },
-    "onboarding.step.shortcuts.title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "macOS Shortcuts & Conflicts"
+    "splash.do-not-show-again": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Do not show again"
           }
         }
       }
     },
-    "onboarding.welcome.cta" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Let's do it!"
+    "splash.press-enter": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Enter ↵"
           }
         }
       }
     },
-    "onboarding.welcome.feature-annotate" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Annotate and edit captures"
+    "splash.welcome-subtitle": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screenshot & recording, simplified."
           }
         }
       }
     },
-    "onboarding.welcome.feature-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture area or fullscreen screenshots"
-          }
-        }
-      }
-    },
-    "onboarding.welcome.feature-record" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Record screen with audio"
-          }
-        }
-      }
-    },
-    "onboarding.welcome.subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A powerful screenshot & screen recording app for macOS"
-          }
-        }
-      }
-    },
-    "splash.do-not-show-again" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Do not show again"
-          }
-        }
-      }
-    },
-    "splash.press-enter" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press Enter ↵"
-          }
-        }
-      }
-    },
-    "splash.welcome-subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Screenshot & recording, simplified."
-          }
-        }
-      }
-    },
-    "splash.welcome-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Welcome to Snapzy"
-          }
-        }
-      }
-    },
-    "sponsor.direct-support" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Direct support"
-          }
-        }
-      }
-    },
-    "sponsor.one-time-tip" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "One-time tip"
-          }
-        }
-      }
-    },
-    "sponsor.recurring-support" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recurring support"
+    "splash.welcome-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome to Snapzy"
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

@@ -120,17 +120,7 @@ struct GeneralSettingsView: View {
           .controlSize(.regular)
         }
 
-        SettingRow(
-          icon: "exclamationmark.bubble",
-          title: L10n.PreferencesGeneral.reportIssueTitle,
-          description: L10n.PreferencesGeneral.reportIssueDescription(bugReportDisplayAddress)
-        ) {
-          Button(L10n.PreferencesGeneral.openReportPageButton) {
-            openBugReportPage()
-          }
-          .buttonStyle(.bordered)
-          .controlSize(.regular)
-        }
+
       }
     }
     .formStyle(.grouped)
@@ -180,15 +170,7 @@ struct GeneralSettingsView: View {
     }
   }
 
-  // MARK: - Help
 
-  private var bugReportDisplayAddress: String {
-    CrashReportService.bugReportURL.absoluteString.replacingOccurrences(of: "https://", with: "")
-  }
-
-  private func openBugReportPage() {
-    NSWorkspace.shared.open(CrashReportService.bugReportURL)
-  }
 }
 
 #Preview {

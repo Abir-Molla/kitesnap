@@ -31,11 +31,7 @@ struct SnapzyOnboardingCompletionCard: View {
       capabilitiesGrid
         .opacity(hasAppeared ? 1 : 0)
 
-      // 4. Community & Open Source Row (monochrome pills)
-      communityRow
-        .opacity(hasAppeared ? 1 : 0)
-
-      // 5. Primary Action Button (same style as previous onboarding steps)
+      // 4. Primary Action Button (same style as previous onboarding steps)
       primaryActionRow
         .opacity(hasAppeared ? 1 : 0)
 
@@ -112,31 +108,6 @@ struct SnapzyOnboardingCompletionCard: View {
       )
     }
     .frame(maxWidth: 880)
-  }
-
-  // MARK: - Community Links
-
-  private var communityRow: some View {
-    HStack(spacing: 12) {
-      CommunityLinkPill(
-        title: L10n.Onboarding.completionStarGithub,
-        icon: "star.fill",
-        url: "https://github.com/duongductrong/Snapzy"
-      )
-
-      CommunityLinkPill(
-        title: L10n.Onboarding.completionJoinDiscord,
-        icon: "bubble.left.and.bubble.right.fill",
-        url: "https://discord.gg/xkWDAuJkZu"
-      )
-
-      CommunityLinkPill(
-        title: L10n.Onboarding.completionSponsorProject,
-        icon: "heart.fill",
-        url: "https://github.com/sponsors/duongductrong"
-      )
-    }
-    .padding(.vertical, 2)
   }
 
   // MARK: - Primary Action
@@ -223,46 +194,3 @@ private struct CapabilityCard: View {
   }
 }
 
-// MARK: - Community Link Pill
-
-private struct CommunityLinkPill: View {
-  var title: String
-  var icon: String
-  var url: String
-
-  @State private var isHovered = false
-
-  var body: some View {
-    Button {
-      if let targetURL = URL(string: url) {
-        NSWorkspace.shared.open(targetURL)
-      }
-    } label: {
-      HStack(spacing: 6) {
-        Image(systemName: icon)
-          .font(.system(size: 10.5))
-          .foregroundStyle(SnapzyGlassInk.muted)
-
-        Text(title)
-          .font(.system(size: 11, weight: .medium))
-          .foregroundStyle(isHovered ? SnapzyGlassInk.primary : SnapzyGlassInk.body)
-      }
-      .padding(.horizontal, 12)
-      .padding(.vertical, 6)
-      .background(
-        Capsule()
-          .fill(Color.white.opacity(isHovered ? 0.09 : 0.04))
-          .overlay(
-            Capsule()
-              .strokeBorder(Color.white.opacity(isHovered ? 0.14 : 0.07), lineWidth: 0.5)
-          )
-      )
-    }
-    .buttonStyle(.plain)
-    .onHover { hovering in
-      withAnimation(SnapzyMotionPreferences.shared.spec(.hover).animation) {
-        isHovered = hovering
-      }
-    }
-  }
-}
