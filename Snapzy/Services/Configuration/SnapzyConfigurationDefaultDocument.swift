@@ -68,8 +68,6 @@ enum SnapzyConfigurationDefaultDocument {
 
     writer.section("capture.ocr")
     writer.value("success_notification", true)
-    writer.value("selected_model", OCRModelSelection.builtIn.persistedValue)
-    writer.value("custom_models", "[]")
 
     writer.section("capture.object_cutout")
     writer.value("auto_crop", true)

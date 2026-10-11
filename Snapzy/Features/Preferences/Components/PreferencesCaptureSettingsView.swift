@@ -408,8 +408,6 @@ struct CaptureSettingsView: View {
         // MARK: - OCR
 
         if selectedPane == .ocr {
-          PreferencesOCRModelListView()
-
           Section(L10n.PreferencesCapture.ocrNotificationsSection) {
             SettingRow(
               icon: "bell.badge",

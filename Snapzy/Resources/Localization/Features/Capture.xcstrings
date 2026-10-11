@@ -1,3730 +1,3382 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "after-capture.accessibility-label" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ for %@"
+  "sourceLanguage": "en",
+  "strings": {
+    "after-capture.accessibility-label": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ for %@"
           }
         }
       }
     },
-    "after-capture.copy-file-action" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copy File"
+    "after-capture.copy-file-action": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy File"
           }
         }
       }
     },
-    "after-capture.copy-file-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copy to clipboard automatically"
+    "after-capture.copy-file-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy to clipboard automatically"
           }
         }
       }
     },
-    "after-capture.open-annotate-action" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open Annotate Editor"
+    "after-capture.open-annotate-action": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Annotate Editor"
           }
         }
       }
     },
-    "after-capture.open-annotate-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open annotate editor after capture"
+    "after-capture.open-annotate-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open annotate editor after capture"
           }
         }
       }
     },
-    "after-capture.save-action" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save"
+    "after-capture.save-action": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
           }
         }
       }
     },
-    "after-capture.save-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to export location"
+    "after-capture.save-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to export location"
           }
         }
       }
     },
-    "after-capture.show-quick-access-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Display overlay with quick actions"
+    "after-capture.show-quick-access-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display overlay with quick actions"
           }
         }
       }
     },
-    "capture-kind.recording" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recording"
+    "capture-kind.recording": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recording"
           }
         }
       }
     },
-    "capture-kind.screenshot" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Screenshot"
+    "capture-kind.screenshot": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screenshot"
           }
         }
       }
     },
-    "capture-storage.empty" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Empty"
+    "capture-storage.empty": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empty"
           }
         }
       }
     },
-    "capture-storage.operation-in-progress" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cannot clear cache while a capture or recording is in progress."
+    "capture-storage.operation-in-progress": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cannot clear cache while a capture or recording is in progress."
           }
         }
       }
     },
-    "foreground-cutout.cutout-failed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Background cutout failed: %@"
+    "foreground-cutout.cutout-failed": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Background cutout failed: %@"
           }
         }
       }
     },
-    "foreground-cutout.generic-failure" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Background cutout failed. Please try again."
+    "foreground-cutout.generic-failure": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Background cutout failed. Please try again."
           }
         }
       }
     },
-    "foreground-cutout.image-conversion-failed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unable to convert cutout result to image."
+    "foreground-cutout.image-conversion-failed": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unable to convert cutout result to image."
           }
         }
       }
     },
-    "foreground-cutout.no-subject-detected" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No foreground subject was detected in the selected area."
+    "foreground-cutout.no-subject-detected": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No foreground subject was detected in the selected area."
           }
         }
       }
     },
-    "foreground-cutout.no-subject-detected-try-tighter-area" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No subject detected. Try selecting a tighter area around the subject."
+    "foreground-cutout.no-subject-detected-try-tighter-area": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No subject detected. Try selecting a tighter area around the subject."
           }
         }
       }
     },
-    "foreground-cutout.unable-to-process-image-try-again" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unable to process the cutout image. Please try again."
+    "foreground-cutout.unable-to-process-image-try-again": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unable to process the cutout image. Please try again."
           }
         }
       }
     },
-    "foreground-cutout.unsupported-os" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Background cutout requires macOS 14 or newer."
+    "foreground-cutout.unsupported-os": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Background cutout requires macOS 14 or newer."
           }
         }
       }
     },
-    "ocr.capturing-content" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capturing..."
+    "ocr.capturing-content": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capturing..."
           }
         }
       }
     },
-    "ocr.copy-link" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copy link"
+    "ocr.copy-link": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy link"
           }
         }
       }
     },
-    "ocr.extracting-content" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Extracting content..."
+    "ocr.extracting-content": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extracting content..."
           }
         }
       }
     },
-    "ocr.image-conversion-failed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Failed to convert image for OCR processing"
+    "ocr.image-conversion-failed": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed to convert image for OCR processing"
           }
         }
       }
     },
-    "ocr.link-copied-toast" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Link copied to clipboard"
+    "ocr.link-copied-toast": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Link copied to clipboard"
           }
         }
       }
     },
-    "ocr.link-detected-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Link detected"
+    "ocr.link-detected-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Link detected"
           }
         }
       }
     },
-    "ocr.links-detected-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%d links detected"
+    "ocr.links-detected-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d links detected"
           }
         }
       }
     },
-    "ocr.no-text-found" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No text found in the selected area"
+    "ocr.no-text-found": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No text found in the selected area"
           }
         }
       }
     },
-    "ocr.notification-copied-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Text has been copied"
+    "ocr.notification-copied-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text has been copied"
           }
         }
       }
     },
-    "ocr.notification-failed-body" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy could not recognize text from the selected area."
+    "ocr.notification-failed-body": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy could not recognize text from the selected area."
           }
         }
       }
     },
-    "ocr.notification-failed-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OCR Failed"
+    "ocr.notification-failed-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OCR Failed"
           }
         }
       }
     },
-    "ocr.notification-no-text-body" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy could not find readable text in the selected area."
+    "ocr.notification-no-text-body": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy could not find readable text in the selected area."
           }
         }
       }
     },
-    "ocr.notification-no-text-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No Text Detected"
+    "ocr.notification-no-text-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Text Detected"
           }
         }
       }
     },
-    "ocr.open-all-links" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open All"
+    "ocr.open-all-links": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open All"
           }
         }
       }
     },
-    "ocr.open-link-accessibility" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open %@"
+    "ocr.open-link-accessibility": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open %@"
           }
         }
       }
     },
-    "ocr.qr-codes-label" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "QR Codes"
+    "ocr.qr-codes-label": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "QR Codes"
           }
         }
       }
     },
-    "ocr.qr-text-only-unsupported" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "QR code detected, but Snapzy can only copy text-based QR content."
+    "ocr.qr-text-only-unsupported": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "QR code detected, but Snapzy can only copy text-based QR content."
           }
         }
       }
     },
-    "ocr.recognition-failed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OCR recognition failed: %@"
+    "ocr.recognition-failed": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OCR recognition failed: %@"
           }
         }
       }
     },
-    "ocr.remote-error-http-status" : {
-      "comment" : "Error shown when the custom OCR endpoint answers with an HTTP error. %d is the status code.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The custom OCR endpoint returned an error (HTTP %d)"
+    "preferences-capture.animation-duration-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripple expand speed (%@s)"
           }
         }
       }
     },
-    "ocr.remote-error-image-encoding-failed" : {
-      "comment" : "Error shown when the image cannot be encoded for a custom OCR endpoint request",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Failed to encode the image for the OCR request"
+    "preferences-capture.animation-duration-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Animation Duration"
           }
         }
       }
     },
-    "ocr.remote-error-invalid-base-url" : {
-      "comment" : "Error shown when the custom OCR endpoint URL cannot be parsed",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The custom OCR endpoint URL is invalid"
+    "preferences-capture.annotate-bring-forward-after-drag-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When the editor stays open, bring Snapzy to the front and focus Annotate after the drop completes"
           }
         }
       }
     },
-    "ocr.remote-error-invalid-response" : {
-      "comment" : "Error shown when the custom OCR endpoint response cannot be decoded",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The custom OCR endpoint returned an unreadable or empty response"
+    "preferences-capture.annotate-bring-forward-after-drag-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reactivate after drop"
           }
         }
       }
     },
-    "ocr.remote-error-unauthorized" : {
-      "comment" : "Error shown when the custom OCR endpoint answers with HTTP 401 or 403",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The custom OCR endpoint rejected the request — check the API key"
+    "preferences-capture.annotate-clipboard-ask": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask every time"
           }
         }
       }
     },
-    "ocr.remote-error-unreachable" : {
-      "comment" : "Error shown when the custom OCR endpoint is unreachable. %@ is the system network error.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The custom OCR endpoint could not be reached: %@"
+    "preferences-capture.annotate-clipboard-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose what happens when a clipboard image is available while opening Annotate"
           }
         }
       }
     },
-    "preferences-capture.animation-duration-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ripple expand speed (%@s)"
+    "preferences-capture.annotate-clipboard-do-nothing": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Do nothing"
           }
         }
       }
     },
-    "preferences-capture.animation-duration-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animation Duration"
+    "preferences-capture.annotate-clipboard-load-automatically": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Load automatically"
           }
         }
       }
     },
-    "preferences-capture.annotate-bring-forward-after-drag-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "When the editor stays open, bring Snapzy to the front and focus Annotate after the drop completes"
+    "preferences-capture.annotate-clipboard-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard image on Open Annotate"
           }
         }
       }
     },
-    "preferences-capture.annotate-bring-forward-after-drag-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reactivate after drop"
+    "preferences-capture.annotate-close-after-drag-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatically close the Annotate editor after a successful drag-to-app drop"
           }
         }
       }
     },
-    "preferences-capture.annotate-clipboard-ask" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ask every time"
+    "preferences-capture.annotate-close-after-drag-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close after drop"
           }
         }
       }
     },
-    "preferences-capture.annotate-clipboard-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choose what happens when a clipboard image is available while opening Annotate"
+    "preferences-capture.annotate-default-tool-description": {
+      "comment": "Annotate preferences setting description for the initial screenshot annotation tool",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tool selected when remembering the last tool is turned off"
           }
         }
       }
     },
-    "preferences-capture.annotate-clipboard-do-nothing" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Do nothing"
+    "preferences-capture.annotate-default-tool-title": {
+      "comment": "Annotate preferences setting title for the initial screenshot annotation tool",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Default Tool"
           }
         }
       }
     },
-    "preferences-capture.annotate-clipboard-load-automatically" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Load automatically"
+    "preferences-capture.annotate-quick-properties-sync-description": {
+      "comment": "Annotate preferences setting description for synchronizing quick annotation properties",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use one set of defaults for compatible annotation tools. Turn off to keep each tool's color, stroke, radius, text size, and watermark values separate."
           }
         }
       }
     },
-    "preferences-capture.annotate-clipboard-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Clipboard image on Open Annotate"
+    "preferences-capture.annotate-quick-properties-sync-title": {
+      "comment": "Annotate preferences setting title for synchronizing quick annotation properties",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sync tool defaults"
           }
         }
       }
     },
-    "preferences-capture.annotate-close-after-drag-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Automatically close the Annotate editor after a successful drag-to-app drop"
+    "preferences-capture.annotate-remember-last-tool-description": {
+      "comment": "Annotate preferences setting description for remembering the last screenshot annotation tool",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start each screenshot annotation with the last tool you chose"
           }
         }
       }
     },
-    "preferences-capture.annotate-close-after-drag-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Close after drop"
+    "preferences-capture.annotate-remember-last-tool-title": {
+      "comment": "Annotate preferences setting title for remembering the last screenshot annotation tool",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remember Last Tool"
           }
         }
       }
     },
-    "preferences-capture.annotate-default-tool-description" : {
-      "comment" : "Annotate preferences setting description for the initial screenshot annotation tool",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tool selected when remembering the last tool is turned off"
+    "preferences-capture.auto-crop-subject-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Applies to background removal in capture and Annotate"
           }
         }
       }
     },
-    "preferences-capture.annotate-default-tool-title" : {
-      "comment" : "Annotate preferences setting title for the initial screenshot annotation tool",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Default Tool"
+    "preferences-capture.auto-crop-subject-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto-Crop Subject"
           }
         }
       }
     },
-    "preferences-capture.annotate-quick-properties-sync-description" : {
-      "comment" : "Annotate preferences setting description for synchronizing quick annotation properties",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Use one set of defaults for compatible annotation tools. Turn off to keep each tool's color, stroke, radius, text size, and watermark values separate."
+    "preferences-capture.auto-detect-element-under-cursor-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Highlight a specific button, popup, or webpage element when hovering, instead of the whole window. Requires the setting above."
           }
         }
       }
     },
-    "preferences-capture.annotate-quick-properties-sync-title" : {
-      "comment" : "Annotate preferences setting title for synchronizing quick annotation properties",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sync tool defaults"
+    "preferences-capture.auto-detect-element-under-cursor-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also detect specific elements, not just windows"
           }
         }
       }
     },
-    "preferences-capture.annotate-remember-last-tool-description" : {
-      "comment" : "Annotate preferences setting description for remembering the last screenshot annotation tool",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start each screenshot annotation with the last tool you chose"
+    "preferences-capture.auto-detect-window-under-cursor-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Highlight and select the window under the cursor without pressing a key first; drag to draw a manual selection instead"
           }
         }
       }
     },
-    "preferences-capture.annotate-remember-last-tool-title" : {
-      "comment" : "Annotate preferences setting title for remembering the last screenshot annotation tool",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Remember Last Tool"
+    "preferences-capture.auto-detect-window-under-cursor-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatically detect window under cursor"
           }
         }
       }
     },
-    "preferences-capture.auto-crop-subject-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Applies to background removal in capture and Annotate"
+    "preferences-capture.available-tokens": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Available tokens: {datetime}, {date}, {year}, {yearShort}, {month}, {monthName}, {monthShort}, {day}, {time}, {ms}, {timestamp}, {type}, {appName}. Use / to create subfolders."
           }
         }
       }
     },
-    "preferences-capture.auto-crop-subject-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Auto-Crop Subject"
+    "preferences-capture.combine-save-as-edit-description": {
+      "comment": "Annotate preferences toggle description for combine save-as-edit behavior",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When stitching images in the editor, saving updates the current screenshot instead of asking to export a new combined image."
           }
         }
       }
     },
-    "preferences-capture.auto-detect-element-under-cursor-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Highlight a specific button, popup, or webpage element when hovering, instead of the whole window. Requires the setting above."
+    "preferences-capture.combine-save-as-edit-title": {
+      "comment": "Annotate preferences toggle title for saving stitched images silently into the current edit",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save combined result as part of current edit"
           }
         }
       }
     },
-    "preferences-capture.auto-detect-element-under-cursor-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Also detect specific elements, not just windows"
+    "preferences-capture.default-preset-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply an Annotate preset right after each screenshot capture"
           }
         }
       }
     },
-    "preferences-capture.auto-detect-window-under-cursor-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Highlight and select the window under the cursor without pressing a key first; drag to draw a manual selection instead"
+    "preferences-capture.default-preset-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Default Preset"
           }
         }
       }
     },
-    "preferences-capture.auto-detect-window-under-cursor-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Automatically detect window under cursor"
+    "preferences-capture.delayed-capture-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How long Delayed Capture waits before freezing the screen for area selection. Open menus or hover states during the countdown."
           }
         }
       }
     },
-    "preferences-capture.available-tokens" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Available tokens: {datetime}, {date}, {year}, {yearShort}, {month}, {monthName}, {monthShort}, {day}, {time}, {ms}, {timestamp}, {type}, {appName}. Use / to create subfolders."
+    "preferences-capture.delayed-capture-seconds": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d seconds"
           }
         }
       }
     },
-    "preferences-capture.combine-save-as-edit-description" : {
-      "comment" : "Annotate preferences toggle description for combine save-as-edit behavior",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "When stitching images in the editor, saving updates the current screenshot instead of asking to export a new combined image."
+    "preferences-capture.delayed-capture-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delayed capture countdown"
           }
         }
       }
     },
-    "preferences-capture.combine-save-as-edit-title" : {
-      "comment" : "Annotate preferences toggle title for saving stitched images silently into the current edit",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save combined result as part of current edit"
+    "preferences-capture.display-duration-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time before badge fades (%@s)"
           }
         }
       }
     },
-    "preferences-capture.default-preset-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Apply an Annotate preset right after each screenshot capture"
+    "preferences-capture.display-duration-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display Duration"
           }
         }
       }
     },
-    "preferences-capture.default-preset-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Default Preset"
+    "preferences-capture.font-size-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Badge text size (%dpt)"
           }
         }
       }
     },
-    "preferences-capture.delayed-capture-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How long Delayed Capture waits before freezing the screen for area selection. Open menus or hover states during the countdown."
+    "preferences-capture.font-size-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Font Size"
           }
         }
       }
     },
-    "preferences-capture.delayed-capture-seconds" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%d seconds"
+    "preferences-capture.frame-rate-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Higher FPS for smoother motion"
           }
         }
       }
     },
-    "preferences-capture.delayed-capture-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delayed capture countdown"
+    "preferences-capture.frame-rate-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frame Rate"
           }
         }
       }
     },
-    "preferences-capture.display-duration-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time before badge fades (%@s)"
+    "preferences-capture.freeze-area-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freeze the screen while selecting. Enable to hold a still snapshot."
           }
         }
       }
     },
-    "preferences-capture.display-duration-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Display Duration"
+    "preferences-capture.freeze-area-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freeze screen"
           }
         }
       }
     },
-    "preferences-capture.font-size-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Badge text size (%dpt)"
+    "preferences-capture.hide-desktop-icons-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporarily hide icons during capture"
           }
         }
       }
     },
-    "preferences-capture.font-size-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Font Size"
+    "preferences-capture.hide-desktop-icons-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hide desktop icons"
           }
         }
       }
     },
-    "preferences-capture.frame-rate-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Higher FPS for smoother motion"
+    "preferences-capture.hide-desktop-widgets-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporarily hide widgets during capture"
           }
         }
       }
     },
-    "preferences-capture.frame-rate-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Frame Rate"
+    "preferences-capture.hide-desktop-widgets-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hide desktop widgets"
           }
         }
       }
     },
-    "preferences-capture.freeze-area-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Freeze the screen while selecting. Enable to hold a still snapshot."
+    "preferences-capture.highlight-color-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Color of click rings"
           }
         }
       }
     },
-    "preferences-capture.freeze-area-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Freeze screen"
+    "preferences-capture.highlight-color-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Highlight Color"
           }
         }
       }
     },
-    "preferences-capture.hide-desktop-icons-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Temporarily hide icons during capture"
+    "preferences-capture.highlight-size-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diameter of ripple effect (%dpx)"
           }
         }
       }
     },
-    "preferences-capture.hide-desktop-icons-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hide desktop icons"
+    "preferences-capture.highlight-size-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Highlight Size"
           }
         }
       }
     },
-    "preferences-capture.hide-desktop-widgets-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Temporarily hide widgets during capture"
+    "preferences-capture.hover-bar-visible-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display controls on screen during recording. When hidden, use the menu bar icon to stop."
           }
         }
       }
     },
-    "preferences-capture.hide-desktop-widgets-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hide desktop widgets"
+    "preferences-capture.hover-bar-visible-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Floating Controls"
           }
         }
       }
     },
-    "preferences-capture.highlight-color-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Color of click rings"
+    "preferences-capture.image-format-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Output format for captured screenshots"
           }
         }
       }
     },
-    "preferences-capture.highlight-color-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Highlight Color"
+    "preferences-capture.image-format-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Image Format"
           }
         }
       }
     },
-    "preferences-capture.highlight-size-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Diameter of ripple effect (%dpx)"
+    "preferences-capture.include-in-recordings-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Snapzy windows such as Annotate in recorded videos"
           }
         }
       }
     },
-    "preferences-capture.highlight-size-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Highlight Size"
+    "preferences-capture.include-in-recordings-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Include in Recordings"
           }
         }
       }
     },
-    "preferences-capture.hover-bar-visible-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Display controls on screen during recording. When hidden, use the menu bar icon to stop."
+    "preferences-capture.include-in-screenshots-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Snapzy windows such as Annotate in captured images"
           }
         }
       }
     },
-    "preferences-capture.hover-bar-visible-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show Floating Controls"
+    "preferences-capture.include-in-screenshots-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Include in Screenshots"
           }
         }
       }
     },
-    "preferences-capture.image-format-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Output format for captured screenshots"
+    "preferences-capture.include-window-shadow-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show the window drop shadow in Application Capture"
           }
         }
       }
     },
-    "preferences-capture.image-format-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Image Format"
+    "preferences-capture.include-window-shadow-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Include window shadow"
           }
         }
       }
     },
-    "preferences-capture.include-in-recordings-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show Snapzy windows such as Annotate in recorded videos"
+    "preferences-capture.jpeg-cutout-note": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Object cutout captures require transparency. Snapzy will save them as PNG even when JPEG is selected."
           }
         }
       }
     },
-    "preferences-capture.include-in-recordings-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Include in Recordings"
+    "preferences-capture.live-passthrough-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freeze interaction with apps beneath so visible tooltips and hover states can be captured. Requires Accessibility permission."
           }
         }
       }
     },
-    "preferences-capture.include-in-screenshots-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show Snapzy windows such as Annotate in captured images"
+    "preferences-capture.live-passthrough-permission-hint": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hover passthrough needs Accessibility permission to observe global mouse and keyboard events."
           }
         }
       }
     },
-    "preferences-capture.include-in-screenshots-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Include in Screenshots"
+    "preferences-capture.live-passthrough-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hover passthrough"
           }
         }
       }
     },
-    "preferences-capture.include-window-shadow-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show the window drop shadow in Application Capture"
+    "preferences-capture.magnifier-zoom-section": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Magnifier Zoom"
           }
         }
       }
     },
-    "preferences-capture.include-window-shadow-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Include window shadow"
+    "preferences-capture.max-resolution-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improves H.264 browser compatibility by limiting recording resolution."
           }
         }
       }
     },
-    "preferences-capture.jpeg-cutout-note" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Object cutout captures require transparency. Snapzy will save them as PNG even when JPEG is selected."
+    "preferences-capture.max-resolution-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Max Resolution"
           }
         }
       }
     },
-    "preferences-capture.live-passthrough-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Freeze interaction with apps beneath so visible tooltips and hover states can be captured. Requires Accessibility permission."
+    "preferences-capture.menu-bar-time-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display elapsed duration next to the status icon."
           }
         }
       }
     },
-    "preferences-capture.live-passthrough-permission-hint" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hover passthrough needs Accessibility permission to observe global mouse and keyboard events."
+    "preferences-capture.menu-bar-time-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Timer in Menu Bar"
           }
         }
       }
     },
-    "preferences-capture.live-passthrough-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hover passthrough"
+    "preferences-capture.microphone-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture your voice"
           }
         }
       }
     },
-    "preferences-capture.magnifier-zoom-section" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Magnifier Zoom"
+    "preferences-capture.microphone-input-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose the built-in or external microphone used for recordings"
           }
         }
       }
     },
-    "preferences-capture.max-resolution-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Improves H.264 browser compatibility by limiting recording resolution."
+    "preferences-capture.microphone-input-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microphone Input"
           }
         }
       }
     },
-    "preferences-capture.max-resolution-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Max Resolution"
+    "preferences-capture.ocr-link-detection-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offer to open web links found in captured text"
           }
         }
       }
     },
-    "preferences-capture.menu-bar-time-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Display elapsed duration next to the status icon."
+    "preferences-capture.ocr-link-detection-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Detect Links"
           }
         }
       }
     },
-    "preferences-capture.menu-bar-time-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show Timer in Menu Bar"
+    "preferences-capture.ocr-notification-allow-action": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow"
           }
         }
       }
     },
-    "preferences-capture.microphone-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture your voice"
+    "preferences-capture.ocr-notification-allow-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow notifications so Snapzy can show you the recognized text."
           }
         }
       }
     },
-    "preferences-capture.microphone-input-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choose the built-in or external microphone used for recordings"
+    "preferences-capture.ocr-notification-denied-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications are turned off for Snapzy in System Settings. OCR still works and copies text to the clipboard."
           }
         }
       }
     },
-    "preferences-capture.microphone-input-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Microphone Input"
+    "preferences-capture.ocr-notifications-section": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications"
           }
         }
       }
     },
-    "preferences-capture.ocr-link-detection-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Offer to open web links found in captured text"
+    "preferences-capture.ocr-success-notification-description": {
+      "comment": "Capture preferences setting description",
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show a system notification with the recognized text after OCR"
           }
         }
       }
     },
-    "preferences-capture.ocr-link-detection-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Detect Links"
+    "preferences-capture.ocr-success-notification-title": {
+      "comment": "Capture preferences setting title",
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OCR Notifications"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-add-custom" : {
-      "comment" : "Button title that opens the sheet to add a custom OCR endpoint",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add Custom Model…"
+    "preferences-capture.ocr-tab": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OCR"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-builtin-description" : {
-      "comment" : "OCR model list row subtitle describing the built-in Apple Vision model",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Apple Vision on-device recognition"
+    "preferences-capture.ocr-text-actions-section": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text Actions"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-builtin-title" : {
-      "comment" : "OCR model list row title for the Apple Vision model bundled with macOS",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Built-in OCR"
+    "preferences-capture.opacity-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ring transparency (%d%%)"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-custom-badge" : {
-      "comment" : "Badge shown on user-added custom OCR endpoint rows",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Custom"
+    "preferences-capture.opacity-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opacity"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-default-badge" : {
-      "comment" : "Badge shown on the built-in OCR model row marking it as the default",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Default"
+    "preferences-capture.overlay-section": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Overlay"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-edit" : {
-      "comment" : "Menu item title that opens the edit sheet for a custom OCR endpoint",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Edit"
+    "preferences-capture.position-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Badge placement in recording area"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-remove" : {
-      "comment" : "Button or menu item title that removes an OCR model",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Remove"
+    "preferences-capture.position-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Position"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-remove-custom-message" : {
-      "comment" : "Confirmation alert message shown before removing a custom OCR endpoint. %@ is the model name.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "“%@” and its stored API key will be deleted."
+    "preferences-capture.quality-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Higher quality = larger file size"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-remove-custom-title" : {
-      "comment" : "Confirmation alert title shown before removing a custom OCR endpoint",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Remove Custom Model?"
+    "preferences-capture.quality-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quality"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-section" : {
-      "comment" : "Capture preferences section title for OCR model selection and management",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OCR Model"
+    "preferences-capture.recording-dim-non-selected-area-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Darken everything outside the recording region while recording so the captured area stands out. Turn off to keep other windows fully visible and usable during recording."
           }
         }
       }
     },
-    "preferences-capture.ocr-model-sheet-add-title" : {
-      "comment" : "Title of the sheet that adds a custom OCR endpoint",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add Custom Model"
+    "preferences-capture.recording-dim-non-selected-area-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dim Non-Selected Area"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-sheet-api-key" : {
-      "comment" : "Field label for the custom OCR endpoint API key",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "API Key (optional)"
+    "preferences-capture.recording-preview": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recording preview: %@"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-sheet-api-key-keep-hint" : {
-      "comment" : "Hint shown when editing a custom OCR endpoint that already has an API key",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Leave blank to keep the existing key."
+    "preferences-capture.recording-show-cursor-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Include mouse pointer in recorded videos and GIFs"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-sheet-base-url" : {
-      "comment" : "Field label for the custom OCR endpoint base URL",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Server / API Base URL"
+    "preferences-capture.recording-template-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pattern for auto-saved recording filename or subfolder path"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-sheet-description" : {
-      "comment" : "Description text at the top of the custom OCR endpoint sheet",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Connect an OpenAI-compatible endpoint — LLM APIs, Ollama, vLLM, or LM Studio."
+    "preferences-capture.recording-template-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recording Template"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-sheet-edit-title" : {
-      "comment" : "Title of the sheet that edits a custom OCR endpoint",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Edit Custom Model"
+    "preferences-capture.remember-last-area-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore previous recording area on next capture"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-sheet-model-identifier" : {
-      "comment" : "Field label for the provider-side model name of a custom OCR endpoint",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Model Identifier"
+    "preferences-capture.remember-last-area-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remember Last Area"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-sheet-name" : {
-      "comment" : "Field label for the custom OCR endpoint display name",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Name"
+    "preferences-capture.remove-background": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove Background"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-sheet-prompt" : {
-      "comment" : "Field label for the custom OCR endpoint prompt override",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prompt (optional)"
+    "preferences-capture.reset-naming-defaults": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Naming Defaults"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-test-connection" : {
-      "comment" : "Button or menu item title that probes a custom OCR endpoint",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Test Connection"
+    "preferences-capture.reverse-magnifier-zoom-direction-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invert the scroll wheel zoom direction (scroll down to zoom in)"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-test-failed-title" : {
-      "comment" : "Alert title shown when a custom OCR endpoint test fails",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Connection Failed"
+    "preferences-capture.reverse-magnifier-zoom-direction-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reverse magnifier zoom direction"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-test-success-latency" : {
-      "comment" : "Message shown when a custom OCR endpoint test succeeds. %d is the latency in milliseconds.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Connected (%d ms)"
+    "preferences-capture.ripple-count-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Number of expanding rings"
           }
         }
       }
     },
-    "preferences-capture.ocr-model-test-success-title" : {
-      "comment" : "Alert title shown when a custom OCR endpoint test succeeds",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Connection Successful"
+    "preferences-capture.ripple-count-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripple Count"
           }
         }
       }
     },
-    "preferences-capture.ocr-notification-allow-action" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Allow"
+    "preferences-capture.screenshot-preview": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screenshot preview: %@"
           }
         }
       }
     },
-    "preferences-capture.ocr-notification-allow-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Allow notifications so Snapzy can show you the recognized text."
+    "preferences-capture.screenshot-template-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pattern for auto-saved screenshot filename or subfolder path"
           }
         }
       }
     },
-    "preferences-capture.ocr-notification-denied-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notifications are turned off for Snapzy in System Settings. OCR still works and copies text to the clipboard."
+    "preferences-capture.screenshot-template-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screenshot Template"
           }
         }
       }
     },
-    "preferences-capture.ocr-notifications-section" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notifications"
+    "preferences-capture.scrolling-capture-info": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best results come from selecting only the moving content, then scrolling in one direction at a steady pace."
           }
         }
       }
     },
-    "preferences-capture.ocr-success-notification-description" : {
-      "comment" : "Capture preferences setting description",
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show a system notification with the recognized text after OCR"
+    "preferences-capture.section-after-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After Capture"
           }
         }
       }
     },
-    "preferences-capture.ocr-success-notification-title" : {
-      "comment" : "Capture preferences setting title",
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OCR Notifications"
+    "preferences-capture.section-annotate": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behavior"
           }
         }
       }
     },
-    "preferences-capture.ocr-tab" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OCR"
+    "preferences-capture.section-app-windows": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Windows"
           }
         }
       }
     },
-    "preferences-capture.ocr-text-actions-section" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Text Actions"
+    "preferences-capture.section-audio": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio"
           }
         }
       }
     },
-    "preferences-capture.opacity-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ring transparency (%d%%)"
+    "preferences-capture.section-desktop": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desktop"
           }
         }
       }
     },
-    "preferences-capture.opacity-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Opacity"
+    "preferences-capture.section-keystroke-overlay": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keystroke Overlay"
           }
         }
       }
     },
-    "preferences-capture.overlay-section" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Overlay"
+    "preferences-capture.section-mouse-highlight": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mouse Highlight"
           }
         }
       }
     },
-    "preferences-capture.position-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Badge placement in recording area"
+    "preferences-capture.section-output-naming": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Output Naming"
           }
         }
       }
     },
-    "preferences-capture.position-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Position"
+    "preferences-capture.section-recording-behavior": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recording Behavior"
           }
         }
       }
     },
-    "preferences-capture.quality-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Higher quality = larger file size"
+    "preferences-capture.section-recording-controls": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recording Controls"
           }
         }
       }
     },
-    "preferences-capture.quality-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Quality"
+    "preferences-capture.section-recording-format": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recording Format"
           }
         }
       }
     },
-    "preferences-capture.recording-dim-non-selected-area-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Darken everything outside the recording region while recording so the captured area stands out. Turn off to keep other windows fully visible and usable during recording."
+    "preferences-capture.section-recording-quality": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recording Quality"
           }
         }
       }
     },
-    "preferences-capture.recording-dim-non-selected-area-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dim Non-Selected Area"
+    "preferences-capture.section-screenshot-format": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Format"
           }
         }
       }
     },
-    "preferences-capture.recording-preview" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recording preview: %@"
+    "preferences-capture.section-screenshot-preset": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preset"
           }
         }
       }
     },
-    "preferences-capture.recording-show-cursor-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Include mouse pointer in recorded videos and GIFs"
+    "preferences-capture.section-scrolling-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scrolling Capture"
           }
         }
       }
     },
-    "preferences-capture.recording-template-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pattern for auto-saved recording filename or subfolder path"
+    "preferences-capture.show-cursor-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Include mouse pointer in captured screenshots"
           }
         }
       }
     },
-    "preferences-capture.recording-template-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recording Template"
+    "preferences-capture.show-cursor-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show cursor"
           }
         }
       }
     },
-    "preferences-capture.remember-last-area-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restore previous recording area on next capture"
+    "preferences-capture.show-magnifier-by-default-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start area selection with the magnifier already active, instead of requiring ⌘+scroll"
           }
         }
       }
     },
-    "preferences-capture.remember-last-area-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Remember Last Area"
+    "preferences-capture.show-magnifier-by-default-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show magnifier by default"
           }
         }
       }
     },
-    "preferences-capture.remove-background" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Remove Background"
+    "preferences-capture.show-magnifier-color-panel-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show the color swatch and hex value below the magnifier preview; turn off to keep only the pixel grid and crosshair"
           }
         }
       }
     },
-    "preferences-capture.reset-naming-defaults" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reset Naming Defaults"
+    "preferences-capture.show-magnifier-color-panel-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show color picker panel"
           }
         }
       }
     },
-    "preferences-capture.reverse-magnifier-zoom-direction-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invert the scroll wheel zoom direction (scroll down to zoom in)"
+    "preferences-capture.show-selection-area-overlay-description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dim the background outside the selection area during capture"
           }
         }
       }
     },
-    "preferences-capture.reverse-magnifier-zoom-direction-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reverse magnifier zoom direction"
+    "preferences-capture.show-selection-area-overlay-title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show selection area overlay"
           }
         }
       }
     },
-    "preferences-capture.ripple-count-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Number of expanding rings"
+    "preferences-capture.show-session-hints-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep guidance visible when starting a scrolling capture session"
           }
         }
       }
     },
-    "preferences-capture.ripple-count-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ripple Count"
+    "preferences-capture.show-session-hints-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Session Hints"
           }
         }
       }
     },
-    "preferences-capture.screenshot-preview" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Screenshot preview: %@"
+    "preferences-capture.system-audio-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture sounds from apps"
           }
         }
       }
     },
-    "preferences-capture.screenshot-template-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pattern for auto-saved screenshot filename or subfolder path"
+    "preferences-capture.system-audio-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System Audio"
           }
         }
       }
     },
-    "preferences-capture.screenshot-template-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Screenshot Template"
+    "preferences-capture.video-format-description": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MOV offers better quality. MP4 provides wider compatibility."
           }
         }
       }
     },
-    "preferences-capture.scrolling-capture-info" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Best results come from selecting only the moving content, then scrolling in one direction at a steady pace."
+    "preferences-capture.video-format-title": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Video Format"
           }
         }
       }
     },
-    "preferences-capture.section-after-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "After Capture"
+    "preferences-capture.webp-warning": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WebP encoding is slower than other formats. For faster capture speed, consider using PNG or JPEG."
           }
         }
       }
     },
-    "preferences-capture.section-annotate" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Behavior"
+    "screen-capture.application-mode-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press %@ to select an app window"
           }
         }
       }
     },
-    "preferences-capture.section-app-windows" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "App Windows"
+    "screen-capture.cancelled": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture was cancelled"
           }
         }
       }
     },
-    "preferences-capture.section-audio" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Audio"
+    "screen-capture.capture-delay-cancel-hint": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esc to cancel"
           }
         }
       }
     },
-    "preferences-capture.section-desktop" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desktop"
+    "screen-capture.capture-failed": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture failed: %@"
           }
         }
       }
     },
-    "preferences-capture.section-keystroke-overlay" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keystroke Overlay"
+    "screen-capture.capture-timed-out": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture timed out. Please try again."
           }
         }
       }
     },
-    "preferences-capture.section-mouse-highlight" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mouse Highlight"
+    "screen-capture.could-not-create-directory": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not create the save folder: %@"
           }
         }
       }
     },
-    "preferences-capture.section-output-naming" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Output Naming"
+    "screen-capture.could-not-create-image-destination": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not create the image destination"
           }
         }
       }
     },
-    "preferences-capture.section-recording-behavior" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recording Behavior"
+    "screen-capture.failed-to-create-image-from-frame": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed to create an image from the captured frame"
           }
         }
       }
     },
-    "preferences-capture.section-recording-controls" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recording Controls"
+    "screen-capture.failed-to-crop-captured-image": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed to crop the captured image"
           }
         }
       }
     },
-    "preferences-capture.section-recording-format" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recording Format"
+    "screen-capture.failed-to-write-image-to-disk": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed to write the image to disk"
           }
         }
       }
     },
-    "preferences-capture.section-recording-quality" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recording Quality"
+    "screen-capture.file-write-verification-failed": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File write verification failed for %@"
           }
         }
       }
     },
-    "preferences-capture.section-screenshot-format" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Format"
+    "screen-capture.magnifier-color-copied-feedback": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copied"
           }
         }
       }
     },
-    "preferences-capture.section-screenshot-preset" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Preset"
+    "screen-capture.magnifier-copy-color-hint-prefix": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press"
           }
         }
       }
     },
-    "preferences-capture.section-scrolling-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Scrolling Capture"
+    "screen-capture.magnifier-copy-color-hint-suffix": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "to Copy"
           }
         }
       }
     },
-    "preferences-capture.show-cursor-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Include mouse pointer in captured screenshots"
+    "screen-capture.manual-mode-hint": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press %@ for manual area selection"
           }
         }
       }
     },
-    "preferences-capture.show-cursor-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show cursor"
+    "screen-capture.no-display-found": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No display found to capture"
           }
         }
       }
     },
-    "preferences-capture.show-magnifier-by-default-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start area selection with the magnifier already active, instead of requiring ⌘+scroll"
+    "screen-capture.permission-denied": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screen capture permission denied"
           }
         }
       }
     },
-    "preferences-capture.show-magnifier-by-default-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show magnifier by default"
+    "screen-capture.recording-click-display-hint": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click a display to record it"
           }
         }
       }
     },
-    "preferences-capture.show-magnifier-color-panel-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show the color swatch and hex value below the magnifier preview; turn off to keep only the pixel grid and crosshair"
+    "screen-capture.recording-click-full-screen-hint": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click for full screen"
           }
         }
       }
     },
-    "preferences-capture.show-magnifier-color-panel-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show color picker panel"
+    "screen-capture.recording-enter-area-hint": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter for area selection"
           }
         }
       }
     },
-    "preferences-capture.show-selection-area-overlay-description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dim the background outside the selection area during capture"
+    "screen-capture.recording-enter-display-hint": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter to pick a display"
           }
         }
       }
     },
-    "preferences-capture.show-selection-area-overlay-title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show selection area overlay"
+    "screen-capture.recording-window-hint": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ for a window"
           }
         }
       }
     },
-    "preferences-capture.show-session-hints-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keep guidance visible when starting a scrolling capture session"
+    "screen-capture.repeat-area-no-previous-selection": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No previous area — select an area with ⇧⌘4 first"
           }
         }
       }
     },
-    "preferences-capture.show-session-hints-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show Session Hints"
+    "screen-capture.save-failed": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed to save screenshot: %@"
           }
         }
       }
     },
-    "preferences-capture.system-audio-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture sounds from apps"
+    "screen-capture.save-location-permission-required": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save location permission is required."
           }
         }
       }
     },
-    "preferences-capture.system-audio-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "System Audio"
+    "screen-capture.selection-outside-display-bounds": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The selected area is outside the display bounds"
           }
         }
       }
     },
-    "preferences-capture.video-format-description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "MOV offers better quality. MP4 provides wider compatibility."
+    "screen-capture.unable-to-capture-selected-area": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unable to capture the selected area."
           }
         }
       }
     },
-    "preferences-capture.video-format-title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Video Format"
+    "screen-capture.webp-encoding-failed": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WebP encoding failed"
           }
         }
       }
     },
-    "preferences-capture.webp-warning" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "WebP encoding is slower than other formats. For faster capture speed, consider using PNG or JPEG."
+    "scrolling-capture-status.adjust-region": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust the region so only the moving content stays inside, then press Start Capture. Press Esc to cancel."
           }
         }
       }
     },
-    "screen-capture.application-mode-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press %@ to select an app window"
+    "scrolling-capture-status.aligning-latest-content": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capturing and aligning the latest visible content..."
           }
         }
       }
     },
-    "screen-capture.cancelled" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture was cancelled"
+    "scrolling-capture-status.alignment-paused": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alignment paused. Slow down and keep one direction so Snapzy can recover."
           }
         }
       }
     },
-    "screen-capture.capture-delay-cancel-hint" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Esc to cancel"
+    "scrolling-capture-status.auto-scroll-needs-accessibility": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto Scroll needs Accessibility permission. Enable Snapzy in System Settings > Privacy & Security > Accessibility."
           }
         }
       }
     },
-    "screen-capture.capture-failed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture failed: %@"
+    "scrolling-capture-status.auto-scroll-paused-move-mouse-inside": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto-scroll paused. Move the pointer back into the selected region to continue."
           }
         }
       }
     },
-    "screen-capture.capture-timed-out" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture timed out. Please try again."
+    "scrolling-capture-status.capturing-first-frame": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capturing the first frame. After that, keep scrolling downward at a steady pace."
           }
         }
       }
     },
-    "screen-capture.could-not-create-directory" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Could not create the save folder: %@"
+    "scrolling-capture-status.couldnt-align-frame": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't align that frame. Keep the same direction and a steadier pace."
           }
         }
       }
     },
-    "screen-capture.could-not-create-image-destination" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Could not create the image destination"
+    "scrolling-capture-status.couldnt-capture-last-frame": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't capture the last frame. Snapzy will save the current stitched result."
           }
         }
       }
     },
-    "screen-capture.failed-to-create-image-from-frame" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Failed to create an image from the captured frame"
+    "scrolling-capture-status.couldnt-refresh-last-frame": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't refresh the last frame. Snapzy will save the current stitched result."
           }
         }
       }
     },
-    "screen-capture.failed-to-crop-captured-image" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Failed to crop the captured image"
+    "scrolling-capture-status.direction-changed": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Direction changed. Keep scrolling the same way or restart the session."
           }
         }
       }
     },
-    "screen-capture.failed-to-write-image-to-disk" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Failed to write the image to disk"
+    "scrolling-capture-status.end-reached-no-new-content": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No new content detected. You're probably at the end of the scrollable content. Press Done to save."
           }
         }
       }
     },
-    "screen-capture.file-write-verification-failed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "File write verification failed for %@"
+    "scrolling-capture-status.finalizing-couldnt-align-last-frame": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't align the last frame cleanly. Snapzy will save the current stitched result."
           }
         }
       }
     },
-    "screen-capture.magnifier-color-copied-feedback" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copied"
+    "scrolling-capture-status.finalizing-current-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finalizing the current capture. Snapzy is locking the latest stitched result before saving."
           }
         }
       }
     },
-    "screen-capture.magnifier-copy-color-hint-prefix" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press"
+    "scrolling-capture-status.finalizing-frames": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Locking the current capture. Snapzy is sealing %d stitched frames before saving."
           }
         }
       }
     },
-    "screen-capture.magnifier-copy-color-hint-suffix" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "to Copy"
+    "scrolling-capture-status.finalizing-height-limit-reached": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Height limit reached. Snapzy is saving the current stitched result."
           }
         }
       }
     },
-    "screen-capture.manual-mode-hint" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press %@ for manual area selection"
+    "scrolling-capture-status.finalizing-no-new-content": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No new content was detected. Snapzy is saving the current stitched result."
           }
         }
       }
     },
-    "screen-capture.no-display-found" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No display found to capture"
+    "scrolling-capture-status.first-frame-locked": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First frame locked. Keep the pointer over the highlighted region and scroll downward steadily."
           }
         }
       }
     },
-    "screen-capture.permission-denied" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Screen capture permission denied"
+    "scrolling-capture-status.height-limit-reached": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reached the %d px output limit. Press Done to save the current result."
           }
         }
       }
     },
-    "screen-capture.recording-click-display-hint" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Click a display to record it"
+    "scrolling-capture-status.mixed-directions-detected": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mixed scroll directions detected. Keep one direction so Snapzy can align."
           }
         }
       }
     },
-    "screen-capture.recording-click-full-screen-hint" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Click for full screen"
+    "scrolling-capture-status.mixed-directions-finalizing": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finalizing the current stitched result after mixed scroll directions."
           }
         }
       }
     },
-    "screen-capture.recording-enter-area-hint" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enter for area selection"
+    "scrolling-capture-status.no-savable-result-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy couldn't lock a savable stitched image yet. You can keep capturing, try Done again, or Cancel."
           }
         }
       }
     },
-    "screen-capture.recording-enter-display-hint" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enter to pick a display"
+    "scrolling-capture-status.preview-refresh-failed": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preview refresh failed. You can Cancel and try again."
           }
         }
       }
     },
-    "screen-capture.recording-window-hint" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ for a window"
+    "scrolling-capture-status.ready-hint-toast": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select only the moving content, press Start Capture, then keep scrolling in one direction at a steady pace."
           }
         }
       }
     },
-    "screen-capture.repeat-area-no-previous-selection" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No previous area — select an area with ⇧⌘4 first"
+    "scrolling-capture-status.region-updated": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Region updated. Keep only the moving content inside, then press Start Capture. Press Esc to cancel."
           }
         }
       }
     },
-    "screen-capture.save-failed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Failed to save screenshot: %@"
+    "scrolling-capture-status.release-to-lock-updated-region": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Release to lock the updated scrolling region."
           }
         }
       }
     },
-    "screen-capture.save-location-permission-required" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save location permission is required."
+    "scrolling-capture-status.save-failed-result-still-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save failed. The stitched result is frozen, so you can try Done again or Cancel."
           }
         }
       }
     },
-    "screen-capture.selection-outside-display-bounds" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The selected area is outside the display bounds"
+    "scrolling-capture-status.saving-stitched-image": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving the stitched long image."
           }
         }
       }
     },
-    "screen-capture.unable-to-capture-selected-area" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unable to capture the selected area."
+    "scrolling-capture-status.session-active": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Session active. %d frames stitched into %d px."
           }
         }
       }
     },
-    "screen-capture.webp-encoding-failed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "WebP encoding failed"
+    "scrolling-capture-status.unable-to-capture-area": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unable to capture the selected area."
           }
         }
       }
     },
-    "scrolling-capture-status.adjust-region" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Adjust the region so only the moving content stays inside, then press Start Capture. Press Esc to cancel."
+    "scrolling-capture-status.unable-to-render-preview": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unable to render the stitched preview."
           }
         }
       }
     },
-    "scrolling-capture-status.aligning-latest-content" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capturing and aligning the latest visible content..."
+    "scrolling-capture-status.waiting-for-new-content": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for new content. Keep the scroll moving in one direction."
           }
         }
       }
     },
-    "scrolling-capture-status.alignment-paused" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alignment paused. Slow down and keep one direction so Snapzy can recover."
+    "scrolling-capture.auto-scroll": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto Scroll"
           }
         }
       }
     },
-    "scrolling-capture-status.auto-scroll-needs-accessibility" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Auto Scroll needs Accessibility permission. Enable Snapzy in System Settings > Privacy & Security > Accessibility."
+    "scrolling-capture.badge-captured": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Captured"
           }
         }
       }
     },
-    "scrolling-capture-status.auto-scroll-paused-move-mouse-inside" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Auto-scroll paused. Move the pointer back into the selected region to continue."
+    "scrolling-capture.badge-finishing": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finishing"
           }
         }
       }
     },
-    "scrolling-capture-status.capturing-first-frame" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capturing the first frame. After that, keep scrolling downward at a steady pace."
+    "scrolling-capture.badge-live": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live"
           }
         }
       }
     },
-    "scrolling-capture-status.couldnt-align-frame" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Couldn't align that frame. Keep the same direction and a steadier pace."
+    "scrolling-capture.badge-paused": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paused"
           }
         }
       }
     },
-    "scrolling-capture-status.couldnt-capture-last-frame" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Couldn't capture the last frame. Snapzy will save the current stitched result."
+    "scrolling-capture.badge-saving": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving"
           }
         }
       }
     },
-    "scrolling-capture-status.couldnt-refresh-last-frame" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Couldn't refresh the last frame. Snapzy will save the current stitched result."
+    "scrolling-capture.badge-syncing": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Syncing"
           }
         }
       }
     },
-    "scrolling-capture-status.direction-changed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Direction changed. Keep scrolling the same way or restart the session."
+    "scrolling-capture.caption-final-frame-locked": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Final frame locked • %d frames • +%d px"
           }
         }
       }
     },
-    "scrolling-capture-status.end-reached-no-new-content" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No new content detected. You're probably at the end of the scrollable content. Press Done to save."
+    "scrolling-capture.caption-finalizing-current-result-last-frame-skipped": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finalizing current stitched result • last frame skipped"
           }
         }
       }
     },
-    "scrolling-capture-status.finalizing-couldnt-align-last-frame" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Couldn't align the last frame cleanly. Snapzy will save the current stitched result."
+    "scrolling-capture.caption-finalizing-current-result-no-new-content": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finalizing current result • no new content"
           }
         }
       }
     },
-    "scrolling-capture-status.finalizing-current-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finalizing the current capture. Snapzy is locking the latest stitched result before saving."
+    "scrolling-capture.caption-finalizing-frames-locked": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finalizing stitched result • %d frames locked"
           }
         }
       }
     },
-    "scrolling-capture-status.finalizing-frames" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Locking the current capture. Snapzy is sealing %d stitched frames before saving."
+    "scrolling-capture.caption-finalizing-stitched-result": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finalizing stitched result..."
           }
         }
       }
     },
-    "scrolling-capture-status.finalizing-height-limit-reached" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Height limit reached. Snapzy is saving the current stitched result."
+    "scrolling-capture.caption-first-frame-locked": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First frame locked"
           }
         }
       }
     },
-    "scrolling-capture-status.finalizing-no-new-content" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No new content was detected. Snapzy is saving the current stitched result."
+    "scrolling-capture.caption-frames-stitched-delta": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d frames stitched • +%d px"
           }
         }
       }
     },
-    "scrolling-capture-status.first-frame-locked" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "First frame locked. Keep the pointer over the highlighted region and scroll downward steadily."
+    "scrolling-capture.caption-frames-stitched-height-limit-reached": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d frames stitched • height limit reached"
           }
         }
       }
     },
-    "scrolling-capture-status.height-limit-reached" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reached the %d px output limit. Press Done to save the current result."
+    "scrolling-capture.caption-frames-stitched-no-new-content": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d frames stitched • no new content"
           }
         }
       }
     },
-    "scrolling-capture-status.mixed-directions-detected" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mixed scroll directions detected. Keep one direction so Snapzy can align."
+    "scrolling-capture.caption-live-preview-running": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live preview running while Snapzy locks the stitched frame."
           }
         }
       }
     },
-    "scrolling-capture-status.mixed-directions-finalizing" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finalizing the current stitched result after mixed scroll directions."
+    "scrolling-capture.caption-no-savable-result-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No savable stitched result is ready yet"
           }
         }
       }
     },
-    "scrolling-capture-status.no-savable-result-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy couldn't lock a savable stitched image yet. You can keep capturing, try Done again, or Cancel."
+    "scrolling-capture.caption-save-failed-result-still-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save failed • stitched result is still ready"
           }
         }
       }
     },
-    "scrolling-capture-status.preview-refresh-failed" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Preview refresh failed. You can Cancel and try again."
+    "scrolling-capture.caption-saving-stitched-result": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving stitched result..."
           }
         }
       }
     },
-    "scrolling-capture-status.ready-hint-toast" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select only the moving content, press Start Capture, then keep scrolling in one direction at a steady pace."
+    "scrolling-capture.caption-start-capture-to-lock-first-frame": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start Capture to lock the first frame"
           }
         }
       }
     },
-    "scrolling-capture-status.region-updated" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Region updated. Keep only the moving content inside, then press Start Capture. Press Esc to cancel."
+    "scrolling-capture.guidance-area-updated": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Area updated"
           }
         }
       }
     },
-    "scrolling-capture-status.release-to-lock-updated-region" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Release to lock the updated scrolling region."
+    "scrolling-capture.guidance-continue-manually": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue manually"
           }
         }
       }
     },
-    "scrolling-capture-status.save-failed-result-still-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save failed. The stitched result is frozen, so you can try Done again or Cancel."
+    "scrolling-capture.guidance-current-result-still-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current result is still ready"
           }
         }
       }
     },
-    "scrolling-capture-status.saving-stitched-image" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saving the stitched long image."
+    "scrolling-capture.guidance-current-stitched-result-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current stitched result is ready"
           }
         }
       }
     },
-    "scrolling-capture-status.session-active" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Session active. %d frames stitched into %d px."
+    "scrolling-capture.guidance-frame-only-scrolling-content": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frame only the scrolling content"
           }
         }
       }
     },
-    "scrolling-capture-status.unable-to-capture-area" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unable to capture the selected area."
+    "scrolling-capture.guidance-height-limit-reached": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Height limit reached"
           }
         }
       }
     },
-    "scrolling-capture-status.unable-to-render-preview" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unable to render the stitched preview."
+    "scrolling-capture.guidance-hold-steady": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold steady"
           }
         }
       }
     },
-    "scrolling-capture-status.waiting-for-new-content" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Waiting for new content. Keep the scroll moving in one direction."
+    "scrolling-capture.guidance-keep-capturing": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep capturing"
           }
         }
       }
     },
-    "scrolling-capture.auto-scroll" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Auto Scroll"
+    "scrolling-capture.guidance-keep-one-direction": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep one direction"
           }
         }
       }
     },
-    "scrolling-capture.badge-captured" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Captured"
+    "scrolling-capture.guidance-keep-one-direction-for-clean-stitch": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep one direction for a clean stitch"
           }
         }
       }
     },
-    "scrolling-capture.badge-finishing" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finishing"
+    "scrolling-capture.guidance-keep-one-direction-or-restart": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep one direction or restart"
           }
         }
       }
     },
-    "scrolling-capture.badge-live" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Live"
+    "scrolling-capture.guidance-keep-one-direction-so-snapzy-can-realign": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep one direction so Snapzy can re-align"
           }
         }
       }
     },
-    "scrolling-capture.badge-paused" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paused"
+    "scrolling-capture.guidance-keep-only-scrolling-content": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep only the scrolling content"
           }
         }
       }
     },
-    "scrolling-capture.badge-saving" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saving"
+    "scrolling-capture.guidance-keep-scrolling-down": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep scrolling down"
           }
         }
       }
     },
-    "scrolling-capture.badge-syncing" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Syncing"
+    "scrolling-capture.guidance-keep-steadier-pace": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep a steadier pace"
           }
         }
       }
     },
-    "scrolling-capture.caption-final-frame-locked" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Final frame locked • %d frames • +%d px"
+    "scrolling-capture.guidance-locking-current-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Locking current capture"
           }
         }
       }
     },
-    "scrolling-capture.caption-finalizing-current-result-last-frame-skipped" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finalizing current stitched result • last frame skipped"
+    "scrolling-capture.guidance-no-new-content-detected": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No new content was detected"
           }
         }
       }
     },
-    "scrolling-capture.caption-finalizing-current-result-no-new-content" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finalizing current result • no new content"
+    "scrolling-capture.guidance-one-direction-steady-pace": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One direction, steady pace"
           }
         }
       }
     },
-    "scrolling-capture.caption-finalizing-frames-locked" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finalizing stitched result • %d frames locked"
+    "scrolling-capture.guidance-place-mouse-inside-selection": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Place mouse inside the capture area"
           }
         }
       }
     },
-    "scrolling-capture.caption-finalizing-stitched-result" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finalizing stitched result..."
+    "scrolling-capture.guidance-please-wait": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Please wait"
           }
         }
       }
     },
-    "scrolling-capture.caption-first-frame-locked" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "First frame locked"
+    "scrolling-capture.guidance-press-done-to-save": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Done to save"
           }
         }
       }
     },
-    "scrolling-capture.caption-frames-stitched-delta" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%d frames stitched • +%d px"
+    "scrolling-capture.guidance-press-done-when-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Done when you're ready"
           }
         }
       }
     },
-    "scrolling-capture.caption-frames-stitched-height-limit-reached" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%d frames stitched • height limit reached"
+    "scrolling-capture.guidance-preview-needs-recovery": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preview needs recovery"
           }
         }
       }
     },
-    "scrolling-capture.caption-frames-stitched-no-new-content" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%d frames stitched • no new content"
+    "scrolling-capture.guidance-release-to-lock-area": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Release to lock area"
           }
         }
       }
     },
-    "scrolling-capture.caption-live-preview-running" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Live preview running while Snapzy locks the stitched frame."
+    "scrolling-capture.guidance-return-mouse-inside-selection": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move the pointer back into the selection to continue auto-scrolling"
           }
         }
       }
     },
-    "scrolling-capture.caption-no-savable-result-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No savable stitched result is ready yet"
+    "scrolling-capture.guidance-reverse-scrolling-can-break-stitch": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reverse scrolling can break the stitch"
           }
         }
       }
     },
-    "scrolling-capture.caption-save-failed-result-still-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save failed • stitched result is still ready"
+    "scrolling-capture.guidance-saving-current-result": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving current result"
           }
         }
       }
     },
-    "scrolling-capture.caption-saving-stitched-result" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saving stitched result..."
+    "scrolling-capture.guidance-saving-long-screenshot": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving long screenshot"
           }
         }
       }
     },
-    "scrolling-capture.caption-start-capture-to-lock-first-frame" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start Capture to lock the first frame"
+    "scrolling-capture.guidance-scroll-down-steadily": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scroll down steadily"
           }
         }
       }
     },
-    "scrolling-capture.guidance-area-updated" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Area updated"
+    "scrolling-capture.guidance-slow-down": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slow down"
           }
         }
       }
     },
-    "scrolling-capture.guidance-continue-manually" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continue manually"
+    "scrolling-capture.guidance-snapzy-locking-first-frame": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy is locking the first frame"
           }
         }
       }
     },
-    "scrolling-capture.guidance-current-result-still-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Current result is still ready"
+    "scrolling-capture.guidance-snapzy-sealing-stitched-result": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snapzy is sealing the stitched result"
           }
         }
       }
     },
-    "scrolling-capture.guidance-current-stitched-result-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Current stitched result is ready"
+    "scrolling-capture.guidance-stay-on-one-direction": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stay on one direction"
           }
         }
       }
     },
-    "scrolling-capture.guidance-frame-only-scrolling-content" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Frame only the scrolling content"
+    "scrolling-capture.guidance-then-press-start-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Then press Start Capture"
           }
         }
       }
     },
-    "scrolling-capture.guidance-height-limit-reached" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Height limit reached"
+    "scrolling-capture.guidance-then-try-done-again": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Then try Done again"
           }
         }
       }
     },
-    "scrolling-capture.guidance-hold-steady" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hold steady"
+    "scrolling-capture.guidance-try-done-again": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try Done again"
           }
         }
       }
     },
-    "scrolling-capture.guidance-keep-capturing" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keep capturing"
+    "scrolling-capture.preview-finishing-saving-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finishing up - saving your capture."
           }
         }
       }
     },
-    "scrolling-capture.guidance-keep-one-direction" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keep one direction"
+    "scrolling-capture.preview-matches-stitched-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preview matches the stitched capture."
           }
         }
       }
     },
-    "scrolling-capture.guidance-keep-one-direction-for-clean-stitch" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keep one direction for a clean stitch"
+    "scrolling-capture.preview-paused-scroll-slowly": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preview paused - scroll slowly so Snapzy can re-align."
           }
         }
       }
     },
-    "scrolling-capture.guidance-keep-one-direction-or-restart" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keep one direction or restart"
+    "scrolling-capture.preview-press-start-to-begin": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Start Capture to begin."
           }
         }
       }
     },
-    "scrolling-capture.guidance-keep-one-direction-so-snapzy-can-realign" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keep one direction so Snapzy can re-align"
+    "scrolling-capture.preview-saving-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving your capture..."
           }
         }
       }
     },
-    "scrolling-capture.guidance-keep-only-scrolling-content" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keep only the scrolling content"
+    "scrolling-capture.preview-showing-latest-stitched-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Showing the latest stitched capture."
           }
         }
       }
     },
-    "scrolling-capture.guidance-keep-scrolling-down" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keep scrolling down"
+    "scrolling-capture.preview-showing-latest-while-locking-newer-content": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Showing the latest stitched result while Snapzy locks newer content."
           }
         }
       }
     },
-    "scrolling-capture.guidance-keep-steadier-pace" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Keep a steadier pace"
+    "scrolling-capture.runtime-capturing": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capturing"
           }
         }
       }
     },
-    "scrolling-capture.guidance-locking-current-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Locking current capture"
+    "scrolling-capture.runtime-finishing": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finishing"
           }
         }
       }
     },
-    "scrolling-capture.guidance-no-new-content-detected" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No new content was detected"
+    "scrolling-capture.runtime-live": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live"
           }
         }
       }
     },
-    "scrolling-capture.guidance-one-direction-steady-pace" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "One direction, steady pace"
+    "scrolling-capture.runtime-paused": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paused"
           }
         }
       }
     },
-    "scrolling-capture.guidance-place-mouse-inside-selection" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Place mouse inside the capture area"
+    "scrolling-capture.runtime-processing": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Processing"
           }
         }
       }
     },
-    "scrolling-capture.guidance-please-wait" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Please wait"
+    "scrolling-capture.runtime-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready"
           }
         }
       }
     },
-    "scrolling-capture.guidance-press-done-to-save" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press Done to save"
+    "scrolling-capture.runtime-saving": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving"
           }
         }
       }
     },
-    "scrolling-capture.guidance-press-done-when-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press Done when you're ready"
+    "scrolling-capture.start-capture": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start Capture"
           }
         }
       }
     },
-    "scrolling-capture.guidance-preview-needs-recovery" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Preview needs recovery"
+    "scrolling-capture.stop-auto-scroll": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop"
           }
         }
       }
     },
-    "scrolling-capture.guidance-release-to-lock-area" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Release to lock area"
+    "scrolling-capture.toast-no-stitched-frame-ready": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No stitched frame is ready yet."
           }
         }
       }
     },
-    "scrolling-capture.guidance-return-mouse-inside-selection" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Move the pointer back into the selection to continue auto-scrolling"
+    "scrolling-capture.toast-saved-stitched-image": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scrolling Capture saved the stitched image."
           }
         }
       }
     },
-    "scrolling-capture.guidance-reverse-scrolling-can-break-stitch" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reverse scrolling can break the stitch"
-          }
-        }
-      }
-    },
-    "scrolling-capture.guidance-saving-current-result" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saving current result"
-          }
-        }
-      }
-    },
-    "scrolling-capture.guidance-saving-long-screenshot" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saving long screenshot"
-          }
-        }
-      }
-    },
-    "scrolling-capture.guidance-scroll-down-steadily" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Scroll down steadily"
-          }
-        }
-      }
-    },
-    "scrolling-capture.guidance-slow-down" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Slow down"
-          }
-        }
-      }
-    },
-    "scrolling-capture.guidance-snapzy-locking-first-frame" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy is locking the first frame"
-          }
-        }
-      }
-    },
-    "scrolling-capture.guidance-snapzy-sealing-stitched-result" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapzy is sealing the stitched result"
-          }
-        }
-      }
-    },
-    "scrolling-capture.guidance-stay-on-one-direction" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stay on one direction"
-          }
-        }
-      }
-    },
-    "scrolling-capture.guidance-then-press-start-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Then press Start Capture"
-          }
-        }
-      }
-    },
-    "scrolling-capture.guidance-then-try-done-again" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Then try Done again"
-          }
-        }
-      }
-    },
-    "scrolling-capture.guidance-try-done-again" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Try Done again"
-          }
-        }
-      }
-    },
-    "scrolling-capture.preview-finishing-saving-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finishing up - saving your capture."
-          }
-        }
-      }
-    },
-    "scrolling-capture.preview-matches-stitched-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Preview matches the stitched capture."
-          }
-        }
-      }
-    },
-    "scrolling-capture.preview-paused-scroll-slowly" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Preview paused - scroll slowly so Snapzy can re-align."
-          }
-        }
-      }
-    },
-    "scrolling-capture.preview-press-start-to-begin" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press Start Capture to begin."
-          }
-        }
-      }
-    },
-    "scrolling-capture.preview-saving-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saving your capture..."
-          }
-        }
-      }
-    },
-    "scrolling-capture.preview-showing-latest-stitched-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Showing the latest stitched capture."
-          }
-        }
-      }
-    },
-    "scrolling-capture.preview-showing-latest-while-locking-newer-content" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Showing the latest stitched result while Snapzy locks newer content."
-          }
-        }
-      }
-    },
-    "scrolling-capture.runtime-capturing" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capturing"
-          }
-        }
-      }
-    },
-    "scrolling-capture.runtime-finishing" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finishing"
-          }
-        }
-      }
-    },
-    "scrolling-capture.runtime-live" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Live"
-          }
-        }
-      }
-    },
-    "scrolling-capture.runtime-paused" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paused"
-          }
-        }
-      }
-    },
-    "scrolling-capture.runtime-processing" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Processing"
-          }
-        }
-      }
-    },
-    "scrolling-capture.runtime-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ready"
-          }
-        }
-      }
-    },
-    "scrolling-capture.runtime-saving" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saving"
-          }
-        }
-      }
-    },
-    "scrolling-capture.start-capture" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start Capture"
-          }
-        }
-      }
-    },
-    "scrolling-capture.stop-auto-scroll" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stop"
-          }
-        }
-      }
-    },
-    "scrolling-capture.toast-no-stitched-frame-ready" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No stitched frame is ready yet."
-          }
-        }
-      }
-    },
-    "scrolling-capture.toast-saved-stitched-image" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Scrolling Capture saved the stitched image."
-          }
-        }
-      }
-    },
-    "scrolling-capture.toast-session-already-active" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A scrolling capture session is already active."
+    "scrolling-capture.toast-session-already-active": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A scrolling capture session is already active."
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

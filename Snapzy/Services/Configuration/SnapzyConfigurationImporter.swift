@@ -18,18 +18,16 @@ enum SnapzyConfigurationImporter {
 
   static func validateTOML(
     _ source: String,
-    defaults: UserDefaults = .standard,
-    keychainStore: OCRKeychainStoring = OCRKeychainStore()
+    defaults: UserDefaults = .standard
   ) -> [SnapzyConfigurationIssue] {
-    prepareImport(source, defaults: defaults, keychainStore: keychainStore).issues
+    prepareImport(source, defaults: defaults).issues
   }
 
   static func importTOML(
     _ source: String,
-    defaults: UserDefaults = .standard,
-    keychainStore: OCRKeychainStoring = OCRKeychainStore()
+    defaults: UserDefaults = .standard
   ) -> SnapzyConfigurationImportResult {
-    let preparedImport = prepareImport(source, defaults: defaults, keychainStore: keychainStore)
+    let preparedImport = prepareImport(source, defaults: defaults)
 
     guard !preparedImport.issues.contains(where: { $0.severity == .error }) else {
       return SnapzyConfigurationImportResult(appliedChangeCount: 0, issues: preparedImport.issues)
@@ -37,12 +35,6 @@ enum SnapzyConfigurationImporter {
 
     preparedImport.mutations.forEach { $0() }
     KeyboardShortcutManager.shared.refreshShortcutRegistration()
-    // Guard mirrors the AppStatusBarController pattern: shared stores track
-    // the standard defaults only; skipping avoids pruning real user state
-    // when tests import into isolated defaults.
-    if defaults == UserDefaults.standard {
-      CustomOCRModelStore.shared.reloadFromDefaults()
-    }
     defaults.synchronize()
 
     return SnapzyConfigurationImportResult(
@@ -53,8 +45,7 @@ enum SnapzyConfigurationImporter {
 
   private static func prepareImport(
     _ source: String,
-    defaults: UserDefaults,
-    keychainStore: OCRKeychainStoring
+    defaults: UserDefaults
   ) -> PreparedImport {
     let document: SimpleTOMLDocument
     do {
@@ -72,7 +63,7 @@ enum SnapzyConfigurationImporter {
     validateSchema(&reader)
     collectGeneral(&reader, defaults: defaults, mutations: &mutations)
     collectMenuBar(&reader, mutations: &mutations)
-    collectCapture(&reader, defaults: defaults, keychainStore: keychainStore, mutations: &mutations)
+    collectCapture(&reader, defaults: defaults, mutations: &mutations)
     collectRecording(&reader, defaults: defaults, mutations: &mutations)
     collectQuickAccess(&reader, defaults: defaults, mutations: &mutations)
     collectHistory(&reader, defaults: defaults, mutations: &mutations)
@@ -180,7 +171,6 @@ enum SnapzyConfigurationImporter {
   private static func collectCapture(
     _ reader: inout SnapzyConfigurationReader,
     defaults: UserDefaults,
-    keychainStore: OCRKeychainStoring,
     mutations: inout [() -> Void]
   ) {
     collectBool(&reader, "capture", "hide_desktop_icons", mutations: &mutations) {
@@ -236,10 +226,7 @@ enum SnapzyConfigurationImporter {
     collectBool(&reader, "capture", "ocr", "success_notification", mutations: &mutations) {
       defaults.set($0, forKey: PreferencesKeys.ocrSuccessNotificationEnabled)
     }
-    collectString(&reader, "capture", "ocr", "selected_model", mutations: &mutations) {
-      defaults.set($0, forKey: PreferencesKeys.ocrSelectedModel)
-    }
-    collectCustomOCRModels(&reader, defaults: defaults, keychainStore: keychainStore, mutations: &mutations)
+
     collectBool(&reader, "capture", "object_cutout", "auto_crop", mutations: &mutations) {
       defaults.set($0, forKey: PreferencesKeys.backgroundCutoutAutoCropEnabled)
     }
@@ -514,49 +501,6 @@ enum SnapzyConfigurationImporter {
     }
     collectBool(&reader, "annotate", "highlighter_text_snapping", mutations: &mutations) {
       defaults.set($0, forKey: PreferencesKeys.annotateHighlighterTextSnappingEnabled)
-    }
-  }
-
-  /// Imports the custom OCR endpoint list as a whole (replace semantics, like
-  /// other list-like settings). API keys never travel in config files, so
-  /// `hasAPIKey` is reconciled against the local Keychain at apply time: a key
-  /// stored for an id that survives the replace stays valid, and keys of ids
-  /// dropped by the replace are deleted.
-  private static func collectCustomOCRModels(
-    _ reader: inout SnapzyConfigurationReader,
-    defaults: UserDefaults,
-    keychainStore: OCRKeychainStoring,
-    mutations: inout [() -> Void]
-  ) {
-    guard let json = reader.string("capture", "ocr", "custom_models") else { return }
-    guard let data = json.data(using: .utf8),
-          let decoded = try? JSONDecoder().decode([CustomOCRModel].self, from: data) else {
-      reader.error("capture.ocr.custom_models must be a JSON array of custom model objects")
-      return
-    }
-    let hasInvalidEntry = decoded.contains {
-      $0.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-        || $0.baseURL.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-        || $0.modelIdentifier.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-    }
-    guard !hasInvalidEntry else {
-      reader.error("capture.ocr.custom_models entries must have non-empty name, baseURL, and modelIdentifier")
-      return
-    }
-    mutations.append {
-      let stored = defaults.data(forKey: PreferencesKeys.ocrCustomModels)
-        .flatMap { try? JSONDecoder().decode([CustomOCRModel].self, from: $0) } ?? []
-      let importedIDs = Set(decoded.map(\.id))
-      for dropped in stored where !importedIDs.contains(dropped.id) {
-        keychainStore.deleteKey(for: dropped.id)
-      }
-      let reconciled = decoded.map { model -> CustomOCRModel in
-        var copy = model
-        copy.hasAPIKey = keychainStore.readKey(for: model.id) != nil
-        return copy
-      }
-      guard let encoded = try? JSONEncoder().encode(reconciled) else { return }
-      defaults.set(encoded, forKey: PreferencesKeys.ocrCustomModels)
     }
   }
 
