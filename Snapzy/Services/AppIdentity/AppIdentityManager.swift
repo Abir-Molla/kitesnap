@@ -10,8 +10,8 @@ import Foundation
 import Security
 
 nonisolated enum AppBundleIdentity {
-  static let releaseIdentifier = "com.trongduong.snapzy"
-  static let debugIdentifier = "com.trongduong.snapzy.debug"
+  static let releaseIdentifier = "com.abirmolla.kitesnap"
+  static let debugIdentifier = "com.abirmolla.kitesnap.debug"
 
   #if DEBUG
   static let isDebugBuild = true

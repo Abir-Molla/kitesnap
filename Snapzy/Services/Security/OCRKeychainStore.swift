@@ -37,7 +37,7 @@ enum OCRKeychainError: LocalizedError, Equatable {
 /// keychain when the data-protection entitlement is unavailable (unsigned dev
 /// builds). Account = model UUID string.
 nonisolated struct OCRKeychainStore: OCRKeychainStoring {
-  private static let service = "com.trongduong.snapzy.ocr"
+  private static let service = "com.abirmolla.kitesnap.ocr"
 
   private struct Location: Equatable {
     let usesDataProtection: Bool
