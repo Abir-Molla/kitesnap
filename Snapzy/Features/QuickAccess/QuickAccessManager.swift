@@ -592,7 +592,6 @@ final class QuickAccessManager: ObservableObject {
   /// Used after drag-to-app so the receiving app can still read the file.
   /// Orphaned temp files get cleaned up on next launch via cleanupOrphanedFiles().
   func dismissCard(id: UUID) {
-    let itemURL = items.first(where: { $0.id == id })?.url
     DiagnosticLogger.shared.log(
       .debug,
       .action,
@@ -605,8 +604,6 @@ final class QuickAccessManager: ObservableObject {
     activityHoldItemIds.remove(id)
     // Clear annotation session cache for this item
     AnnotateManager.shared.clearSessionData(for: id)
-    if let itemURL {
-    }
     withAnimation(.spring(response: 0.15, dampingFraction: 0.8)) {
       items.removeAll { $0.id == id }
     }
