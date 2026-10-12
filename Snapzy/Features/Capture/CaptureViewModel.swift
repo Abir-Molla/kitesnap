@@ -272,7 +272,7 @@ final class ScreenCaptureViewModel: ObservableObject, KeyboardShortcutDelegate {
 
     let visibleNormalWindows = NSApp.windows.filter {
       $0.isVisible &&
-        $0.level == .normal &&
+        ($0.level == .normal || $0.level == .floating) &&
         $0.className != "NSStatusBarWindow"
     }
     let session = HiddenWindowSession(

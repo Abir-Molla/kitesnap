@@ -38,14 +38,12 @@ final class PreferencesWindowController: NSObject, NSWindowDelegate {
       PreferencesNavigationState.shared.select(tab)
     }
 
-    // Elevate to regular app so Snapzy appears in the top-left menu bar and takes key focus
+    // Elevate to regular app so KiteSnap appears in the top-left menu bar and takes key focus
     if !didElevateActivationPolicy {
       NSApp.setActivationPolicy(.regular)
       didElevateActivationPolicy = true
       DiagnosticLogger.shared.log(.debug, .ui, "Activation policy elevated for preferences window")
     }
-
-    NSApp.activate(ignoringOtherApps: true)
 
     let window = self.window ?? makeWindow()
     self.window = window
@@ -53,7 +51,24 @@ final class PreferencesWindowController: NSObject, NSWindowDelegate {
     if !window.isVisible {
       window.center()
     }
+
+    // Bring window to the front regardless of whether KiteSnap is already active
+    window.orderFrontRegardless()
     window.makeKeyAndOrderFront(nil)
+
+    // Activate application ignoring other apps
+    NSRunningApplication.current.activate(options: [.activateIgnoringOtherApps, .activateAllWindows])
+    NSApp.activate(ignoringOtherApps: true)
+
+    // WindowServer policy transition dispatch to guarantee frontmost focus
+    DispatchQueue.main.async { [weak window] in
+      guard let window else { return }
+      NSRunningApplication.current.activate(options: [.activateIgnoringOtherApps, .activateAllWindows])
+      NSApp.activate(ignoringOtherApps: true)
+      window.orderFrontRegardless()
+      window.makeKeyAndOrderFront(nil)
+    }
+
     configureNonCollapsibleSidebar()
   }
 
@@ -91,7 +106,7 @@ final class PreferencesWindowController: NSObject, NSWindowDelegate {
     created.title = PreferencesNavigationState.shared.selectedTab.title
     created.delegate = self
     created.isReleasedWhenClosed = false
-    created.level = .normal
+    created.level = .floating
     created.collectionBehavior = [.managed, .participatesInCycle, .fullScreenAuxiliary]
     created.contentMinSize = Self.minimumContentSize
 
@@ -128,7 +143,7 @@ final class PreferencesWindowController: NSObject, NSWindowDelegate {
       win.isVisible &&
       win !== self.window &&
       win.className != "NSStatusBarWindow" &&
-      win.level == .normal
+      (win.level == .normal || win.level == .floating)
     }
 
     // If no normal windows remain, revert back to accessory (menu bar only) mode

@@ -15,7 +15,7 @@ extension NSApplication {
       window.isVisible &&
       window !== closingWindow &&
       window.className != "NSStatusBarWindow" &&
-      window.level == .normal
+      (window.level == .normal || window.level == .floating)
     }
 
     if visibleWindows.isEmpty && activationPolicy() != .accessory {

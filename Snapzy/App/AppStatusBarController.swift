@@ -1004,7 +1004,7 @@ final class AppStatusBarController: ObservableObject {
       window.isVisible &&
       window !== closingWindow &&
       window.className != "NSStatusBarWindow" &&
-      window.level == .normal
+      (window.level == .normal || window.level == .floating)
     }
 
     // If no visible windows, revert to accessory (menu bar only) mode
@@ -1129,7 +1129,7 @@ final class AppStatusBarController: ObservableObject {
 
     if let candidate = NSApp.windows.first(where: {
       $0.isVisible &&
-      $0.level == .normal &&
+      ($0.level == .normal || $0.level == .floating) &&
       $0.className != "NSStatusBarWindow" &&
       !existingWindowNumbers.contains($0.windowNumber)
     }) {
