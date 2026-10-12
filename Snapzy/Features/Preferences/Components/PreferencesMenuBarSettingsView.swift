@@ -2,7 +2,7 @@
 //  PreferencesMenuBarSettingsView.swift
 //  Snapzy
 //
-//  Menu Bar preferences tab: icon style picker and menu item visibility/order.
+//  Menu Bar preferences tab: menu item visibility and order.
 //
 
 import SwiftUI
@@ -17,16 +17,9 @@ struct MenuBarSettingsView: View {
   @State private var draggedItem: MenuBarItemKind?
   @State private var activeDragID: UUID?
   @State private var mouseUpMonitor: Any?
-  @State private var iconRefreshID = UUID()
-  @State private var showImportError = false
-  @State private var isCustomDropTargeted = false
-
-  private let iconRenderer = MenuBarIconRenderer.shared
 
   var body: some View {
     Form {
-      iconSection
-
       ForEach(MenuBarItemGroup.allCases, id: \.self) { group in
         itemGroupSection(group)
       }
@@ -50,7 +43,6 @@ struct MenuBarSettingsView: View {
           Spacer()
           Button(L10n.PreferencesMenuBar.resetButton) {
             store.resetToDefaults()
-            iconRefreshID = UUID()
           }
           .buttonStyle(.bordered)
           .controlSize(.regular)
@@ -60,134 +52,9 @@ struct MenuBarSettingsView: View {
       }
     }
     .formStyle(.grouped)
-    .alert(L10n.PreferencesMenuBar.importFailedTitle, isPresented: $showImportError) {
-      Button(L10n.Common.ok, role: .cancel) {}
-    } message: {
-      Text(L10n.PreferencesMenuBar.importFailedMessage)
-    }
   }
 
-  // MARK: - Icon Section
-
-  private var iconSection: some View {
-    Section(L10n.PreferencesMenuBar.iconSection) {
-      VStack(alignment: .leading, spacing: 10) {
-        HStack(spacing: 12) {
-          ForEach(MenuBarIconStyle.allCases) { style in
-            MenuBarIconTile(
-              style: style,
-              isSelected: store.iconStyle == style,
-              hasCustomIcon: iconRenderer.hasCustomIcon,
-              isDropTargeted: style == .custom && isCustomDropTargeted,
-              previewImage: previewImage(for: style),
-              title: iconTitle(style),
-              action: { selectIconStyle(style) }
-            )
-            .onDrop(
-              of: style == .custom ? [.fileURL] : [],
-              isTargeted: $isCustomDropTargeted,
-              perform: { providers in
-                guard style == .custom else { return false }
-                return handleCustomIconDrop(providers)
-              }
-            )
-          }
-        }
-        .id(iconRefreshID)
-
-        Text(L10n.PreferencesMenuBar.iconSectionDescription)
-          .font(.caption)
-          .foregroundColor(.secondary)
-          .fixedSize(horizontal: false, vertical: true)
-
-        if store.iconStyle == .custom {
-          HStack(spacing: 8) {
-            Button(L10n.PreferencesMenuBar.importButton) {
-              presentImportPanel()
-            }
-            .buttonStyle(.bordered)
-            .controlSize(.regular)
-
-            Button(L10n.PreferencesMenuBar.removeCustomButton) {
-              iconRenderer.removeCustomIcon()
-              store.setIconStyle(.default)
-              iconRefreshID = UUID()
-            }
-            .buttonStyle(.bordered)
-            .controlSize(.regular)
-          }
-          .transition(.opacity.combined(with: .move(edge: .top)))
-        }
-      }
-      .padding(.vertical, 4)
-      .animation(.easeInOut(duration: 0.15), value: store.iconStyle)
-    }
-  }
-
-  private func previewImage(for style: MenuBarIconStyle) -> NSImage? {
-    switch style {
-    case .default:
-      return iconRenderer.statusImage(for: .default)
-    case .custom:
-      return iconRenderer.hasCustomIcon ? iconRenderer.statusImage(for: .custom) : nil
-    default:
-      return nil
-    }
-  }
-
-  private func iconTitle(_ style: MenuBarIconStyle) -> String {
-    switch style {
-    case .default: return L10n.PreferencesMenuBar.iconDefault
-    case .custom: return L10n.PreferencesMenuBar.iconCustom
-    default: return style.rawValue.capitalized
-    }
-  }
-
-  private func selectIconStyle(_ style: MenuBarIconStyle) {
-    // The custom slot is an add action until an icon has been imported.
-    if style == .custom && !iconRenderer.hasCustomIcon {
-      presentImportPanel()
-      return
-    }
-    store.setIconStyle(style)
-  }
-
-  private func presentImportPanel() {
-    let panel = NSOpenPanel()
-    panel.allowedContentTypes = [.png]
-    panel.allowsMultipleSelection = false
-    panel.canChooseDirectories = false
-    panel.prompt = L10n.PreferencesMenuBar.importButton
-
-    guard panel.runModal() == .OK, let url = panel.url else { return }
-    importCustomIcon(from: url)
-  }
-
-  private func handleCustomIconDrop(_ providers: [NSItemProvider]) -> Bool {
-    guard let provider = providers.first else { return false }
-    _ = provider.loadObject(ofClass: URL.self) { url, _ in
-      guard let url else { return }
-      Task { @MainActor in
-        if url.pathExtension.lowercased() == "png" {
-          self.importCustomIcon(from: url)
-        } else {
-          self.showImportError = true
-        }
-      }
-    }
-    return true
-  }
-
-  private func importCustomIcon(from url: URL) {
-    if iconRenderer.saveCustomIcon(from: url) {
-      store.setIconStyle(.custom)
-      iconRefreshID = UUID()
-    } else {
-      showImportError = true
-    }
-  }
-
-  // MARK: - Item Group Sections
+  // MARK: - Item Group Section
 
   private func itemGroupSection(_ group: MenuBarItemGroup) -> some View {
     Section(itemGroupTitle(group)) {
@@ -213,9 +80,6 @@ struct MenuBarSettingsView: View {
       }
       .padding(.vertical, 4)
       .onAppear {
-        // Authoritative drag-end signal: leftMouseUp always fires on the main
-        // thread at the end of every drag, even when SwiftUI replaces a row's
-        // drop delegate mid-reorder.
         mouseUpMonitor = NSEvent.addLocalMonitorForEvents(matching: .leftMouseUp) { event in
           if self.draggedItem != nil {
             self.draggedItem = nil
@@ -241,116 +105,6 @@ struct MenuBarSettingsView: View {
     case .recording: return L10n.PreferencesMenuBar.recordingSection
     case .tools: return L10n.PreferencesMenuBar.toolsSection
     }
-  }
-}
-
-// MARK: - Icon Tile
-
-/// Menu bar icon choice tile. Label-less for a consistent grid rhythm; the
-/// custom slot renders as a dashed "add" action until an icon is imported.
-private struct MenuBarIconTile: View {
-  let style: MenuBarIconStyle
-  let isSelected: Bool
-  let hasCustomIcon: Bool
-  let isDropTargeted: Bool
-  let previewImage: NSImage?
-  let title: String
-  let action: () -> Void
-
-  @State private var isHovered = false
-
-  private var showsAddAction: Bool {
-    style == .custom && !hasCustomIcon
-  }
-
-  var body: some View {
-    Button(action: action) {
-      ZStack {
-        tileBackground
-
-        tileContent
-      }
-      .frame(width: 44, height: 44)
-      .overlay(
-        Radius.rect(Radius.tile)
-          .strokeBorder(
-            isSelected ? Color.accentColor : Color.clear,
-            lineWidth: 2.5
-          )
-      )
-      .overlay(alignment: .bottomTrailing) {
-        if isSelected {
-          selectionBadge
-        }
-      }
-      .contentShape(Radius.rect(Radius.tile))
-    }
-    .buttonStyle(.plain)
-    .onHover { isHovered = $0 }
-    .help(title)
-    .accessibilityLabel(title)
-    .accessibilityAddTraits(isSelected ? .isSelected : [])
-  }
-
-  @ViewBuilder
-  private var tileBackground: some View {
-    if showsAddAction {
-      // Dashed "add" affordance — reads as an action, not a choice.
-      Radius.rect(Radius.tile)
-        .strokeBorder(
-          style: StrokeStyle(lineWidth: 1.5, dash: [4, 3])
-        )
-        .foregroundStyle(isDropTargeted ? Color.accentColor : Color.secondary.opacity(0.5))
-        .background(
-          Radius.rect(Radius.tile)
-            .fill(isDropTargeted ? Color.accentColor.opacity(0.12) : Color.clear)
-        )
-    } else {
-      Radius.rect(Radius.tile)
-        .fill(fillColor)
-        .overlay(
-          Radius.rect(Radius.tile)
-            .strokeBorder(Color.primary.opacity(0.08), lineWidth: 1)
-        )
-    }
-  }
-
-  private var fillColor: Color {
-    if isSelected {
-      return Color.accentColor.opacity(0.15)
-    }
-    if isHovered {
-      return Color.primary.opacity(0.1)
-    }
-    return Color.primary.opacity(0.05)
-  }
-
-  @ViewBuilder
-  private var tileContent: some View {
-    if showsAddAction {
-      Image(systemName: "plus")
-        .font(.system(size: 16, weight: .medium))
-        .foregroundStyle(isDropTargeted ? Color.accentColor : Color.secondary)
-    } else if let symbolName = style.symbolName {
-      Image(systemName: symbolName)
-        .font(.system(size: 19))
-        .foregroundStyle(isSelected ? Color.accentColor : Color.primary)
-    } else if let previewImage {
-      Image(nsImage: previewImage)
-        .resizable()
-        .interpolation(.high)
-        .aspectRatio(contentMode: .fit)
-        .frame(width: 20, height: 20)
-        .foregroundStyle(isSelected ? Color.accentColor : Color.primary)
-    }
-  }
-
-  private var selectionBadge: some View {
-    Image(systemName: "checkmark.circle.fill")
-      .font(.system(size: 14))
-      .foregroundStyle(.white, Color.accentColor)
-      .background(Circle().fill(Color.accentColor))
-      .offset(x: 5, y: 5)
   }
 }
 
@@ -462,7 +216,6 @@ private struct MenuBarReorderDropDelegate: DropDelegate {
   }
 
   func performDrop(info: DropInfo) -> Bool {
-    // Belt-and-suspenders: also reset here for cases where the monitor fires late.
     Task { @MainActor in
       draggedItem = nil
     }

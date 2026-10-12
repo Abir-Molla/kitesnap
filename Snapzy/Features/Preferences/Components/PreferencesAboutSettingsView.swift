@@ -13,10 +13,11 @@ struct AboutSettingsView: View {
   private var appVersion: String {
     let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
     let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1"
-    return "Snapzy \(version) (\(build))"
+    return "KiteSnap \(version) (\(build))"
   }
 
   @StateObject private var updatesViewModel = CheckForUpdatesViewModel(updater: UpdaterManager.shared.updater)
+  @State private var showUpToDateAlert = false
 
   var body: some View {
     GeometryReader { proxy in
@@ -39,13 +40,20 @@ struct AboutSettingsView: View {
         .padding(.bottom, 28)
       }
     }
+    .alert(isPresented: $showUpToDateAlert) {
+      Alert(
+        title: Text("KiteSnap is Up to Date"),
+        message: Text("You are using the latest version of KiteSnap (\(appVersion))."),
+        dismissButton: .default(Text(L10n.Common.ok))
+      )
+    }
   }
 
   // MARK: - Hero Section
 
   private var heroSection: some View {
     VStack(spacing: 10) {
-      Image(nsImage: NSApp.applicationIconImage)
+      Image(nsImage: AppIconProvider.image)
         .resizable()
         .aspectRatio(contentMode: .fit)
         .frame(width: 96, height: 96)
@@ -69,7 +77,10 @@ struct AboutSettingsView: View {
       VStack(spacing: 10) {
         versionStatusLabel
 
-        CheckForUpdatesView(viewModel: updatesViewModel) {
+        Button {
+          showUpToDateAlert = true
+          updatesViewModel.checkForUpdates()
+        } label: {
           HStack(spacing: 5) {
             Image(systemName: "arrow.triangle.2.circlepath")
               .font(.system(size: 11, weight: .semibold))

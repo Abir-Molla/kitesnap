@@ -21,10 +21,10 @@ final class PreferencesWindowController: NSObject, NSWindowDelegate {
 
   /// Default content size: wide enough for sidebar and grouped form cards,
   /// tall enough for long panes without excessive initial scrolling.
-  static let defaultContentSize = CGSize(width: 800, height: 620)
+  static let defaultContentSize = CGSize(width: 760, height: 680)
 
   /// Minimum window size to prevent label truncation.
-  static let minimumContentSize = CGSize(width: 700, height: 520)
+  static let minimumContentSize = CGSize(width: 710, height: 580)
 
   private var didElevateActivationPolicy = false
 

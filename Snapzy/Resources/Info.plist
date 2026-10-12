@@ -25,7 +25,9 @@
 		</dict>
 	</array>
 	<key>CFBundleIconFile</key>
-	<string>SnapzyIcon</string>
+	<string>AppIcon</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

@@ -271,7 +271,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Grant access to %@ once so Snapzy can create config.toml and apply direct edits on launch."
+            "value": "Grant access to %@ once so KiteSnap can create config.toml and apply direct edits on launch."
           }
         }
       }
@@ -293,7 +293,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choose %@ to keep Snapzy config in the default dotfiles location."
+            "value": "Choose %@ to keep KiteSnap config in the default dotfiles location."
           }
         }
       }
@@ -304,7 +304,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Grant access for %@. If the folder is missing, Snapzy will create it automatically."
+            "value": "Grant access for %@. If the folder is missing, KiteSnap will create it automatically."
           }
         }
       }
@@ -315,7 +315,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Grant access for %@. Snapzy will create config.toml there if it is missing."
+            "value": "Grant access for %@. KiteSnap will create config.toml there if it is missing."
           }
         }
       }
@@ -414,7 +414,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "config.toml no longer matches Snapzy settings and may have edits from outside the app. Syncing will replace it with current settings."
+            "value": "config.toml no longer matches KiteSnap settings and may have edits from outside the app. Syncing will replace it with current settings."
           }
         }
       }
@@ -458,7 +458,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sync queued. Snapzy will update config.toml shortly."
+            "value": "Sync queued. KiteSnap will update config.toml shortly."
           }
         }
       }
@@ -546,7 +546,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Export Snapzy Config"
+            "value": "Export KiteSnap Config"
           }
         }
       }
@@ -645,7 +645,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Import Snapzy Config"
+            "value": "Import KiteSnap Config"
           }
         }
       }
@@ -777,7 +777,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "If you confirm, Snapzy will replace config.toml with default values, reset app settings, and clear cloud credentials. Saved captures are not deleted."
+            "value": "If you confirm, KiteSnap will replace config.toml with default values, reset app settings, and clear cloud credentials. Saved captures are not deleted."
           }
         }
       }
@@ -953,7 +953,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choose where Snapzy saves captures"
+            "value": "Choose where KiteSnap saves captures"
           }
         }
       }
@@ -986,7 +986,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Desktop/Snapzy"
+            "value": "Desktop/KiteSnap"
           }
         }
       }
@@ -1019,7 +1019,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choose the language used across Snapzy"
+            "value": "Choose the language used across KiteSnap"
           }
         }
       }
@@ -1030,7 +1030,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Relaunch Snapzy"
+            "value": "Relaunch KiteSnap"
           }
         }
       }
@@ -1041,7 +1041,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Snapzy needs to quit and reopen to apply this language change everywhere."
+            "value": "KiteSnap needs to quit and reopen to apply this language change everywhere."
           }
         }
       }
@@ -1052,7 +1052,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Relaunch Snapzy?"
+            "value": "Relaunch KiteSnap?"
           }
         }
       }
@@ -1063,7 +1063,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Could Not Relaunch Snapzy"
+            "value": "Could Not Relaunch KiteSnap"
           }
         }
       }
@@ -1173,7 +1173,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Access Snapzy from the menu bar. When hidden, open Snapzy again to show settings."
+            "value": "Access KiteSnap from the menu bar. When hidden, open KiteSnap again to show settings."
           }
         }
       }
@@ -1404,7 +1404,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Launch Snapzy when you log in"
+            "value": "Launch KiteSnap when you log in"
           }
         }
       }
@@ -1481,7 +1481,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "This will move all capture files to Trash and remove them from History. This action cannot be undone in Snapzy."
+            "value": "This will move all capture files to Trash and remove them from History. This action cannot be undone in KiteSnap."
           }
         }
       }

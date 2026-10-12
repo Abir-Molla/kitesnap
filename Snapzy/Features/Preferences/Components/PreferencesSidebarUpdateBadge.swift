@@ -2,7 +2,7 @@
 //  PreferencesSidebarUpdateBadge.swift
 //  Snapzy
 //
-//  Sidebar bottom badge showing app icon, name, update channel, and quick update action.
+//  Sidebar bottom badge showing KiteSnap icon, name, version, and quick update action.
 //
 
 import AppKit
@@ -10,14 +10,8 @@ import Sparkle
 import SwiftUI
 
 struct PreferencesSidebarUpdateBadge: View {
-  @AppStorage(PreferencesKeys.updateChannel)
-  private var updateChannel: String = UpdateChannel.stable.rawValue
-
   @State private var isHovering = false
-
-  private var isBeta: Bool {
-    updateChannel == UpdateChannel.beta.rawValue
-  }
+  @State private var showUpToDateAlert = false
 
   private var appVersion: String {
     let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
@@ -30,28 +24,28 @@ struct PreferencesSidebarUpdateBadge: View {
         .opacity(0.4)
 
       Button {
-        UpdaterManager.shared.checkForUpdates()
+        triggerUpdateCheck()
       } label: {
         HStack(spacing: 10) {
-          Image(nsImage: NSApp.applicationIconImage)
+          Image(nsImage: AppIconProvider.image)
             .resizable()
             .scaledToFit()
             .frame(width: 28, height: 28)
-            .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous)) // radius-lint:allow — clips the app icon bitmap; matches the icon's own corner
+            .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
             .overlay(
-              RoundedRectangle(cornerRadius: 6, style: .continuous) // radius-lint:allow — traces the icon clip
+              RoundedRectangle(cornerRadius: 6, style: .continuous)
                 .stroke(Color.primary.opacity(0.08), lineWidth: 0.5)
             )
 
           VStack(alignment: .leading, spacing: 2) {
             HStack(spacing: 4) {
-              Text(verbatim: "Snapzy")
+              Text(verbatim: "KiteSnap")
                 .font(.system(size: 12.5, weight: .semibold))
                 .foregroundStyle(.primary)
 
               Spacer(minLength: 4)
 
-              channelBadge
+              upToDateBadge
             }
 
             Text(appVersion)
@@ -60,8 +54,8 @@ struct PreferencesSidebarUpdateBadge: View {
               .lineLimit(1)
           }
         }
-        .padding(.horizontal, 10)
-        .padding(.vertical, 8)
+        .padding(.horizontal, 9)
+        .padding(.vertical, 7)
         .background {
           Radius.rect(Radius.card)
             .fill(isHovering ? Color.primary.opacity(0.06) : Color.primary.opacity(0.035))
@@ -79,31 +73,7 @@ struct PreferencesSidebarUpdateBadge: View {
       .help(L10n.Menu.checkForUpdates)
       .contextMenu {
         Button(L10n.Menu.checkForUpdates) {
-          UpdaterManager.shared.checkForUpdates()
-        }
-
-        Divider()
-
-        Button {
-          setChannel(.stable)
-        } label: {
-          HStack {
-            Text(L10n.PreferencesAbout.updateChannelStable)
-            if !isBeta {
-              Image(systemName: "checkmark")
-            }
-          }
-        }
-
-        Button {
-          setChannel(.beta)
-        } label: {
-          HStack {
-            Text(L10n.PreferencesAbout.updateChannelBeta)
-            if isBeta {
-              Image(systemName: "checkmark")
-            }
-          }
+          triggerUpdateCheck()
         }
 
         Divider()
@@ -112,32 +82,37 @@ struct PreferencesSidebarUpdateBadge: View {
           PreferencesNavigationState.shared.select(.about)
         }
       }
-      .padding(.horizontal, 12)
+      .padding(.horizontal, 8)
       .padding(.vertical, 8)
+    }
+    .alert(isPresented: $showUpToDateAlert) {
+      Alert(
+        title: Text("KiteSnap is Up to Date"),
+        message: Text("You are using the latest version of KiteSnap (\(appVersion))."),
+        dismissButton: .default(Text(L10n.Common.ok))
+      )
     }
   }
 
-  private var channelBadge: some View {
-    Text(isBeta ? "BETA" : "STABLE")
-      .font(.system(size: 9.5, weight: .bold))
-      .padding(.horizontal, 5)
+  private var upToDateBadge: some View {
+    Text("LATEST")
+      .font(.system(size: 9.0, weight: .bold))
+      .padding(.horizontal, 4.5)
       .padding(.vertical, 1.5)
-      .foregroundStyle(isBeta ? Color.orange : Color.secondary)
+      .foregroundStyle(Color.green)
       .background(
         Capsule()
-          .fill(isBeta ? Color.orange.opacity(0.18) : Color.secondary.opacity(0.12))
+          .fill(Color.green.opacity(0.15))
       )
   }
 
-  private func setChannel(_ channel: UpdateChannel) {
-    guard updateChannel != channel.rawValue else { return }
-    updateChannel = channel.rawValue
-    SnapzyConfigurationSyncCoordinator.shared.scheduleSync(reason: .explicitChange)
+  private func triggerUpdateCheck() {
+    showUpToDateAlert = true
     UpdaterManager.shared.checkForUpdates()
   }
 }
 
 #Preview {
   PreferencesSidebarUpdateBadge()
-    .frame(width: 220)
+    .frame(width: 200)
 }

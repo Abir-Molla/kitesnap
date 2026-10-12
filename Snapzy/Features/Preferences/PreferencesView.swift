@@ -12,7 +12,7 @@ struct PreferencesView: View {
   @ObservedObject private var navigationState = PreferencesNavigationState.shared
 
   /// Fixed sidebar width prevents divider dragging and accidental collapsing.
-  private static let fixedSidebarWidth: CGFloat = 220
+  private static let fixedSidebarWidth: CGFloat = 200
 
   var body: some View {
     NavigationSplitView(columnVisibility: columnVisibilityBinding) {
@@ -102,7 +102,7 @@ struct PreferencesView: View {
     .transition(.opacity)
     .animation(.easeOut(duration: 0.12), value: navigationState.selectedTab)
     .navigationTitle(navigationState.selectedTab.title)
-    .navigationSplitViewColumnWidth(min: 480, ideal: 580)
+    .navigationSplitViewColumnWidth(min: 480, ideal: 550)
     .toolbar {
       ToolbarItemGroup(placement: .navigation) {
         Button {
