@@ -120,8 +120,8 @@ struct AboutSettingsView: View {
 
         Spacer()
 
-        Link(destination: URL(string: "https://github.com/duongductrong")!) {
-          Text("Trong Duong")
+        Link(destination: URL(string: "https://github.com/Abir-Molla/kitesnap")!) {
+          Text("Abir Molla")
             .font(.system(size: 13, weight: .medium))
             .foregroundStyle(Color.primary)
         }
@@ -183,9 +183,8 @@ struct AboutSettingsView: View {
         Spacer(minLength: 20)
 
         VStack(alignment: .trailing, spacing: 8) {
-          supportLink(title: L10n.PreferencesAbout.website, url: "https://snapzy.app")
-          supportLink(title: L10n.PreferencesAbout.github, url: "https://github.com/duongductrong/Snapzy")
-          supportLink(title: L10n.PreferencesAbout.reportBug, url: "https://github.com/duongductrong/Snapzy/issues")
+          supportLink(title: L10n.PreferencesAbout.github, url: "https://github.com/Abir-Molla/kitesnap")
+          supportLink(title: L10n.PreferencesAbout.reportBug, url: "https://github.com/Abir-Molla/kitesnap/issues")
         }
       }
       .padding(.horizontal, 16)

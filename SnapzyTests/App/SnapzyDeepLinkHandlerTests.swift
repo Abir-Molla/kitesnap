@@ -10,6 +10,24 @@ import XCTest
 
 final class SnapzyDeepLinkHandlerTests: XCTestCase {
 
+    func testKiteSnapSchemeCanonicalRoutesParseExpectedActions() throws {
+    let cases: [(String, SnapzyDeepLinkAction)] = [
+      ("kitesnap://capture/fullscreen", .captureFullscreen),
+      ("kitesnap://capture/area", .captureArea),
+      ("kitesnap://capture/delayed", .captureDelayed),
+      ("kitesnap://record/screen", .recordScreen),
+      ("kitesnap://open/annotate", .openAnnotate),
+      ("kitesnap://open/history", .openHistory),
+      ("kitesnap://show/shortcuts", .showShortcuts),
+      ("kitesnap://settings", .openSettings(nil)),
+    ]
+
+    for (urlString, expectedAction) in cases {
+      let url = try XCTUnwrap(URL(string: urlString))
+      XCTAssertEqual(SnapzyDeepLinkAction(url: url), expectedAction, urlString)
+    }
+  }
+
   func testCanonicalRoutesParseExpectedActions() throws {
     let cases: [(String, SnapzyDeepLinkAction)] = [
       ("snapzy://capture/fullscreen", .captureFullscreen),

@@ -57,8 +57,8 @@ struct AboutLinkCard: View {
   AboutLinkCard(
     icon: "globe",
     title: "Website",
-    subtitle: "github.com/duongductrong",
-    url: "https://github.com"
+    subtitle: "github.com/Abir-Molla/kitesnap",
+    url: "https://github.com/Abir-Molla/kitesnap"
   )
   .frame(width: 150)
   .padding()
