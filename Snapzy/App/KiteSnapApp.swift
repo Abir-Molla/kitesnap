@@ -235,7 +235,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     alert.addButton(withTitle: "Try Again")
     alert.addButton(withTitle: "Start Fresh…")
-    alert.addButton(withTitle: "Quit Snapzy")
+    alert.addButton(withTitle: "Quit KiteSnap")
 
     switch alert.runModal() {
     case .alertFirstButtonReturn:
@@ -351,7 +351,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     alert.addButton(withTitle: "Try Repair")
     alert.addButton(withTitle: "Reset Database...")
-    alert.addButton(withTitle: "Quit Snapzy")
+    alert.addButton(withTitle: "Quit KiteSnap")
 
     switch alert.runModal() {
     case .alertFirstButtonReturn:

@@ -784,7 +784,7 @@ nonisolated enum L10n {
     )
     static let quitSnapzy = string(
       "menu.quit-snapzy",
-      defaultValue: "Quit Snapzy",
+      defaultValue: "Quit KiteSnap",
       comment: "Status bar menu item title for quitting the app"
     )
   }

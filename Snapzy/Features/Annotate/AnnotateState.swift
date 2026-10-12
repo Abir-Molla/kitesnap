@@ -243,7 +243,7 @@ final class AnnotateState: ObservableObject {
   @Published var arrowBendDirection: ArrowBendDirection = .primary
   @Published var arrowStartHead: ArrowEndpointStyle = .none
   @Published var arrowEndHead: ArrowEndpointStyle = .arrow
-  @Published var watermarkText: String = "Snapzy"
+  @Published var watermarkText: String = "KiteSnap"
   @Published var spotlightOpacity: CGFloat = 0.5
   @Published private var annotationToolProperties: [AnnotationToolType: AnnotationProperties] = [:]
   private var isQuickPropertiesGestureEditing = false
