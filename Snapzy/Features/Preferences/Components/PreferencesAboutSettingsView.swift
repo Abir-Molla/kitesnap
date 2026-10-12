@@ -9,7 +9,6 @@ import AppKit
 import SwiftUI
 
 struct AboutSettingsView: View {
-  @AppStorage(PreferencesKeys.updateChannel) private var updateChannel: String = UpdateChannel.stable.rawValue
 
   private var appVersion: String {
     let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
@@ -55,7 +54,7 @@ struct AboutSettingsView: View {
         .shadow(color: Color.black.opacity(0.06), radius: 3, x: 0, y: 1)
 
       VStack(spacing: 3) {
-        Text(verbatim: "Snapzy")
+        Text(verbatim: "KiteSnap")
           .font(.system(size: 24, weight: .bold, design: .rounded))
           .foregroundStyle(Color.primary)
 
@@ -138,42 +137,6 @@ struct AboutSettingsView: View {
 
   private var versionAndSupportCard: some View {
     VStack(spacing: 0) {
-      // Update Channel
-      HStack(alignment: .center) {
-        Text(L10n.PreferencesAbout.updateChannelTitle)
-          .font(.system(size: 13, weight: .regular))
-          .foregroundStyle(Color.primary)
-
-        Spacer()
-
-        Picker("", selection: $updateChannel) {
-          Text(L10n.PreferencesAbout.updateChannelStable).tag(UpdateChannel.stable.rawValue)
-          Text(L10n.PreferencesAbout.updateChannelBeta).tag(UpdateChannel.beta.rawValue)
-        }
-        .pickerStyle(.menu)
-        .labelsHidden()
-        .fixedSize()
-        .controlSize(.regular)
-      }
-      .padding(.horizontal, 16)
-      .padding(.vertical, 12)
-
-      if updateChannel == UpdateChannel.beta.rawValue {
-        HStack(alignment: .top, spacing: 6) {
-          Image(systemName: "exclamationmark.triangle.fill")
-            .font(.caption)
-            .foregroundColor(.orange)
-          Text(L10n.PreferencesAbout.updateChannelBetaWarning)
-            .font(.caption)
-            .foregroundColor(.orange)
-            .multilineTextAlignment(.leading)
-        }
-        .padding(.horizontal, 16)
-        .padding(.bottom, 10)
-      }
-
-      divider
-
       // Support & Links
       HStack(alignment: .top) {
         Text(L10n.PreferencesAbout.support)
@@ -191,10 +154,6 @@ struct AboutSettingsView: View {
       .padding(.vertical, 12)
     }
     .cardContainer(maxWidth: 480)
-    .onChange(of: updateChannel) { _ in
-      SnapzyConfigurationSyncCoordinator.shared.scheduleSync(reason: .explicitChange)
-      UpdaterManager.shared.checkForUpdates()
-    }
   }
 
   // MARK: - Helpers
