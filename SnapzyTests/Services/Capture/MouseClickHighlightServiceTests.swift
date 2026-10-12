@@ -1,6 +1,6 @@
 //
 //  MouseClickHighlightServiceTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for MouseClickHighlightService lifecycle.
 //

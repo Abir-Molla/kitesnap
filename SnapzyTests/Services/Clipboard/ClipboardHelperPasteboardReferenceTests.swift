@@ -1,6 +1,6 @@
 //
 //  ClipboardHelperPasteboardReferenceTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Verify that Snapzy tracks which file URL the general pasteboard currently
 //  references, so temp-file cleanup can preserve paste-integrity (#234).

@@ -1,6 +1,6 @@
 //
 //  RecordingConfigurationTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Tests for screen-recording toolbar and overlay configuration defaults.
 //

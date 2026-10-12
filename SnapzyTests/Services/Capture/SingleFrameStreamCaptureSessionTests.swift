@@ -1,6 +1,6 @@
 //
 //  SingleFrameStreamCaptureSessionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression tests for GitHub issue #286: the macOS 13 single-frame SCStream
 //  fallback must always terminate (first frame, stream error, timeout or

@@ -1,6 +1,6 @@
 //
 //  BackgroundCursorControlTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for BackgroundCursorControl.enableOnce: the CGS
 //  SetsCursorInBackground grant is attempted at most once per instance and the

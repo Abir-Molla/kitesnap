@@ -1,6 +1,6 @@
 //
 //  CITestGate.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Shared gate for interaction / nondeterministic tests. Tests that exercise
 //  real UI surfaces (NSSavePanel, NSPasteboard, drag-to-app), async ML/OCR

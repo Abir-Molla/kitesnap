@@ -1,6 +1,6 @@
 //
 //  RecordingAnnotationStateTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for RecordingAnnotationState append, clear, count limit, and cleanup.
 //

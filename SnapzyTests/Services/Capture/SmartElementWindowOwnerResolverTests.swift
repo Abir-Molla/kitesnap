@@ -1,6 +1,6 @@
 //
 //  SmartElementWindowOwnerResolverTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for CoreGraphics window-owner resolution.
 //

@@ -1,6 +1,6 @@
 //
 //  AnnotateExporterTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for AnnotateExporter helpers (URL generation, image scale, encoding).
 //

@@ -1,6 +1,6 @@
 //
 //  RecordingToolbarWindowTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for recording hover bar drag-position clamping (issue #351).
 //

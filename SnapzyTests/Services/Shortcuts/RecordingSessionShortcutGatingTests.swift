@@ -1,6 +1,6 @@
 //
 //  RecordingSessionShortcutGatingTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for recording-session gating of global shortcuts:
 //  the four recording-session kinds (pause/resume, toggle pen, restart,

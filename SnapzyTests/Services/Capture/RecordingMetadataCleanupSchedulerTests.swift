@@ -1,6 +1,6 @@
 //
 //  RecordingMetadataCleanupSchedulerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for RecordingMetadataCleanupScheduler lifecycle.
 //

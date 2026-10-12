@@ -1,6 +1,6 @@
 //
 //  PersistedCombineSessionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for persisted combine (stitch) session state and its restore fallbacks.
 //
@@ -20,7 +20,7 @@ final class PersistedCombineSessionTests: XCTestCase {
   override func setUp() {
     super.setUp()
     tempDirectory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_CombineSession_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_CombineSession_\(UUID().uuidString)", isDirectory: true)
     sessionsDirectory = tempDirectory.appendingPathComponent("AnnotationSessions", isDirectory: true)
     sourceDirectory = tempDirectory.appendingPathComponent("Sources", isDirectory: true)
     try? FileManager.default.createDirectory(at: sourceDirectory, withIntermediateDirectories: true)

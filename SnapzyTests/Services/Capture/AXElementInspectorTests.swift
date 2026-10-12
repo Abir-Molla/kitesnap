@@ -1,6 +1,6 @@
 //
 //  AXElementInspectorTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the AXElementInspector filter + Y-flip helpers used by
 //  SmartElementQueryService.

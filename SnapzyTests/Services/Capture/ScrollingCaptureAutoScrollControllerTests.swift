@@ -1,6 +1,6 @@
 //
 //  ScrollingCaptureAutoScrollControllerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Closed-loop Auto Scroll sequencing: one step, one settled commit, no stale frames.
 //

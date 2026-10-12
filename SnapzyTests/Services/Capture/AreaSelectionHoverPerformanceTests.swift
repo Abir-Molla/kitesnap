@@ -1,6 +1,6 @@
 //
 //  AreaSelectionHoverPerformanceTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Main-thread cost harness for the capture-mode hover hot path (crosshair /
 //  coordinate indicator). Drives the production per-tick code — a real session

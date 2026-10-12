@@ -1,6 +1,6 @@
 //
 //  AreaSelectionOverlayTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Remaining overlay tests: coordinates indicator visibility and
 //  application-window interaction mode.

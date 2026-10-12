@@ -1,6 +1,6 @@
 //
 //  MicrophoneAudioCapturerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Tests for MicrophoneAudioCapturer initialization and lifecycle.
 //

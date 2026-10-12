@@ -1,6 +1,6 @@
 //
 //  QuickAccessActionShortcutStoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for Quick Access card action shortcut persistence and gating.
 //

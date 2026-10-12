@@ -1,6 +1,6 @@
 //
 //  RecordingMetadataStoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Tests for recording Smart Camera metadata persistence and migration.
 //
@@ -35,7 +35,7 @@ final class RecordingMetadataStoreTests: XCTestCase {
   override func setUp() async throws {
     try await super.setUp()
     tempDirectory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_RecordingMetadata_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_RecordingMetadata_\(UUID().uuidString)", isDirectory: true)
     try FileManager.default.createDirectory(at: tempDirectory, withIntermediateDirectories: true)
   }
 

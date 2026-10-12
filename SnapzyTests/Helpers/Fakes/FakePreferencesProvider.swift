@@ -1,6 +1,6 @@
 //
 //  FakePreferencesProvider.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  In-memory PreferencesProviding fake for unit tests.
 //

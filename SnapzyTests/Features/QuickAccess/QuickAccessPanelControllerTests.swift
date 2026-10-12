@@ -1,6 +1,6 @@
 //
 //  QuickAccessPanelControllerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression tests for the panel show/hide transition wedge:
 //  a show() landing during the exit animation (or any dropped NSAnimationContext

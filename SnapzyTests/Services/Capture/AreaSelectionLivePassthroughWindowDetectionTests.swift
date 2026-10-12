@@ -1,6 +1,6 @@
 //
 //  AreaSelectionLivePassthroughWindowDetectionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression coverage for https://github.com/duongductrong/Snapzy/pull/472#issuecomment-5357458899:
 //  under live-passthrough input (the default capture mode), `AreaSelectionController.handleLivePassthroughButton`

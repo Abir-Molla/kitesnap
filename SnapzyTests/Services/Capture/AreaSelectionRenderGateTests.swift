@@ -1,6 +1,6 @@
 //
 //  AreaSelectionRenderGateTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 
 import CoreGraphics

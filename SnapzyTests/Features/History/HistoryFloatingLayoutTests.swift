@@ -1,6 +1,6 @@
 //
 //  HistoryFloatingLayoutTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for HistoryFloatingLayout math and HistoryFloatingTimeFilter.
 //
@@ -313,7 +313,7 @@ final class HistoryFloatingLayoutTests: XCTestCase {
     file: StaticString = #filePath,
     line: UInt = #line
   ) throws -> UserDefaults {
-    let suiteName = "SnapzyTests.HistoryFloatingLayoutTests.\(UUID().uuidString)"
+    let suiteName = "KiteSnapTests.HistoryFloatingLayoutTests.\(UUID().uuidString)"
     let defaults = try XCTUnwrap(UserDefaults(suiteName: suiteName), file: file, line: line)
     defaults.removePersistentDomain(forName: suiteName)
     return defaults

@@ -7249,7 +7249,7 @@ nonisolated enum L10n {
       defaultValue: "Hold steady",
       comment: "Selection guidance title shown while the first scrolling capture frame is locking"
     )
-    static let guidanceSnapzyLockingFirstFrame = string(
+    static let guidanceKiteSnapLockingFirstFrame = string(
       "scrolling-capture.guidance-snapzy-locking-first-frame",
       defaultValue: "Snapzy is locking the first frame",
       comment: "Selection guidance detail shown while the first scrolling capture frame is locking"
@@ -7259,7 +7259,7 @@ nonisolated enum L10n {
       defaultValue: "Slow down",
       comment: "Selection guidance title shown when scrolling capture needs slower scrolling"
     )
-    static let guidanceKeepOneDirectionSoSnapzyCanRealign = string(
+    static let guidanceKeepOneDirectionSoKiteSnapCanRealign = string(
       "scrolling-capture.guidance-keep-one-direction-so-snapzy-can-realign",
       defaultValue: "Keep one direction so Snapzy can re-align",
       comment: "Selection guidance detail shown when scrolling capture needs recovery"
@@ -7314,7 +7314,7 @@ nonisolated enum L10n {
       defaultValue: "Locking current capture",
       comment: "Selection guidance title shown while scrolling capture finalizes"
     )
-    static let guidanceSnapzySealingStitchedResult = string(
+    static let guidanceKiteSnapSealingStitchedResult = string(
       "scrolling-capture.guidance-snapzy-sealing-stitched-result",
       defaultValue: "Snapzy is sealing the stitched result",
       comment: "Selection guidance detail shown while scrolling capture finalizes"

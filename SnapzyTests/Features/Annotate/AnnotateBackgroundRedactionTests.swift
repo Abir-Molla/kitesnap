@@ -1,6 +1,6 @@
 //
 //  AnnotateBackgroundRedactionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for region-based redaction and background cutout.
 //  ALWAYS-RUN: applySensitiveRedactionRegions gap cases (empty no-op,

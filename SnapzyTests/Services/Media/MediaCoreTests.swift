@@ -1,6 +1,6 @@
 //
 //  MediaCoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for OCR benchmark math and QR clipboard payload logic.
 //

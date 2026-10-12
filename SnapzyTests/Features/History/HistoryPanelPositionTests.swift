@@ -1,6 +1,6 @@
 //
 //  HistoryPanelPositionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for HistoryPanelPosition layout math and HistoryBackgroundStyle persistence.
 //
@@ -106,7 +106,7 @@ final class HistoryPanelPositionTests: XCTestCase {
     file: StaticString = #filePath,
     line: UInt = #line
   ) throws -> UserDefaults {
-    let suiteName = "SnapzyTests.HistoryPanelPositionTests.\(UUID().uuidString)"
+    let suiteName = "KiteSnapTests.HistoryPanelPositionTests.\(UUID().uuidString)"
     let defaults = try XCTUnwrap(UserDefaults(suiteName: suiteName), file: file, line: line)
     defaults.removePersistentDomain(forName: suiteName)
     return defaults

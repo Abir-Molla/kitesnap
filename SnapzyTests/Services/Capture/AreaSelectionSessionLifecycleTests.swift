@@ -1,6 +1,6 @@
 //
 //  AreaSelectionSessionLifecycleTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression tests for the area-selection session lifecycle races:
 //  session replacement must tear the previous session down through the cancel

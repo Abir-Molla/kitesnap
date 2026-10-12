@@ -1,6 +1,6 @@
 //
 //  OCRRecognitionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression coverage for language-aware Vision OCR routing.
 //

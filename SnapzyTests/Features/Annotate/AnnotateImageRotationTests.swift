@@ -1,6 +1,6 @@
 //
 //  AnnotateImageRotationTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for 90° point/rect rotation helpers used by the editor rotation tools.
 //  Coordinate system is bottom-left origin (y-up), matching AppKit annotation storage.

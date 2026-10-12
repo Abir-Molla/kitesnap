@@ -1,6 +1,6 @@
 //
 //  SmartElementCaptureControllerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the standalone Smart Element overlay controller.
 //

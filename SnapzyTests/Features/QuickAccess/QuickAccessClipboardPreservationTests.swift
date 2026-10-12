@@ -1,6 +1,6 @@
 //
 //  QuickAccessClipboardPreservationTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Verify that dismissing a Quick Access card does NOT delete a temp capture
 //  while the general pasteboard still references it (#234), and that deletion

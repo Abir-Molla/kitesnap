@@ -1,6 +1,6 @@
 //
 //  QuickLookCaptureTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 
 import CoreGraphics

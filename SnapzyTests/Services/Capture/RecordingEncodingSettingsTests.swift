@@ -1,6 +1,6 @@
 //
 //  RecordingEncodingSettingsTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for RecordingVideoEncodingSettings and RecordingAudioEncodingSettings.
 //

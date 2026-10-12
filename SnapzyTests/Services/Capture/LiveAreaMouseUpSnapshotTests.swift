@@ -1,6 +1,6 @@
 //
 //  LiveAreaMouseUpSnapshotTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the live area-capture mouse-up fast-grab gating and all-or-nothing
 //  per-display gather (ScreenCaptureViewModel.gatherLiveMouseUpSnapshots). The snapshot

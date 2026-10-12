@@ -1,6 +1,6 @@
 //
 //  AreaSelectionOverlayLumaSamplingTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression test for the luma-sampling coordinate mismatch:
 //  backdrop captured at nominalResolution but scaleFactor set to backingScaleFactor.

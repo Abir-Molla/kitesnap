@@ -1,6 +1,6 @@
 //
 //  ScrollingCaptureWindowSharingTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for scrolling capture session chrome capture exclusion.
 //

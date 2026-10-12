@@ -1,6 +1,6 @@
 //
 //  PauseResumeRecordingShortcutTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the optional pause/resume recording global shortcut
 //  and the start/stop toggle eligibility on RecordingState.

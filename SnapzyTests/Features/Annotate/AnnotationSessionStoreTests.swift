@@ -1,6 +1,6 @@
 //
 //  AnnotationSessionStoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for persisted editable annotation session sidecars.
 //
@@ -21,7 +21,7 @@ final class AnnotationSessionStoreTests: XCTestCase {
   override func setUp() {
     super.setUp()
     tempDirectory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_AnnotationSessionStore_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_AnnotationSessionStore_\(UUID().uuidString)", isDirectory: true)
     sessionsDirectory = tempDirectory.appendingPathComponent("AnnotationSessions", isDirectory: true)
     sourceDirectory = tempDirectory.appendingPathComponent("Sources", isDirectory: true)
     try? FileManager.default.createDirectory(at: sourceDirectory, withIntermediateDirectories: true)

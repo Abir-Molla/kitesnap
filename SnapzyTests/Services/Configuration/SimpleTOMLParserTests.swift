@@ -1,6 +1,6 @@
 //
 //  SimpleTOMLParserTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the focused TOML parser used by config import.
 //

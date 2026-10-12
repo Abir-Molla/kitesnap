@@ -1,6 +1,6 @@
 //
 //  AnnotateImageOpsTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for image load / replace / import behavior on
 //  AnnotateState. Pure/state-only assertions — ALWAYS-RUN.

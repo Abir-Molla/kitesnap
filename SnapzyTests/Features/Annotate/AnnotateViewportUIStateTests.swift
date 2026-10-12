@@ -1,6 +1,6 @@
 //
 //  AnnotateViewportUIStateTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for AnnotateState viewport geometry (zoom/pan/viewport
 //  metrics) and UI state (tool activation, sidebar collapse/restore for crop,

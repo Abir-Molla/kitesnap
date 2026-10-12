@@ -1,6 +1,6 @@
 //
 //  AreaSelectionOverlayPassthroughCursorTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression tests for the live-passthrough cursor guard: while a passthrough
 //  session owns the overlay, no code path may set the real system cursor (the

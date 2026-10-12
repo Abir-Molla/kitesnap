@@ -1,6 +1,6 @@
 //
 //  SmartElementQueryServiceTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the public service surface: permission gate, dedup,
 //  cancel, and the Combine debounce. Tests use FakeAXSnapshotProvider so

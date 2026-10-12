@@ -1,6 +1,6 @@
 //
 //  WindowCaptureResolutionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 
 import CoreGraphics

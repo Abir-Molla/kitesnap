@@ -1,6 +1,6 @@
 //
 //  CropEdgeSnappingTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Pure snap-math tests with a hand-built CropEdgeProfile (no image needed):
 //  per-handle edge movement, tolerance behavior, opposite-edge anchoring,

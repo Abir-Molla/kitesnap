@@ -1,6 +1,6 @@
 //
 //  LiquidGlassTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Behavioural tests for Liquid Glass capability gating, appearance adaptation, and controls.
 //

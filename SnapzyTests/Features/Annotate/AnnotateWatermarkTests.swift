@@ -1,6 +1,6 @@
 //
 //  AnnotateWatermarkTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for watermark text updates, the three watermark
 //  styles and their per-style default rotation, and inheritance of remembered

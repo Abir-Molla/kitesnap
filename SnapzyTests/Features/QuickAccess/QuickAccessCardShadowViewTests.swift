@@ -1,6 +1,6 @@
 //
 //  QuickAccessCardShadowViewTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the layer-backed Quick Access card shadow host.
 //

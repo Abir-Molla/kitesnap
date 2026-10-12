@@ -1,6 +1,6 @@
 //
 //  AreaSelectionMultiMonitorReconciliationTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression test for the multi-monitor selectionEnabled reconciliation bug:
 //  a pooled window on a secondary display whose backdrop hadn't arrived yet

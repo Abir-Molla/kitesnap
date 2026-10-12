@@ -1,6 +1,6 @@
 //
 //  ClipboardHelperTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for ClipboardHelper format handling and file copy logic.
 //

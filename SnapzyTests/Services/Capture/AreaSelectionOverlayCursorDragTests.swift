@@ -1,6 +1,6 @@
 //
 //  AreaSelectionOverlayCursorDragTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for cursor re-assertion during drag and mouse-down event handling.
 //

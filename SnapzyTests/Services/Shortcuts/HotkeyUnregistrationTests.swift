@@ -1,6 +1,6 @@
 //
 //  HotkeyUnregistrationTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression probe for GitHub issue #418:
 //  "When a screenshot shortcut is disabled, the key combo still works

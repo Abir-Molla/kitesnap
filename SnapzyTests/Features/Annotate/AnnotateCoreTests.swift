@@ -1,6 +1,6 @@
 //
 //  AnnotateCoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for annotation creation and geometry helpers.
 //
@@ -3347,7 +3347,7 @@ final class AnnotateCoreTests: XCTestCase {
 
   func testAnnotateExporterGenerateCopyURL_incrementsExistingCopies() throws {
     let directory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_AnnotateCopyURL_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_AnnotateCopyURL_\(UUID().uuidString)", isDirectory: true)
     try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
     defer { try? FileManager.default.removeItem(at: directory) }
 

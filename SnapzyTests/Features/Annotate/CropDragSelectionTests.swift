@@ -1,6 +1,6 @@
 //
 //  CropDragSelectionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Pure geometry tests for drag-to-draw crop: anchor/pointer normalization in
 //  every direction, clamping to image bounds, aspect-ratio fitting, moving

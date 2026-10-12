@@ -1,6 +1,6 @@
 //
 //  RecordingMouseTrackerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for RecordingMouseTracker sample-rate resolution and lifecycle.
 //

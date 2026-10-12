@@ -1,6 +1,6 @@
 //
 //  RecordingToolbarInteractionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression coverage for recording toolbar hit targets.
 //

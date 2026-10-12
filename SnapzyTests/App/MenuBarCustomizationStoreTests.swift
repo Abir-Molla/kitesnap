@@ -1,6 +1,6 @@
 //
 //  MenuBarCustomizationStoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for menu bar item order/visibility and icon style persistence.
 //
@@ -195,7 +195,7 @@ final class MenuBarCustomizationStoreTests: XCTestCase {
   // MARK: - Helpers
 
   private func makeIsolatedDefaults() -> UserDefaults {
-    let suiteName = "SnapzyTests.MenuBar.\(UUID().uuidString)"
+    let suiteName = "KiteSnapTests.MenuBar.\(UUID().uuidString)"
     let defaults = UserDefaults(suiteName: suiteName)!
     defaults.removePersistentDomain(forName: suiteName)
     return defaults

@@ -841,7 +841,7 @@ final class AppStatusBarController: ObservableObject {
   @objc private func replayOnboardingAction() {
     logMenuAction("replayOnboarding")
     OnboardingFlowView.resetOnboarding()
-    SnapzyOnboardingWindowController.shared.close()
+    KiteSnapOnboardingWindowController.shared.close()
     PreferencesWindowController.shared.close()
 
     // Let the status-bar menu finish dismissing before presenting the onboarding window.

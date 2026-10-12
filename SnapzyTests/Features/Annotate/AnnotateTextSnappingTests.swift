@@ -1,6 +1,6 @@
 //
 //  AnnotateTextSnappingTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Pure snap-math tests with a hand-built AnnotateTextLineProfile (no Vision
 //  needed): single-line snapping, drag-direction normalization, multi-line

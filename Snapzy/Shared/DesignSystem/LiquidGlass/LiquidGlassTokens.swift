@@ -84,7 +84,7 @@ enum LiquidGlassCapabilities {
   /// Forces the pre-26 fallback path for local testing and validation.
   #if DEBUG
     static let argumentForcesLegacy: Bool =
-      ProcessInfo.processInfo.arguments.contains("-SnapzyForceLegacyGlass")
+      ProcessInfo.processInfo.arguments.contains("-KiteSnapForceLegacyGlass")
       || ProcessInfo.processInfo.environment["SNAPZY_FORCE_LEGACY_GLASS"] == "1"
 
     static var forcesLegacyGlass: Bool {
@@ -139,7 +139,7 @@ enum LiquidGlassCapabilities {
     usesNativeGlass(for: mode, userEnabled: isUserPreferenceEnabled)
   }
 
-  /// Developer-only override (`-SnapzyForceLegacyGlass` or the legacy runtime flag).
+  /// Developer-only override (`-KiteSnapForceLegacyGlass` or the legacy runtime flag).
   private static var developerForcedLegacy: Bool {
     if let runtimeLegacyOverride {
       return runtimeLegacyOverride

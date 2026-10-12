@@ -1,6 +1,6 @@
 //
 //  FixtureLoader.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Loads test fixture files from the test bundle.
 //
@@ -12,7 +12,7 @@ enum FixtureLoader {
     let testBundle = Bundle(for: FixtureLoaderClass.self)
     return testBundle.bundleURL
       .deletingLastPathComponent()
-      .appendingPathComponent("SnapzyTests", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests", isDirectory: true)
       .appendingPathComponent("Fixtures", isDirectory: true)
   }
 

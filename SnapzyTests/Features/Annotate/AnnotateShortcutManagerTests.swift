@@ -1,6 +1,6 @@
 //
 //  AnnotateShortcutManagerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for AnnotateShortcutManager lookup, conflict detection, and enable/disable.
 //

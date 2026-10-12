@@ -1,6 +1,6 @@
 //
 //  AnnotateExportSaveTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for AnnotateExporter render + save paths.
 //  ALWAYS-RUN: renderFinalImage non-nil + dims (NO pixel equality — retina
@@ -23,7 +23,7 @@ final class AnnotateExportSaveTests: XCTestCase {
   override func setUp() {
     super.setUp()
     tempDir = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_ExportSave_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_ExportSave_\(UUID().uuidString)", isDirectory: true)
     try? FileManager.default.createDirectory(at: tempDir, withIntermediateDirectories: true)
   }
 

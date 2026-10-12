@@ -1,6 +1,6 @@
 //
 //  AreaSelectionOverlayMagnifierTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for magnifier zoom-state mechanics: scroll-wheel input, min/max
 //  clamping, and reverse-direction setting.

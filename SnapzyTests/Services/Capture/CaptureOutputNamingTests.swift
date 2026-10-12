@@ -1,6 +1,6 @@
 //
 //  CaptureOutputNamingTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for CaptureOutputNaming filename generation and sanitization.
 //
@@ -18,7 +18,7 @@ final class CaptureOutputNamingTests: XCTestCase {
   override func setUp() {
     super.setUp()
     tempDirectory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_CaptureOutputNaming_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_CaptureOutputNaming_\(UUID().uuidString)", isDirectory: true)
     try? FileManager.default.createDirectory(at: tempDirectory, withIntermediateDirectories: true)
     defaults = UserDefaultsFactory.make()
   }

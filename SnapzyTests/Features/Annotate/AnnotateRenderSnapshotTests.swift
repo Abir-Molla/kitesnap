@@ -1,6 +1,6 @@
 //
 //  AnnotateRenderSnapshotTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Tests for the snapshot-based off-main render path (save-and-close flow).
 //

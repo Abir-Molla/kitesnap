@@ -1,6 +1,6 @@
 //
 //  QuickAccessPinWindowDragDeciderTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression coverage for pin-window background drag ownership (PR #584).
 //

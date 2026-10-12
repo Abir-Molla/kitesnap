@@ -1,6 +1,6 @@
 //
 //  AnnotateNativeDensityRestoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression tests for native-density (1×) capture restores: annotation sessions
 //  must reopen in the exact logical coordinate space they were authored in,
@@ -20,7 +20,7 @@ final class AnnotateNativeDensityRestoreTests: XCTestCase {
   override func setUp() {
     super.setUp()
     tempDirectory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_AnnotateNativeDensity_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_AnnotateNativeDensity_\(UUID().uuidString)", isDirectory: true)
     try? FileManager.default.createDirectory(at: tempDirectory, withIntermediateDirectories: true)
   }
 
@@ -32,7 +32,7 @@ final class AnnotateNativeDensityRestoreTests: XCTestCase {
 
   // MARK: - File DPI density (Layer 2: file opens trust the file, not the screen)
 
-  func testFileDensityScaleFactor_readsSnapzyWrittenDPI() throws {
+  func testFileDensityScaleFactor_readsKiteSnapWrittenDPI() throws {
     let retinaURL = try writePNG(named: "retina.png", pixelWidth: 400, pixelHeight: 300, dpi: 144)
     XCTAssertEqual(try XCTUnwrap(AnnotateState.fileDensityScaleFactor(from: retinaURL)), 2.0, accuracy: 0.001)
 

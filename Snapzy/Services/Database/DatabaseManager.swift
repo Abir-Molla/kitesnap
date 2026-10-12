@@ -154,7 +154,7 @@ final class DatabaseManager: @unchecked Sendable {
       if isRunningUnderXCTest {
         let processID = ProcessInfo.processInfo.processIdentifier
         return FileManager.default.temporaryDirectory
-          .appendingPathComponent("SnapzyTests", isDirectory: true)
+          .appendingPathComponent("KiteSnapTests", isDirectory: true)
           .appendingPathComponent("Databases", isDirectory: true)
           .appendingPathComponent("runner-\(processID)", isDirectory: true)
       }

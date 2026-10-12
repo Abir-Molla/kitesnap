@@ -1,6 +1,6 @@
 //
 //  CaptureHistoryRetentionServiceTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for retention service scheduling and sweep logic.
 //  Verifies via synchronous DB reads to avoid observation timing issues.
@@ -23,11 +23,11 @@ final class CaptureHistoryRetentionServiceTests: XCTestCase {
     super.setUp()
     service = CaptureHistoryRetentionService.shared
     tempDirectory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_CaptureHistoryRetention_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_CaptureHistoryRetention_\(UUID().uuidString)", isDirectory: true)
     annotationSessionStore = AnnotationSessionStore(
       rootDirectory: tempDirectory.appendingPathComponent("AnnotationSessions", isDirectory: true)
     )
-    defaultsSuiteName = "SnapzyTests.CaptureHistoryRetentionServiceTests.\(UUID().uuidString)"
+    defaultsSuiteName = "KiteSnapTests.CaptureHistoryRetentionServiceTests.\(UUID().uuidString)"
     defaults = UserDefaults(suiteName: defaultsSuiteName)
     defaults.removePersistentDomain(forName: defaultsSuiteName)
     defaults.set(true, forKey: PreferencesKeys.historyEnabled)

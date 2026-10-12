@@ -1,6 +1,6 @@
 //
 //  AnnotateBlurEffectRendererTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for BlurEffectRenderer drawing helpers.
 //

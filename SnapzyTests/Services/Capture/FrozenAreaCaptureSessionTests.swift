@@ -1,6 +1,6 @@
 //
 //  FrozenAreaCaptureSessionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for FrozenAreaCaptureSession crop math and pixel alignment.
 //

@@ -1,6 +1,6 @@
 //
 //  ScrollingCaptureStitcherTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the scrolling capture stitch algorithm.
 //

@@ -1,6 +1,6 @@
 //
 //  AnnotateBlurCacheManagerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for BlurCacheManager caching logic.
 //

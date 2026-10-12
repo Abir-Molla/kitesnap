@@ -1,6 +1,6 @@
 //
 //  SandboxOffDataMigrationServiceTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Tests for one-time App Sandbox data migration.
 //
@@ -21,7 +21,7 @@ final class SandboxOffDataMigrationServiceTests: XCTestCase {
   override func setUpWithError() throws {
     try super.setUpWithError()
     rootDirectory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_SandboxOffMigration_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_SandboxOffMigration_\(UUID().uuidString)", isDirectory: true)
     homeDirectory = rootDirectory.appendingPathComponent("Home", isDirectory: true)
     libraryDirectory = rootDirectory
       .appendingPathComponent("DestinationLibrary", isDirectory: true)

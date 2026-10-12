@@ -1,6 +1,6 @@
 //
 //  OCRLinkDetectorTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for web link detection in OCR-captured text.
 //

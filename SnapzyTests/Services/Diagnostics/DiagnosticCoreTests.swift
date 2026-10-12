@@ -1,6 +1,6 @@
 //
 //  DiagnosticCoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for diagnostic log value formatting and parsing.
 //

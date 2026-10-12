@@ -1,6 +1,6 @@
 //
 //  RecordingAudioLevelMeterTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Tests for RecordingAudioLevelMeter using real synthesized PCM sample buffers
 //  (sine tone vs silence). No mocked RMS — the meter processes genuine audio data.

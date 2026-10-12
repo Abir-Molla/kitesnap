@@ -1,6 +1,6 @@
 //
 //  AnnotateSelectionEditingTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Phase-03 characterization tests for selection + editing STATE wiring:
 //  hit selection, marquee selection, delete + undo, direct bounds mutation,

@@ -1,6 +1,6 @@
 //
 //  CaptureHistoryRecordTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for capture history record presentation helpers.
 //
@@ -31,7 +31,7 @@ final class CaptureHistoryRecordTests: XCTestCase {
 
   func testFileURLAndFileExistsReflectStoredPath() throws {
     let directory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_HistoryRecord_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_HistoryRecord_\(UUID().uuidString)", isDirectory: true)
     try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
     defer { try? FileManager.default.removeItem(at: directory) }
 
@@ -46,7 +46,7 @@ final class CaptureHistoryRecordTests: XCTestCase {
 
   func testThumbnailURLRequiresExistingThumbnailFile() throws {
     let directory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_HistoryThumbnail_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_HistoryThumbnail_\(UUID().uuidString)", isDirectory: true)
     try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
     defer { try? FileManager.default.removeItem(at: directory) }
 

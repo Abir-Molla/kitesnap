@@ -1,6 +1,6 @@
 //
 //  MockURLSession.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Programmable URLSession fake for network tests.
 //

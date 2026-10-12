@@ -1,6 +1,6 @@
 //
 //  QuickAccessCoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for Quick Access models and countdown behavior.
 //
@@ -1688,7 +1688,7 @@ final class QuickAccessCoreTests: XCTestCase {
   }
 
   private func makeIsolatedDefaults() -> UserDefaults {
-    let suiteName = "SnapzyTests.QuickAccess.\(UUID().uuidString)"
+    let suiteName = "KiteSnapTests.QuickAccess.\(UUID().uuidString)"
     let defaults = UserDefaults(suiteName: suiteName)!
     defaults.removePersistentDomain(forName: suiteName)
     return defaults

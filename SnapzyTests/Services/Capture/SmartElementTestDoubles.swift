@@ -1,6 +1,6 @@
 //
 //  SmartElementTestDoubles.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Shared fakes/spies for SmartElementQueryService tests so each test file
 //  stays under the project's 200-LOC modularization threshold.

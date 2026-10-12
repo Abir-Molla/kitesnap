@@ -1,6 +1,6 @@
 //
 //  CropContentAnalyzerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Tests for the pure image edge analysis engine: border detection on
 //  synthetic rasters (native + downscaled), Y-flip into bottom-left image

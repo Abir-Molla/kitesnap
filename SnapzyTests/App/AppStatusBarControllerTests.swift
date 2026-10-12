@@ -1,6 +1,6 @@
 //
 //  AppStatusBarControllerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for AppStatusBarController activation policy.
 //

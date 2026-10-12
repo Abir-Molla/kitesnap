@@ -1,6 +1,6 @@
 //
 //  AnnotateColorPaletteStoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Tests for persistent custom Annotate colors and quick favorites.
 //

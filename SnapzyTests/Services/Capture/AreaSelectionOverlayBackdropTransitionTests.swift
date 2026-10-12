@@ -1,6 +1,6 @@
 //
 //  AreaSelectionOverlayBackdropTransitionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for BackdropTransitionEffect.shouldCrossfade logic and
 //  applyBackdrop animation behavior.

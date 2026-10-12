@@ -1,6 +1,6 @@
 //
 //  CaptureHistoryStoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Integration tests for CaptureHistoryStore GRDB persistence.
 //
@@ -18,14 +18,14 @@ final class CaptureHistoryStoreTests: XCTestCase {
 
   override func setUp() {
     super.setUp()
-    defaultsSuiteName = "SnapzyTests.CaptureHistoryStoreTests.\(UUID().uuidString)"
+    defaultsSuiteName = "KiteSnapTests.CaptureHistoryStoreTests.\(UUID().uuidString)"
     defaults = UserDefaults(suiteName: defaultsSuiteName)
     defaults.removePersistentDomain(forName: defaultsSuiteName)
     defaults.set(true, forKey: PreferencesKeys.historyEnabled)
     CaptureHistoryStore.shared.userDefaults = defaults
 
     testDirectory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_CaptureHistoryStore_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_CaptureHistoryStore_\(UUID().uuidString)", isDirectory: true)
     try? FileManager.default.createDirectory(at: testDirectory, withIntermediateDirectories: true)
 
     CaptureHistoryStore.shared.removeAll()

@@ -1,6 +1,6 @@
 //
 //  CaptureOverlayShortcutSettingsTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for CaptureOverlayShortcut persistence, display formatting,
 //  and legacy migration.

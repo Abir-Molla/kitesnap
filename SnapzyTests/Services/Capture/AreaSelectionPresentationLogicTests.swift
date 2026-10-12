@@ -1,6 +1,6 @@
 //
 //  AreaSelectionPresentationLogicTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the area-selection presentation watchdog's pure evaluator.
 //  The watchdog exists because `isVisible` alone cannot detect a window that

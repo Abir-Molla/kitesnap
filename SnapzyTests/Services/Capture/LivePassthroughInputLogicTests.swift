@@ -1,6 +1,6 @@
 //
 //  LivePassthroughInputLogicTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for LivePassthroughInputLogic: coordinate flip, hover coalescing
 //  gate, and dim-visibility driver of the live-capture passthrough input path.

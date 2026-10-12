@@ -174,7 +174,7 @@ struct HistoryFloatingContentView: View {
   @ViewBuilder
   private var panelBorder: some View {
     if backgroundStyle == .hud {
-      // SnapzyGlassWindowBackdrop already owns onboarding's 0.5pt border.
+      // KiteSnapGlassWindowBackdrop already owns onboarding's 0.5pt border.
       EmptyView()
     } else {
       panelShape

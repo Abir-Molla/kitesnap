@@ -1,6 +1,6 @@
 //
 //  AnnotateCropTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for the crop lifecycle on AnnotateState: init to full
 //  bounds, updateCropRect normalization (standardize + min-size floor, NO image

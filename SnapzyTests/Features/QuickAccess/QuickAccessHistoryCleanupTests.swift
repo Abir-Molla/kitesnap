@@ -1,6 +1,6 @@
 //
 //  QuickAccessHistoryCleanupTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Verify that user-initiated deletion from Quick Access also removes the
 //  matching Capture History record, while auto-dismiss paths preserve it.
@@ -132,7 +132,7 @@ final class QuickAccessHistoryCleanupTests: XCTestCase {
 
   func testDeleteItem_removesHistoryRecordForSavedFile() async throws {
     let directory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_DeleteSaved_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_DeleteSaved_\(UUID().uuidString)", isDirectory: true)
     defer { try? FileManager.default.removeItem(at: directory) }
     let fileURL = try createTestFile(in: directory)
 

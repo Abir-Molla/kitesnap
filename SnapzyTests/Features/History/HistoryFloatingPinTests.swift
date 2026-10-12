@@ -1,6 +1,6 @@
 //
 //  HistoryFloatingPinTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for History Floating Panel pin functionality (Issue #552).
 //

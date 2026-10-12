@@ -102,7 +102,7 @@ final class SplashWindowController: NSObject, NSWindowDelegate {
   func show(forceOnboarding: Bool = false) {
     let needsOnboarding = forceOnboarding || !OnboardingFlowView.hasCompletedOnboarding
     if needsOnboarding {
-      SnapzyOnboardingWindowController.shared.show()
+      KiteSnapOnboardingWindowController.shared.show()
       return
     }
     showWindow(forceOnboarding: forceOnboarding)

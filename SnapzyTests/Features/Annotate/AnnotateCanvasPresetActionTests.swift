@@ -1,6 +1,6 @@
 //
 //  AnnotateCanvasPresetActionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for canvas preset CRUD (isolated UserDefaults) and
 //  canvas effect apply/reset actions on AnnotateState. Preset persistence is

@@ -1,6 +1,6 @@
 //
 //  PreferencesCoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for persisted preferences value models.
 //
@@ -185,7 +185,7 @@ final class PreferencesCoreTests: XCTestCase {
     file: StaticString = #filePath,
     line: UInt = #line
   ) throws -> UserDefaults {
-    let suiteName = "SnapzyTests.PreferencesCoreTests.\(UUID().uuidString)"
+    let suiteName = "KiteSnapTests.PreferencesCoreTests.\(UUID().uuidString)"
     let defaults = try XCTUnwrap(UserDefaults(suiteName: suiteName), file: file, line: line)
     defaults.removePersistentDomain(forName: suiteName)
     return defaults

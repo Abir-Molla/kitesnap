@@ -1,6 +1,6 @@
 //
 //  PermissionRowSnapshotRenderTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Renders PermissionRow states to PNGs for manual visual inspection.
 //  Opt-in via SNAPZY_RENDER_PERMISSION_ROWS=1 — this writes files, it asserts nothing.

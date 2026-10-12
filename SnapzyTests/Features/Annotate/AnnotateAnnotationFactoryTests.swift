@@ -1,6 +1,6 @@
 //
 //  AnnotateAnnotationFactoryTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for `AnnotationFactory.createAnnotation` successful
 //  creation paths (shape/line/pencil/blur). Counter, spotlight, highlighter,

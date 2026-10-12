@@ -1,6 +1,6 @@
 //
 //  LiquidGlassToggleRenderTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression: the Liquid Glass preference must switch rendering live, in both directions.
 //

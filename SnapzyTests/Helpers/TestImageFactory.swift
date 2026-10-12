@@ -1,6 +1,6 @@
 //
 //  TestImageFactory.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Synthetic CGImage generator for unit tests.
 //

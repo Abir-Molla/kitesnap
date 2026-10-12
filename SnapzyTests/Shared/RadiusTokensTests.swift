@@ -1,6 +1,6 @@
 //
 //  RadiusTokensTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  The corner-radius scale is a proportionality claim: guard the proportion, not the literals.
 //

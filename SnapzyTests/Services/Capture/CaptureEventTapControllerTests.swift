@@ -1,6 +1,6 @@
 //
 //  CaptureEventTapControllerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for CaptureEventTapController: start/stop state machine,
 //  delegate routing via the factory seam, and the permission-denied path.

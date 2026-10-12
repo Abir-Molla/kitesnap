@@ -1,6 +1,6 @@
 //
 //  OCRModelSelectionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Tests for OCRModelSelection backward compatibility and safe fallback.
 //

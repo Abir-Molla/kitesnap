@@ -1,6 +1,6 @@
 //
 //  WindowCaptureSelectionPolicyTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 
 import CoreGraphics

@@ -1,6 +1,6 @@
 //
 //  RecordingVideoCompatibilityLimiterTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 
 import XCTest

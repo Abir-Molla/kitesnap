@@ -1,6 +1,6 @@
 //
 //  AnnotateMockupTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for the mockup preset/reset actions on AnnotateState
 //  (the path the Annotate Window drives) plus the standalone `MockupState`

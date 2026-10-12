@@ -1,6 +1,6 @@
 //
 //  AnnotationItemHitTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for AnnotationItem.containsPoint and geometry helpers.
 //

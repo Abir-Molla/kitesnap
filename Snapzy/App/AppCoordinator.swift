@@ -97,7 +97,7 @@ final class AppCoordinator {
     CrashSentinel.shared.markTerminated()
     LogCleanupScheduler.shared.stop()
     RecordingMetadataCleanupScheduler.shared.stop()
-    SnapzyConfigurationSyncCoordinator.shared.stop()
+    KiteSnapConfigurationSyncCoordinator.shared.stop()
 
     for observer in observers {
       NotificationCenter.default.removeObserver(observer)
@@ -106,7 +106,7 @@ final class AppCoordinator {
   }
 
   func handleDeepLink(_ url: URL) {
-    SnapzyDeepLinkHandler(screenCaptureViewModel: environment.screenCaptureViewModel)
+    KiteSnapDeepLinkHandler(screenCaptureViewModel: environment.screenCaptureViewModel)
       .handle(url)
   }
 
@@ -131,8 +131,8 @@ final class AppCoordinator {
     )
   }
 
-  private func applyUserConfigurationIfNeeded() -> SnapzyConfigurationAutoImportResult {
-    let result = SnapzyConfigurationAutoImporter.applyIfNeededOnLaunch()
+  private func applyUserConfigurationIfNeeded() -> KiteSnapConfigurationAutoImportResult {
+    let result = KiteSnapConfigurationAutoImporter.applyIfNeededOnLaunch()
     let context = [
       "file": result.fileURL.path,
       "changes": "\(result.appliedChangeCount)",
@@ -185,8 +185,8 @@ final class AppCoordinator {
     return result
   }
 
-  private func startConfigurationSync(after autoImportResult: SnapzyConfigurationAutoImportResult) {
-    let coordinator = SnapzyConfigurationSyncCoordinator.shared
+  private func startConfigurationSync(after autoImportResult: KiteSnapConfigurationAutoImportResult) {
+    let coordinator = KiteSnapConfigurationSyncCoordinator.shared
     coordinator.start()
 
     guard autoImportResult.status != .applied else { return }
@@ -195,7 +195,7 @@ final class AppCoordinator {
 
   private func flushConfigurationSyncBeforeTermination() {
     do {
-      try SnapzyConfigurationSyncCoordinator.shared.flushPendingSync(reason: .appTerminate)
+      try KiteSnapConfigurationSyncCoordinator.shared.flushPendingSync(reason: .appTerminate)
     } catch {
       DiagnosticLogger.shared.logError(
         .preferences,
@@ -206,7 +206,7 @@ final class AppCoordinator {
   }
 
   private func presentStartupExperience(
-    configurationAutoImportResult: SnapzyConfigurationAutoImportResult
+    configurationAutoImportResult: KiteSnapConfigurationAutoImportResult
   ) {
     if shouldPresentConfigurationAccessOnboarding(for: configurationAutoImportResult) {
       UserDefaults.standard.set(true, forKey: PreferencesKeys.configurationAccessOnboardingPrompted)
@@ -229,7 +229,7 @@ final class AppCoordinator {
   }
 
   private func shouldPresentConfigurationAccessOnboarding(
-    for result: SnapzyConfigurationAutoImportResult
+    for result: KiteSnapConfigurationAutoImportResult
   ) -> Bool {
     guard result.status == .skippedPermissionRequired else {
       return false

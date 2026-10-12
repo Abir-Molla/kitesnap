@@ -1,6 +1,6 @@
 //
 //  AppLaunchPolicyTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for deciding whether the host app should start interactive UI.
 //
@@ -14,7 +14,7 @@ final class AppLaunchPolicyTests: XCTestCase {
   func testShouldStartInteractiveApplication_underXCTestSkipsBeforeScreenAccess() {
     var didRequestScreenCount = false
     let policy = AppLaunchPolicy(
-      environment: ["XCTestConfigurationFilePath": "/tmp/SnapzyTests.xctestconfiguration"],
+      environment: ["XCTestConfigurationFilePath": "/tmp/KiteSnapTests.xctestconfiguration"],
       screenCountProvider: {
         didRequestScreenCount = true
         return 1
@@ -49,7 +49,7 @@ final class AppLaunchPolicyTests: XCTestCase {
   func testShouldStartInteractiveApplication_canOptInInteractiveXCTestHost() {
     let policy = AppLaunchPolicy(
       environment: [
-        "XCTestConfigurationFilePath": "/tmp/SnapzyTests.xctestconfiguration",
+        "XCTestConfigurationFilePath": "/tmp/KiteSnapTests.xctestconfiguration",
         "SNAPZY_ALLOW_INTERACTIVE_XCTEST_HOST": "1",
       ],
       screenCountProvider: { 1 }

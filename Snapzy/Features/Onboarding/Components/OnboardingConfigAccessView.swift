@@ -13,11 +13,11 @@ struct ConfigAccessView: View {
   let onSkip: () -> Void
 
   @EnvironmentObject private var onboardingLocalization: OnboardingLocalizationController
-  @State private var isGranted = !SnapzyConfigurationService.shared.needsUserSelectedConfigAccess
+  @State private var isGranted = !KiteSnapConfigurationService.shared.needsUserSelectedConfigAccess
   @State private var statusMessage: String?
   @State private var errorMessage: String?
 
-  private let service = SnapzyConfigurationService.shared
+  private let service = KiteSnapConfigurationService.shared
 
   var body: some View {
     OnboardingStepContainer(onBack: onBack) {
@@ -98,7 +98,7 @@ struct ConfigAccessView: View {
     errorMessage = nil
 
     do {
-      guard let result = try SnapzyConfigurationAccessGranting.grantSuggestedConfigAccess(
+      guard let result = try KiteSnapConfigurationAccessGranting.grantSuggestedConfigAccess(
         service: service,
         message: L10n.PreferencesAdvanced.configDirectoryPanelOnboardingMessage(
           service.suggestedConfigDirectoryURL.path
@@ -119,7 +119,7 @@ struct ConfigAccessView: View {
     }
   }
 
-  private func autoImportFailureMessage(for result: SnapzyConfigurationAutoImportResult) -> String {
+  private func autoImportFailureMessage(for result: KiteSnapConfigurationAutoImportResult) -> String {
     if let errorMessage = result.errorMessage {
       return errorMessage
     }

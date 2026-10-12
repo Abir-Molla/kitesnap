@@ -1,6 +1,6 @@
 //
 //  AreaSelectionAutoWindowDetectionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for "automatically detect window under cursor" in manual-region mode: hovering
 //  previews whatever window is under the cursor, a plain click selects it, and a drag past a

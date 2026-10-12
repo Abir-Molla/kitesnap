@@ -1,6 +1,6 @@
 //
 //  InlineAreaMagnifierHostViewTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the coordinate bubble that stands in for plain area screenshot's
 //  `updateCoordinateIndicator` while the magnifier is inactive in this SwiftUI-based flow.

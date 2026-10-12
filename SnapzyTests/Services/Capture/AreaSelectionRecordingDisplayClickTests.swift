@@ -1,6 +1,6 @@
 //
 //  AreaSelectionRecordingDisplayClickTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Overlay-level tests for picking a whole display in the recording overlay: a plain click in
 //  manual-region mode (with and without window auto-detection, and on a display that had no

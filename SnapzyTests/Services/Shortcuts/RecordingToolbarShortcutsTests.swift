@@ -1,6 +1,6 @@
 //
 //  RecordingToolbarShortcutsTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the three new optional recording shortcuts:
 //  - Pen / Annotation Toggle (`togglePenRecording`)
@@ -147,7 +147,7 @@ final class RecordingToolbarShortcutsTests: XCTestCase {
     XCTAssertEqual(GlobalShortcutKind.deleteRecording.configKey, "delete_recording")
 
     // Default configuration document checks
-    let defaultDoc = SnapzyConfigurationDefaultDocument.self
+    let defaultDoc = KiteSnapConfigurationDefaultDocument.self
     let defaultTOML = defaultDoc.toml()
     let defaultParsed = try SimpleTOMLParser.parse(defaultTOML)
     
@@ -198,7 +198,7 @@ final class RecordingToolbarShortcutsTests: XCTestCase {
     enabled = false
     """
 
-    let result = SnapzyConfigurationImporter.importTOML(source, defaults: defaults)
+    let result = KiteSnapConfigurationImporter.importTOML(source, defaults: defaults)
     XCTAssertFalse(result.hasErrors)
     
     // Check imported values in KeyboardShortcutManager
@@ -215,7 +215,7 @@ final class RecordingToolbarShortcutsTests: XCTestCase {
     XCTAssertFalse(manager.isShortcutEnabled(for: .deleteRecording))
 
     // Export test
-    let exportedSource = SnapzyConfigurationExporter.exportTOML(defaults: defaults)
+    let exportedSource = KiteSnapConfigurationExporter.exportTOML(defaults: defaults)
     let document = try SimpleTOMLParser.parse(exportedSource)
     
     XCTAssertEqual(document.value(at: "shortcuts", "global", "toggle_pen_recording", "key")?.stringValue, "P")

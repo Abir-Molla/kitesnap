@@ -1,6 +1,6 @@
 //
 //  CaptureDelayTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Delayed Capture countdown setting resolution and the whole-second
 //  countdown state machine behind the countdown HUD.

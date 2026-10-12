@@ -1,6 +1,6 @@
 //
 //  DatabaseManagerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Tests for launch-safe database initialization and recovery helpers.
 //
@@ -99,7 +99,7 @@ final class DatabaseManagerTests: XCTestCase {
 
   private static func makeWritableTestDirectory() throws -> URL {
     let directory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_DatabaseManager", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_DatabaseManager", isDirectory: true)
       .appendingPathComponent(UUID().uuidString, isDirectory: true)
 
     do {

@@ -1,6 +1,6 @@
 //
 //  AnnotateTextEditingTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for the text-editing lifecycle state machine:
 //  begin -> update -> commit / finish. Undo/redo of text edits and text

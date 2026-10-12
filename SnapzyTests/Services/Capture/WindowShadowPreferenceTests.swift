@@ -1,6 +1,6 @@
 //
 //  WindowShadowPreferenceTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 
 import XCTest

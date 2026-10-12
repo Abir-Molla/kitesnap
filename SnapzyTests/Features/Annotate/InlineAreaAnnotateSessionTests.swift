@@ -1,6 +1,6 @@
 //
 //  InlineAreaAnnotateSessionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for InlineAreaAnnotateSession coordinate conversion helpers.
 //

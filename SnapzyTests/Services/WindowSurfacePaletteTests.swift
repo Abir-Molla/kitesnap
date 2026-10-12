@@ -1,6 +1,6 @@
 //
 //  WindowSurfacePaletteTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for WindowSurfacePalette and ThemeManager appearance behavior.
 //

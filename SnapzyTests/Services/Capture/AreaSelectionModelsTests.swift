@@ -1,6 +1,6 @@
 //
 //  AreaSelectionModelsTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for AreaSelectionTarget, AreaSelectionResult, and WindowCaptureTarget.
 //

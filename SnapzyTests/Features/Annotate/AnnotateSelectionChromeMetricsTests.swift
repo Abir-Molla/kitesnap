@@ -1,6 +1,6 @@
 //
 //  AnnotateSelectionChromeMetricsTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 
 import CoreGraphics

@@ -156,12 +156,12 @@ struct HistoryBackdropView: View {
   /// directional scrim, leading bloom, top hairline, border, and dark appearance — not a second
   /// approximation of those layers.
   private var onboardingGlassBackdrop: some View {
-    SnapzyGlassWindowBackdrop(radius: resolvedBackdropCornerRadius)
+    KiteSnapGlassWindowBackdrop(radius: resolvedBackdropCornerRadius)
       .environment(\.colorScheme, .dark)
   }
 
   private var resolvedBackdropCornerRadius: CGFloat {
-    cornerRadius > 0 ? cornerRadius : SnapzyOnboardingMetrics.windowRadius
+    cornerRadius > 0 ? cornerRadius : KiteSnapOnboardingMetrics.windowRadius
   }
 
   /// Balanced Liquid Glass overlays on top of the vibrancy substrate: a vertical thickness sheen,

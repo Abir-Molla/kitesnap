@@ -1,6 +1,6 @@
 //
 //  TempCaptureManagerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for TempCaptureManager file lifecycle management.
 //
@@ -41,7 +41,7 @@ final class TempCaptureManagerTests: XCTestCase {
     super.setUp()
     fakePreferences = FakePreferencesProvider()
     let exportDirectory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_Export_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_Export_\(UUID().uuidString)", isDirectory: true)
     try? FileManager.default.createDirectory(at: exportDirectory, withIntermediateDirectories: true)
     fakeFileAccess = FakeSandboxFileAccess(exportDirectory: exportDirectory)
     defaults = UserDefaultsFactory.make()
@@ -79,7 +79,7 @@ final class TempCaptureManagerTests: XCTestCase {
   /// Create a test file in an arbitrary directory.
   private func createExternalTestFile() throws -> URL {
     let dir = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_External_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_External_\(UUID().uuidString)", isDirectory: true)
     try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
     let url = dir.appendingPathComponent("external_file.png")
     try Data("test".utf8).write(to: url)
@@ -222,7 +222,7 @@ final class TempCaptureManagerTests: XCTestCase {
     fakePreferences.setAction(.save, for: .screenshot, enabled: true)
 
     let exportDir = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_Export_\(UUID().uuidString)")
+      .appendingPathComponent("KiteSnapTests_Export_\(UUID().uuidString)")
 
     let result = manager.resolveSaveDirectory(
       for: .screenshot,
@@ -237,7 +237,7 @@ final class TempCaptureManagerTests: XCTestCase {
     fakePreferences.setAction(.save, for: .screenshot, enabled: false)
 
     let exportDir = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_Export_\(UUID().uuidString)")
+      .appendingPathComponent("KiteSnapTests_Export_\(UUID().uuidString)")
 
     let result = manager.resolveSaveDirectory(
       for: .screenshot,
@@ -266,7 +266,7 @@ final class TempCaptureManagerTests: XCTestCase {
 
   func testRecordingSavePlan_structure() throws {
     let exportDir = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_Export_\(UUID().uuidString)")
+      .appendingPathComponent("KiteSnapTests_Export_\(UUID().uuidString)")
 
     let plan = try manager.makeRecordingSavePlan(exportDirectory: exportDir)
 
@@ -281,7 +281,7 @@ final class TempCaptureManagerTests: XCTestCase {
     fakePreferences.setAction(.save, for: .recording, enabled: true)
 
     let exportDir = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_Export_\(UUID().uuidString)")
+      .appendingPathComponent("KiteSnapTests_Export_\(UUID().uuidString)")
 
     let plan = try manager.makeRecordingSavePlan(exportDirectory: exportDir)
     XCTAssertEqual(plan.finalDirectory, exportDir)
@@ -294,7 +294,7 @@ final class TempCaptureManagerTests: XCTestCase {
     fakePreferences.setAction(.save, for: .recording, enabled: false)
 
     let exportDir = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_Export_\(UUID().uuidString)")
+      .appendingPathComponent("KiteSnapTests_Export_\(UUID().uuidString)")
 
     let plan = try manager.makeRecordingSavePlan(exportDirectory: exportDir)
     XCTAssertEqual(plan.finalDirectory, manager.tempCaptureDirectory)
@@ -307,7 +307,7 @@ final class TempCaptureManagerTests: XCTestCase {
 
   func testDeleteRecordingProcessingDirectory_validDir_removesIt() throws {
     let exportDir = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_Export_\(UUID().uuidString)")
+      .appendingPathComponent("KiteSnapTests_Export_\(UUID().uuidString)")
 
     let plan = try manager.makeRecordingSavePlan(exportDirectory: exportDir)
     XCTAssertTrue(FileManager.default.fileExists(atPath: plan.processingDirectory.path))

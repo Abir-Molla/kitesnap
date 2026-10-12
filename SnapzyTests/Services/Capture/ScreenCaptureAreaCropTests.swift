@@ -1,6 +1,6 @@
 //
 //  ScreenCaptureAreaCropTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the live area-capture reconcile-and-crop math (issue #308).
 //  Covers scale-mismatch (actual pixels ≠ assumed), region correctness via

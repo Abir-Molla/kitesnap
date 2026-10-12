@@ -1,6 +1,6 @@
 //
 //  AreaSelectionCaptureCoordinateSpaceTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression tests asserting that CGDisplayBounds (Quartz Y-down space) is used
 //  for CGWindowListCreateImage capture rects, not NSScreen.frame (AppKit Y-up space).

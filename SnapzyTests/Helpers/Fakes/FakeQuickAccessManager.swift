@@ -1,6 +1,6 @@
 //
 //  FakeQuickAccessManager.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Records QuickAccessManaging calls for assertion.
 //

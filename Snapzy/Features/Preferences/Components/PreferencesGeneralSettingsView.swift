@@ -60,7 +60,7 @@ struct GeneralSettingsView: View {
             .labelsHidden()
             .onChange(of: useLiquidGlass) { _ in
               LiquidGlassCapabilities.runtimeLegacyOverride = nil
-              SnapzyConfigurationSyncCoordinator.shared.scheduleSync(reason: .explicitChange)
+              KiteSnapConfigurationSyncCoordinator.shared.scheduleSync(reason: .explicitChange)
             }
         }
       }
@@ -81,7 +81,7 @@ struct GeneralSettingsView: View {
             get: { updater.automaticallyChecksForUpdates },
             set: {
               updater.automaticallyChecksForUpdates = $0
-              SnapzyConfigurationSyncCoordinator.shared.scheduleSync(reason: .explicitChange)
+              KiteSnapConfigurationSyncCoordinator.shared.scheduleSync(reason: .explicitChange)
             }
           ))
           .labelsHidden()
@@ -92,7 +92,7 @@ struct GeneralSettingsView: View {
             get: { updater.automaticallyDownloadsUpdates },
             set: {
               updater.automaticallyDownloadsUpdates = $0
-              SnapzyConfigurationSyncCoordinator.shared.scheduleSync(reason: .explicitChange)
+              KiteSnapConfigurationSyncCoordinator.shared.scheduleSync(reason: .explicitChange)
             }
           ))
           .labelsHidden()

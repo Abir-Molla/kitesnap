@@ -1,6 +1,6 @@
 //
 //  ScreenRecordingEncodingSettingsTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Tests for deterministic screen-recording encoding decisions.
 //

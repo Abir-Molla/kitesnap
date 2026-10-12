@@ -1,6 +1,6 @@
 //
 //  PostCaptureActionHandlerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for PostCaptureActionHandler routing logic.
 //
@@ -30,7 +30,7 @@ final class PostCaptureActionHandlerTests: XCTestCase {
     resetAfterCaptureActionsToDefaults()
 
     tempDirectory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_PostCapture_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_PostCapture_\(UUID().uuidString)", isDirectory: true)
     try FileManager.default.createDirectory(at: tempDirectory, withIntermediateDirectories: true)
 
     // Create a minimal test image file

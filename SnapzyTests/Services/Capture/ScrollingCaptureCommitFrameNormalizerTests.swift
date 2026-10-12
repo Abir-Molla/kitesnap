@@ -1,6 +1,6 @@
 //
 //  ScrollingCaptureCommitFrameNormalizerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression tests for mixed-density scrolling-capture commit frames.
 //

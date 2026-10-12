@@ -1,6 +1,6 @@
 //
 //  OCRNotificationContentTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for OCR result notification titles, bodies, and text previews.
 //

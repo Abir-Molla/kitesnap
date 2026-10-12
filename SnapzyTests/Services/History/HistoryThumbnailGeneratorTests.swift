@@ -1,6 +1,6 @@
 //
 //  HistoryThumbnailGeneratorTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Integration tests for thumbnail generation, caching, and cleanup.
 //
@@ -17,7 +17,7 @@ final class HistoryThumbnailGeneratorTests: XCTestCase {
   override func setUp() {
     super.setUp()
     testDirectory = FileManager.default.temporaryDirectory
-      .appendingPathComponent("SnapzyTests_HistoryThumbs_\(UUID().uuidString)", isDirectory: true)
+      .appendingPathComponent("KiteSnapTests_HistoryThumbs_\(UUID().uuidString)", isDirectory: true)
     try? FileManager.default.createDirectory(at: testDirectory, withIntermediateDirectories: true)
     generator = HistoryThumbnailGenerator(
       thumbnailsDirectory: testDirectory.appendingPathComponent("thumbnails", isDirectory: true)

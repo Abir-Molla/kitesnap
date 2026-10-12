@@ -1,6 +1,6 @@
 //
 //  ScreenshotLastAreaStoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for repeat-area screenshot rect persistence.
 //

@@ -1,6 +1,6 @@
 //
 //  RecordingSessionTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for RecordingSession thread-safe state management.
 //

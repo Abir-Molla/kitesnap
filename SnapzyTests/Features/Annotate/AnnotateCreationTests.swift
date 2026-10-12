@@ -1,6 +1,6 @@
 //
 //  AnnotateCreationTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for state-level creation wiring: `updateBlurType`
 //  across all blur types and `nextCounterValue` monotonicity. Basic factory

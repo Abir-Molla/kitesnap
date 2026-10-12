@@ -1,6 +1,6 @@
 //
 //  AreaSelectionOverlayTestCase.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Shared base class for AreaSelectionOverlayView unit tests.
 //  Provides setUp/tearDown boilerplate and image-creation helpers used

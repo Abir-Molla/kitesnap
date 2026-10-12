@@ -1,6 +1,6 @@
 //
 //  AreaSelectionOverlayPassthroughStaleLocationTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression tests for the live-passthrough stale-pointer bug: the event tap
 //  consumes every mouse move, so `NSEvent.mouseLocation` stays frozen at the

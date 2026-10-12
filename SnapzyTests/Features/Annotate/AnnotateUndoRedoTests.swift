@@ -1,6 +1,6 @@
 //
 //  AnnotateUndoRedoTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Characterization tests for AnnotateState undo/redo checkpoint semantics:
 //  saveState pushes a snapshot, undo restores the prior snapshot, redo reapplies

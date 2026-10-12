@@ -1,6 +1,6 @@
 //
 //  ScrollingCaptureCommitSchedulerTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for scrolling capture refresh coalescing.
 //

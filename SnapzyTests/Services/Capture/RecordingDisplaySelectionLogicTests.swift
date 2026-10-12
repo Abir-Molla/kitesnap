@@ -1,6 +1,6 @@
 //
 //  RecordingDisplaySelectionLogicTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for picking a whole display in the recording overlay: the mode transition
 //  table, plain-click resolution, display hit-testing on a real 3-display layout, the

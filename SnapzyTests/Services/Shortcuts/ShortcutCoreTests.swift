@@ -1,6 +1,6 @@
 //
 //  ShortcutCoreTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for shortcut value models and menu equivalents.
 //

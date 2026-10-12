@@ -1,6 +1,6 @@
 //
 //  LineDashStyleTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for line dash style patterns and persistence fallbacks.
 //

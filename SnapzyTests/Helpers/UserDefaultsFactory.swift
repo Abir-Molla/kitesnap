@@ -1,6 +1,6 @@
 //
 //  UserDefaultsFactory.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Creates isolated UserDefaults instances for tests.
 //
@@ -12,7 +12,7 @@ enum UserDefaultsFactory {
     file: StaticString = #filePath,
     line: UInt = #line
   ) -> UserDefaults {
-    let suiteName = "SnapzyTests.\(UUID().uuidString)"
+    let suiteName = "KiteSnapTests.\(UUID().uuidString)"
     guard let defaults = UserDefaults(suiteName: suiteName) else {
       fatalError("Failed to create UserDefaults with suiteName \(suiteName)")
     }

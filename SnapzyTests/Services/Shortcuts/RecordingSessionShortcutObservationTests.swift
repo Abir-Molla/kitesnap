@@ -1,6 +1,6 @@
 //
 //  RecordingSessionShortcutObservationTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Integration tests for the production observation path behind recording-session
 //  shortcut gating: KeyboardShortcutManager re-registers session-scoped shortcuts

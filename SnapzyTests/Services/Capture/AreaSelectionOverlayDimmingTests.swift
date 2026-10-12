@@ -1,6 +1,6 @@
 //
 //  AreaSelectionOverlayDimmingTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for AreaSelectionOverlayView overlay rendering:
 //  enabled/disabled dimming, dark/light adaptive colors, and hysteresis banding.

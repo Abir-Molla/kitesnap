@@ -1,6 +1,6 @@
 //
 //  ArrowGeometryTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for ArrowGeometry path sampling, bounds, and transforms.
 //

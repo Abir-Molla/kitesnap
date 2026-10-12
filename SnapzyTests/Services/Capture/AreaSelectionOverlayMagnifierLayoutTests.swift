@@ -1,6 +1,6 @@
 //
 //  AreaSelectionOverlayMagnifierLayoutTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for magnifier layout and rendering: corner-flip positioning,
 //  contentsRect centering, overlay-setting compatibility, and empty-backdrop fallback.

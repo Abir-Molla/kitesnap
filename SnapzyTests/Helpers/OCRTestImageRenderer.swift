@@ -1,6 +1,6 @@
 //
 //  OCRTestImageRenderer.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Synthetic OCR fixture rendering helpers.
 //

@@ -1,6 +1,6 @@
 //
 //  AreaSelectionOverlayOffscreenCursorTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Regression tests for the off-screen cursor guard: once the session ends and
 //  the overlay window is ordered out, the `.activeAlways` + `.mouseMoved`

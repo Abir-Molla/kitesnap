@@ -1,6 +1,6 @@
 //
 //  ScrollingCaptureMetricsTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for ScrollingCaptureSessionMetrics value-type accumulator.
 //

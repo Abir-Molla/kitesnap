@@ -14,15 +14,15 @@ struct AdvancedSettingsView: View {
   @AppStorage(PreferencesKeys.diagnosticsRetentionDays) private var diagnosticsRetentionDays = LogCleanupScheduler.defaultRetentionDays
   @AppStorage(PreferencesKeys.urlSchemeEnabled) private var urlSchemeEnabled = true
 
-  @State private var needsConfigAccess = SnapzyConfigurationService.shared.needsUserSelectedConfigAccess
+  @State private var needsConfigAccess = KiteSnapConfigurationService.shared.needsUserSelectedConfigAccess
   @State private var isRestoreConfirmationPresented = false
   @State private var isConfigSyncConfirmationPresented = false
   @State private var pendingConfigSyncURL: URL?
   @State private var pendingConfigSyncSignature: String?
   @State private var logSizeText = L10n.PreferencesAdvanced.calculating
-  @ObservedObject private var configSyncCoordinator = SnapzyConfigurationSyncCoordinator.shared
+  @ObservedObject private var configSyncCoordinator = KiteSnapConfigurationSyncCoordinator.shared
 
-  private let service = SnapzyConfigurationService.shared
+  private let service = KiteSnapConfigurationService.shared
   private let tomlContentType = UTType(filenameExtension: "toml") ?? .plainText
 
   private var canUseBackupActions: Bool {
@@ -214,7 +214,7 @@ struct AdvancedSettingsView: View {
     return false
   }
 
-  private var effectiveConfigSyncStatus: SnapzyConfigurationSyncCoordinator.Status {
+  private var effectiveConfigSyncStatus: KiteSnapConfigurationSyncCoordinator.Status {
     needsConfigAccess ? .needsPermission : configSyncCoordinator.status
   }
 
@@ -429,7 +429,7 @@ struct AdvancedSettingsView: View {
 
   private func grantConfigAccess(openAfterGrant: Bool) {
     do {
-      guard let grantResult = try SnapzyConfigurationAccessGranting.grantSuggestedConfigAccess(service: service) else {
+      guard let grantResult = try KiteSnapConfigurationAccessGranting.grantSuggestedConfigAccess(service: service) else {
         return
       }
 
@@ -444,13 +444,13 @@ struct AdvancedSettingsView: View {
     }
   }
 
-  private func issues(for autoImportResult: SnapzyConfigurationAutoImportResult) -> [SnapzyConfigurationIssue] {
+  private func issues(for autoImportResult: KiteSnapConfigurationAutoImportResult) -> [KiteSnapConfigurationIssue] {
     if let issues = autoImportResult.importResult?.issues {
       return issues
     }
 
     if autoImportResult.status == .failed, let errorMessage = autoImportResult.errorMessage {
-      return [SnapzyConfigurationIssue(severity: .error, message: errorMessage)]
+      return [KiteSnapConfigurationIssue(severity: .error, message: errorMessage)]
     }
 
     return []
@@ -518,7 +518,7 @@ struct AdvancedSettingsView: View {
     }
   }
 
-  private func showGrantNotice(for grantResult: SnapzyConfigurationAccessGrantResult) {
+  private func showGrantNotice(for grantResult: KiteSnapConfigurationAccessGrantResult) {
     let issues = issues(for: grantResult.autoImportResult)
     let style = noticeStyle(for: issues)
     let message: String
@@ -534,14 +534,14 @@ struct AdvancedSettingsView: View {
     showNotice(message, style: style)
   }
 
-  private func showImportNotice(for result: SnapzyConfigurationImportResult) {
+  private func showImportNotice(for result: KiteSnapConfigurationImportResult) {
     showNotice(
       noticeSummary(for: result, successMessage: L10n.PreferencesAdvanced.importSucceeded),
       style: noticeStyle(for: result.issues)
     )
   }
 
-  private func showRestoreNotice(for result: SnapzyConfigurationImportResult) {
+  private func showRestoreNotice(for result: KiteSnapConfigurationImportResult) {
     guard !result.hasErrors else {
       showImportNotice(for: result)
       return
@@ -555,7 +555,7 @@ struct AdvancedSettingsView: View {
   }
 
   private func noticeSummary(
-    for result: SnapzyConfigurationImportResult,
+    for result: KiteSnapConfigurationImportResult,
     successMessage: String
   ) -> String {
     if result.hasErrors {
@@ -575,7 +575,7 @@ struct AdvancedSettingsView: View {
     return successMessage
   }
 
-  private func noticeStyle(for issues: [SnapzyConfigurationIssue]) -> AppToastStyle {
+  private func noticeStyle(for issues: [KiteSnapConfigurationIssue]) -> AppToastStyle {
     if issues.contains(where: { $0.severity == .error }) {
       return .error
     }
@@ -620,7 +620,7 @@ private struct AdvancedConfigAccessWarningRow: View {
           .font(.subheadline)
           .fontWeight(.semibold)
         Text(L10n.PreferencesAdvanced.configAccessWarningDescription(
-          SnapzyConfigurationService.shared.suggestedConfigDirectoryURL.path
+          KiteSnapConfigurationService.shared.suggestedConfigDirectoryURL.path
         ))
         .font(.caption)
         .foregroundStyle(.secondary)

@@ -1,6 +1,6 @@
 //
 //  CaptureHistoryPreferencesTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Verify the shared Capture History enabled reader applies the intended
 //  default (`true`) consistently, unlike `bool(forKey:)` which defaults to

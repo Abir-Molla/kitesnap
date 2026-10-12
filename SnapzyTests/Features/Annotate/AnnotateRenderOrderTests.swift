@@ -1,6 +1,6 @@
 //
 //  AnnotateRenderOrderTests.swift
-//  SnapzyTests
+//  KiteSnapTests
 //
 //  Unit tests for the renderOrdered z-order tiering used by canvas and export.
 //
